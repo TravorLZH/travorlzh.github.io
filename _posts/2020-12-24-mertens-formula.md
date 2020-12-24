@@ -2,7 +2,8 @@
 layout: post
 title:  "Merten's Formula"
 date:   2020-12-24
-tags: math number-theory
+des:    A brilliant association between primes and logarithms
+tags:   math number-theory
 ---
 In this article, we are going to derive Merten's asymptotic formula that
 

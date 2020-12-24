@@ -2,6 +2,7 @@
 layout: post
 title: "Stirling's Formula"
 date: 2020-12-10
+des: An efficient way to calculate factorial?
 tags: complex-analysis asymptotics
 ---
 

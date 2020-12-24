@@ -1,7 +1,7 @@
 ---
 layout: post
 nav: 0
-title: How to create a flashing desktop
+title: How to Create a Flashing Desktop
 des: For those people who wanna make tricks
 ---
 

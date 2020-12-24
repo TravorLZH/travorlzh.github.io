@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Mathematical Basis of Fourier Transform"
-date: 2020-12-23
+title:  "Mathematical Basis of Fourier Transform"
+date:   2020-12-23
+des:    A comprehensive derivation of different forms of Fourier transform
 tags: fourier-transform number-theory physics
 ---
 

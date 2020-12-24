@@ -1,8 +1,8 @@
 ---
 layout: post
 nav: 0
-des: What will you do if you don't know what vim is
-title: Use Pycharm to emulate Vim
+des: What will you do if you don't know what vim is?
+title: Use Pycharm to Emulate Vim
 ---
 
 ![pycharm](/assets/images/pycharm.png)
