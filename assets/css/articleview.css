@@ -6,12 +6,16 @@
 	margin: 10px;
 	border-radius: 3px;
 	box-shadow: 1px 1px 5px gray;
-	transition: transform 0.3s, box-shadow 0.3s;
+	transition: transform 0.3s, box-shadow 0.3s, background-color 1s;
 }
 
 .article:hover{
 	box-shadow: 1px 1px 8px gray;
+	background-color: lightcyan;
 	transform: translateY(-5px);
+}
+.article:focus{
+	transform: translateY(-2px);
 }
 .article a {
 	position: absolute;
@@ -25,12 +29,8 @@
 .article h1{
 	font-size: 20px;
 	font-weight: bold;
-	display: inline-block;
+	display: inline-block; 
 	color: black;
-	transition: color 1.2s;
-}
-.article:hover h1{
-	color: #0000FF;
 }
 .article p{
 	margin-top: 8px;
