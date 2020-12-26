@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Merten's Formula"
+title:  "Mertens' Formula"
 date:   2020-12-24
 des:    A brilliant association between primes and logarithms
 tags:   math number-theory
 ---
-In this article, we are going to derive Merten's asymptotic formula that
+In this article, we are going to derive Mertens' asymptotic formula that
 
 $$
 \prod_{p\le x}\left(1-\frac1p\right)\sim{e^{-\gamma}\over\log x}\tag1
@@ -13,7 +13,7 @@ $$
 
 # An elementary estimate for reciprocal sum
 
-Due to Merten's first theorem that
+Due to Mertens' first theorem that
 
 $$
 g(x)=\sum_{p\le x}{\log p\over p}=\log x+h(x)
@@ -37,7 +37,7 @@ $$
 f(x)=\sum_{p\le x}\frac1p=\log\log x+B_1+\mathcal O\left(1\over\log x\right)\tag1
 $$
 
-where $B_1$ is called **Merten's constant**.
+where $B_1$ is called **Mertens' constant**.
 
 # Euler product and convergence
 
@@ -190,7 +190,7 @@ $$
 B_1=\gamma+\sum_p\left[\log\left(1-\frac1p\right)+\frac1p\right]\tag6
 $$
 
-# Proof of Merten's formula
+# Proof of Mertens' formula
 
 With every prerequisite being ready, plugging (2) and (6) back into (1) gives
 
@@ -204,7 +204,7 @@ $$
 \sum_{p\le x}\log\left(1-\frac1p\right)=-\gamma-\log\log x+\mathcal O\left(1\over\log x\right)\tag7
 $$
 
-By exponentiating and employing $e^a=1+\mathcal O(a)$, we acquire Merten's formula:
+By exponentiating and employing $e^a=1+\mathcal O(a)$, we acquire Mertens' formula:
 
 $$
 \prod_{p\le x}\left(1-\frac1p\right)={e^{-\gamma}\over\log x}\left[1+\mathcal O\left(1\over\log x\right)\right]\tag{$x\ge2$}
