@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Mathematical Basis of Fourier Transform"
+title:  "A Complete Investigation on Fourier Transform"
 date:   2020-12-23
 des:    A comprehensive derivation of different forms of Fourier transform
 tags: fourier-transform number-theory physics
 ---
+
+> This post is also available at [HFI Programming Club's blog](https://hfi.me/2020/12/fourier-transform/).
 
 Fourier transform is a commonly used techniques in many different fields. In mathematics, people use Fourier transform to solve differential equations, and in signal processing it is used to study the seasonality of time series. To prevent misuse, we had better understand theoretical background of Fourier transform before diving into applications. Prepare some papers and penciles, our adventure will begin from the heat equation.
 
