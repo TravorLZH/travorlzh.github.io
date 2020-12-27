@@ -10,7 +10,7 @@ tags: fourier-transform number-theory physics
 
 Fourier transform is a commonly used techniques in many different fields. In mathematics, people use Fourier transform to solve differential equations, and in signal processing it is used to study the seasonality of time series. To prevent misuse, we had better understand theoretical background of Fourier transform before diving into applications. Prepare some papers and penciles, our adventure will begin from the heat equation.
 
-# The Heat Equation
+## The Heat Equation
 
 In the field of **partial differential equations (PDEs)**, heat equation is defined as follows
 
@@ -28,7 +28,7 @@ with the initial condition and the boundary condition being $u(x,0)=f(x)$ and $u
 
 > We will not go into too much detail about this equation since this is not the topic of this blog.
 
-# Solving One-dimensional Heat Equation
+## Solving One-dimensional Heat Equation
 
 Since the conditions and (1) are linear and homogenous, we are allowed to perform separation of variables. That is, we set
 
@@ -123,7 +123,7 @@ $$
 A_n=\frac2L\int_0^Lf(x)\sin(\lambda_n)\mathrm dx\tag3
 $$
 
-# Heat Equation and Fourier Series
+## Heat Equation and Fourier Series
 
 As shown in (2), the solution to the heat equation requires us to determine the coefficients of a trigonometric series, and this type of series is known as the **Fourier series** to acknowledge Joseph Fourier for his contribution in the study of heat equation. Particularly, Fourier hypothesizes all functions defined on an arbitrary $[T_0,T_0+T]$ can be represented as superposition of sinusoids:
 
@@ -157,7 +157,7 @@ $$
 f(x)={a_0\over2}+\sum_{n=1}^\infty\left[a_n\cos\left(2\pi nx\over T\right)+b_n\sin\left(2\pi nx\over T\right)\right]\tag5
 $$
 
-# Application of Fourier Series - the Basel Problem
+## Application of Fourier Series - the Basel Problem
 
 Oftentimes, Fourier expansion of certain functions help us evaluate values of certain series. For instance, let's set $T_0=0$, $T=2\pi$, and $f(x)=x^2$; we have
 
@@ -197,7 +197,7 @@ $$
 
 which is an equivalent form of the **Basel problem**.
 
-# Fourier Series in a Complex Sense
+## Fourier Series in a Complex Sense
 
 Equation (5) still looks a bit complicated, but **Euler's formula** for trigonometric functions can help us simplify:
 
@@ -218,7 +218,7 @@ $$
 c_n=\frac1T\int_{T_0}^{T_0+T}f(x)e^{-2\pi inx/T}\mathrm dx
 $$
 
-# Fourier Transform
+## Fourier Transform
 
 Since sinusoids are periodic, Fourier series virtually serve to produce a trigonometric representations of periodic functions. Nonetheless, in mathematics most functions we study are not periodic, indicating that a stronger tool is needed.
 
@@ -284,7 +284,7 @@ $$
 
 > In order for $F(\omega)$ to exist, we ensure that $f(t)$ is square-integrable (i.e. this integral $\int\lvert f\rvert^2$ must converge).
 
-# Application of Fourier Transform - Airy's Equation
+### Application of Fourier Transform - Airy's Equation
 
 Oftentimes in quantum mechanics, Schrodinger equations in particular problems were simplified into **Airy's equation**:
 
@@ -341,11 +341,11 @@ $$
 
 > As (11) suggests, Airy's equation is a second order ODE, meaning there exists another branch of solutions that are linearly independent to $Y_0\operatorname{Ai}(x)$. Consequently, Fourier transform only gives the square-integrable branch of the general solution.
 
-# Discretizing Fourier Transform
+## Discrete Fourier Transform
 
 Although integrals look beautiful, it is not easy for computers to evaluate integrals, especially when it is integrating over the entire real line. As a result, we may consider discretizing the problem for computer use.
 
-# Sampling the Time Domain - Discrete-time Fourier Transform
+### Sampling the Time Domain - Discrete-time Fourier Transform
 
 In reality, we do not capture signals as a continuous flow but instead a discrete sequence, so discretizing the time domain will help us apply Fourier transform to discrete signals. Particularly, if we were to discretize the time-domain with sampling period $1/T$, we get
 
@@ -380,7 +380,7 @@ $$
 
 wherein the inversion formula is the same as (10).
 
-# Sampling the Frequency Domain - Discrete Fourier Transform
+### Sampling the Frequency Domain - Discrete Fourier Transform
 
 Thanks to delta function, we turn integrals into summation. However, the inversion formula for DTFT is still in terms of integrals, so it is needed for us to manipulate this expression to feet real-life use. Because in reality we process finitely sized signal, the discrete signals are only finite sequences. As a result, let's consider DTFT on an discrete signal with length $N$:
 
@@ -432,7 +432,7 @@ $$
 
 > It can be verified that (13) and (14) conforms to the definition of DFT in [numpy](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fft.html).
 
-# Application of DFT - Spectrum of the Greatest Common Divisor
+### Application of DFT - Spectrum of the Greatest Common Divisor
 
 It is well-known that DFT is frequently used in signal processing, and now let's try analyzing the spectrum of the greatest common divisor function:
 

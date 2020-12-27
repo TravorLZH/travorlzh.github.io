@@ -6,6 +6,10 @@ des: An efficient way to calculate factorial?
 tags: complex-analysis asymptotics
 ---
 
+In this article, we are going to obtain a formula that allows us to approximate factorials as large values.
+
+## Logarithm of a factorial
+
 To further study the property of factorial, we take logarithm of this operation because logarithm can convert a problem involving multiplication into a summatory problem, in which many tools are available for approximation:
 
 $$
@@ -53,7 +57,7 @@ $$
 
 As a result, all we need is to figure out the constant
 
-# Wallis product
+## Wallis product
 
 According to the Weierstrass factorization theorem, we have
 

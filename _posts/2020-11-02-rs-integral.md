@@ -8,7 +8,7 @@ tags: number-theory asymptotics
 
 As the title suggests, today we are going to do some integral calculus. First, let's recall the definition of Riemann integral:
 
-### Riemann Integral and Its Formal Definition
+## Riemann Integral and Its Formal Definition
 
 Traditionally, an integral of some function $f(x)$ over some interval $[a,b]$ is defined as the signed area of $f(x)$ over the curve:
 
@@ -49,7 +49,7 @@ $$
 
 exists and converges to $\int_a^bf(x)\mathrm dx$.
 
-### From Riemann Integral to Riemann-Stieltjes Integral
+## From Riemann Integral to Riemann-Stieltjes Integral
 
 Although Riemann integral appears to be sufficient to integrate functions, it is not friendly to integrate piecewise continuous functions. Let's first look at its definition:
 
@@ -111,7 +111,7 @@ $$
 
 which indicates the validness of this theorem. $\square$
 
-### Properties of Riemann-Stieltjes Integral
+## Properties of Riemann-Stieltjes Integral
 
 In addition to the constraint for the Riemann-Stieltjes integral to exist, we can also transform it into a Riemann integral at specific occasions:
 
@@ -155,7 +155,7 @@ $$
 \int_a^bf(x)\mathrm dg(x)=f(x)g(x) \vert _q^b-\int_a^bg(x)f'(x)\mathrm dx
 $$
 
-### Riemann-Stieltjes Integral and Partial Summation
+## Riemann-Stieltjes Integral and Partial Summation
 
 Let $h(n)$ be some arithmetic function and $H(x)$ be its summatory function
 
@@ -187,7 +187,7 @@ $$
 
 Employing (5) in different situations can give us plentiful brilliant results. Let's have a look at some of them:
 
-### Asymptotic Expansions
+## Asymptotic Expansions
 
 It was well-known that the harmonic series $1+\frac12+\frac13+\cdots$ diverges, and we can provide a formal proof using Riemann-Stieltjes integral:
 
@@ -205,7 +205,7 @@ $$
 
 Since $\log N\to\infty$ as $N\to\infty$, we conclude that the harmonic series diverges.
 
-### Evaluation of an Interesting Series
+## Evaluation of an Interesting Series
 
 $$
 \sum_{n\ge1}{(-1)^n\log n\over n}
@@ -254,7 +254,7 @@ $$
 \sum_{n\ge1}{(-1)^n\log n\over n}=\gamma\log2+\frac12\log^22
 $$
 
-### The Prime Number Theorem
+## The Prime Number Theorem
 
 If we were to define the prime indicator function
 
@@ -297,6 +297,6 @@ $$
 
 which is the prime number theorem.
 
-### Conclusion
+## Conclusion
 
 To sum up, in this blog, we first define and explore the Riemann-Stieltjes integral, then uses this integration techniques to solve problems via asymptotic expansion. Lastly, we provide a conditional proof for the prime number theorem.

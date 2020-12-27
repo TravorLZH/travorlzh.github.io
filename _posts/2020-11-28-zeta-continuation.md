@@ -25,7 +25,7 @@ $$
 
 It can be easily verified that this expression converges absolutely and uniformly when $\Re(s)>1$, allowing us to make some manipulations with it. Let' have a look
 
-# An Identity due to Poisson's Summation Formula
+## An Identity due to Poisson's Summation Formula
 
 Define
 
@@ -45,7 +45,7 @@ $$
 \psi(x)={1\over\sqrt x}\psi\left(\frac1x\right)+{1\over2\sqrt x}-\frac12\tag2
 $$
 
-# Integral Representation for $\zeta(s)$
+## Integral Representation for $\zeta(s)$
 
 Let's perform Mellin transform on this function so that
 
@@ -65,7 +65,7 @@ $$
 
 As a result, we can study the properties of the Riemann zeta function by digging deeper into the integral on the left hand side.
 
-# Analytic Continuation of the Integral
+## Analytic Continuation of the Integral
 
 First, let's split the integral into two parts
 
@@ -130,7 +130,7 @@ $$
 
 which is known as the **functional equation** for $\zeta(s)$.
 
-# Conclusion
+## Conclusion
 
 In this blog, we begin with the Dirichlet series definition of $\zeta(s)$, and then we try to connect zeta function with an integral representation. Subsequently, we use Poisson's summation formula to obtain its analytic continuation. However, this analytic continuation has other impacts. If we look back to the functional equation
 

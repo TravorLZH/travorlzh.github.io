@@ -7,7 +7,7 @@ tags: asymptotics complex-analysis number-theory
 
 In this article, we are going to investigate the properties of another powerful tool in analytic number theory: the Bernoulli numbers and polynomials.
 
-# Bernoulli numbers
+## Bernoulli numbers
 
 As they are defined, the following generating function characterized **Bernoulli numbers**:
 
@@ -17,7 +17,7 @@ $$
 
 Thus the primitive way of calculating Bernoulli numbers is through differentiating the generating function at $x=0$. However, let's first see how far we can go without actually taking the derivatives:
 
-## Values of $B_{2k+1}$
+### Values of $B_{2k+1}$
 
 For practical purpose, let's try setting $x$ to $-x$, resulting in
 
@@ -33,7 +33,7 @@ $$
 
 is even. Hence, according to (1) we have $B_1=-\frac12$ and $B_{2k+1}=0$ for all $k\ge1$.
 
-## Recursive formula for $B_n$
+### Recursive formula for $B_n$
 
 If we were to apply Cauchy product to (2), we have
 
@@ -61,7 +61,7 @@ $$
 
 With the knowledge of $B_0=1$ and $B_1=-\frac12$ we can use this formula to find out all Bernoulli numbers.
 
-# Bernoulli polynomials
+## Bernoulli polynomials
 
 In order for us to further investigate the properties of Bernoulli numbers, let's move our attention to a generalization: the **Bernoulli polynomials**.
 
@@ -71,7 +71,7 @@ $$
 
 A direct result of this relation implies we can obtain $B_n(t)$ via performing multiple differentiation on the generating function, but it appears that this becomes way more complicated than differentiating (1). As a result, it is vital for us to study Bernoulli polynomials algebraically:
 
-## Relation with sums of consecutive powers
+### Relation with sums of consecutive powers
 
 Similar to how we deduce (3), we can perform subtraction to get
 
@@ -91,7 +91,7 @@ $$
 \sum_{k=1}^Nk^n={B_{n+1}(N+1)-B_{n+1}\over n+1}
 $$
 
-## Relation with Bernoulli numbers
+### Relation with Bernoulli numbers
 
 To find a closed form expression, we apply Cauchy product to (5) so that Bernoulli polynomials can now be associated with Bernoulli numbers.
 
@@ -113,9 +113,9 @@ $$
 
 Having analyzed the algebraic properties of these objects, let's move onto some calculus.
 
-# Analytic properties
+## Analytic properties
 
-## Closed form for Bernoulli numbers
+### Closed form for Bernoulli numbers
 
 Recursive relations are still not satisfactory, why don't we consider using some complex analysis on (1)?
 
@@ -162,7 +162,7 @@ $$
 {B_{2n}\over(2n)!}={2(-1)^{n+1}\over(2\pi)^{2n}}\sum_{k=1}^\infty{1\over k^{2n}}
 $$
 
-## Derivatives of Bernoulli polynomials
+### Derivatives of Bernoulli polynomials
 
 By (6) it follows that
 
@@ -178,7 +178,7 @@ $$
 
 and by the properties of $B_n(1)=B_n(0)$ for all $n>1$ we can define $P_n(t)=B_n(\{t\})$ as the periodic Bernoulli polynomials, which will be proved to be powerful in the next section.
 
-# Euler-Maclaurin formula
+## Euler-Maclaurin formula
 
 With everything ready, let's begin our main course, where we aim to study the sum
 
@@ -215,11 +215,11 @@ $$
 \sum_{k=a}^bf(k)=\int_a^bf(t)\mathrm dt+{f(a)+f(b)\over2}+\left.\sum_{r=2}^m{B_r\over r!}f^{(r-1)}(t)\right \vert _a^b+{(-1)^{m+1}\over m!}\int_a^bP_m(t)f^{(m)}(t)\mathrm dt\tag7
 $$
 
-# Applications
+## Applications
 
 To reinforce our understandings of what we have derived, let's have a look at some of their applications.
 
-## Complex Stirling's formula for Gamma function
+### Complex Stirling's formula for Gamma function
 
 Prior to this article, I have applied Euler-Maclaurin formula to factorials, and today I will present to you a more inclusive version of Stirling's formula that can be used for continuous factorial. According to its definition, the Gamma function can be represented by
 
@@ -325,7 +325,7 @@ $$
 \Gamma(s+1)=\sqrt{2\pi s}\left(\frac se\right)^s\left[1+\mathcal O\left(\frac1s\right)\right]
 $$
 
-## Riemann zeta function
+### Riemann zeta function
 
 It is well-known that the Riemann zeta function's original definition converges at which $\Re(s)>1$, but Euler-Maclaurin formula offers a way to expand the domain of $\zeta(s)$. Particularly, we first let $\Re(s)>1$ and obtain
 
@@ -345,6 +345,6 @@ $$
 
 Because of this, we can use this definition to define $\zeta(s)$ even within the critical strip $0\le\Re s\le1\wedge s\ne1$.
 
-# Summary
+## Summary
 
 In this article, we begin with the definition of Bernoulli numbers using generating function, and then we start manipulating these expressions to extrac more algebraic properties among them. In addition, we step into complex analysis to derive a marvelous identity connecting Bernoulli numbers with Riemann zeta function. Then, back into the "elementary" domain, we repetitively perform integration by parts to obtain another powerful tool in asymptotics: the Euler-Maclaurin formula. Lastly, we apply Euler-Maclaurin formula to obtain interesting identities of Gamma function and zeta function. Although my articles up to now are discussing diverse and seemingly unrelated topics, they will eventually be joined in the future.

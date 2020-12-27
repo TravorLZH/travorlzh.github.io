@@ -15,7 +15,7 @@ $$
 
 To understand this formula, let's first understand what it says:
 
-### $\sum_{d \vert n}$ Summation over divisors
+## $\sum_{d \vert n}$ Summation over divisors
 
 The first part of (1) is the summation symbol: $\sum_{d \vert n}$. Instead of summing over all positive integers within $n$, it is summing over the divisors of $n$. For instance, if $n=10$, then $\sum_{d \vert n}$ sums over $n=1,2,5,10$. Pedantically, we write
 $$
@@ -27,7 +27,7 @@ $$
 > 1. Calculate $\sum_{d \vert 15}d^2$
 > 2. Explain the meaning of $\sum_{d \vert n}1$
 
-### Formulating $\mu(n)$, the Möbius function
+## Formulating $\mu(n)$, the Möbius function
 
 Usually, the Möbius function is defined as
 
@@ -65,7 +65,7 @@ By observing the expansion, we discover that $a(n)$ must satisfy
 
 As a result, $a(n)$ is the Möbius function $\mu(n)$.
 
-### The formula
+## The formula
 
 With our understanding of the symbols, we can now be capable of understanding the implication of (1). That is, (1) declares that the summation of the Möbius function over divisors of some certain number $n$ is one for $n=1$ and zero for all $n\ne1$. Obviously, when $n=1$, we have
 
@@ -79,7 +79,7 @@ $$
 > 2. $\mu(5)\mu(2)$
 > 3. $\mu(10)$
 
-### Properties of $\mu(n)$
+## Properties of $\mu(n)$
 
 Generally, we say some arithmetic function $f(n)$ to be **multiplicative** when for all coprime positive integers $a$ and $b$, $f(ab)=f(a)f(b)$. Now, let's show the following fact of $\mu(n)$:
 
@@ -101,7 +101,7 @@ which completes the proof. $\square$
 
 With these tools being prepared, we can delve into proving (1).
 
-### Proof of (1)
+## Proof of (1)
 
 Let $n=ab$ where $a$ and $b$ are coprime positive integers, then
 
@@ -118,7 +118,7 @@ $$
 
 Due to the fact that $\sum_{d \vert n}\mu(d)$ is multiplicative, we conclude (1) is true.
 
-### Application of Möbius inversion: Euler's totient function $\varphi(n)$
+## Application of Möbius inversion: Euler's totient function $\varphi(n)$
 
 In fact, (1) can help us find a definition for Euler's totient function $\varphi(n)$, i.e. number of positive integers within $n$ that are coprime to $n$:
 
@@ -150,7 +150,7 @@ As we can see, (1) actually helps us give definition to other arithmetic functio
 > 
 > $$\displaystyle{\varphi(n)=n\prod_{p\text{ prime}\atop p \vert n}\left(1-\frac1p\right)}$$
 
-### Divisor sum of Euler's totient function
+## Divisor sum of Euler's totient function
 
 If we were to sum $\varphi(n)$ over divisors of $n$, we could magically obtain $n$:
 
@@ -184,7 +184,7 @@ $$
 \sum_{d \vert n}\varphi(d)=n\tag3
 $$
 
-### Dirichlet convolution
+## Dirichlet convolution
 
 If we juxtapose (2) and (3), we can see that $\varphi(n)$ and $n$ are closely related to each other, particularly if we define (4) as **Dirichlet convolution**, then we can say that $\varphi(n)$ can be obtained by convolving Möbius function with $n$. Similarly, $n$ can be obtained by convolving $\varphi(n)$ with $1$.
 $$
@@ -228,7 +228,7 @@ $$
 
 which also implies the theorem. $\square$
 
-### Algebraic properties of multiplicative functions
+## Algebraic properties of multiplicative functions
 
 Let $G$ be the set containing all multiplicative functions and $*$ be the Dirichlet convolution operator, then we can verify that
 
@@ -242,6 +242,6 @@ Let $G$ be the set containing all multiplicative functions and $*$ be the Dirich
 
 As a result, we conclude that all multiplicative functions form an **abelian group** under Dirichlet convolution.
 
-### Conclusion
+## Conclusion
 
 In a nutshell, we begin our discussion with the explanation and proof Möbius inversion formula as in (1), and then we present Dirichlet convolution, a generalization of the sum-of-divisor operation. At last, we discover an algebraic property in multiplicative functions: that is, all multiplicative functions form an abelian group under Dirichlet convolution.

@@ -14,7 +14,7 @@ $$
 
 with $0!=1$, but however it is possible to generalize this operation to complex numbers. Let's begin our journey of generalizations!
 
-# First generalization: integral representation
+## First generalization: integral representation
 
 It can be easily shown that the following integral satisfies
 
@@ -46,7 +46,7 @@ $$
 \int_0^\infty t^{s-1}e^{-\lambda t}\mathrm dt={\Gamma(s)\over\lambda^s}
 $$
 
-# Digression: the Beta function
+## Digression: the Beta function
 
 To convenience our derivation process, let's define the Euler integral of the first kind: the Beta function $B(x,y)$:
 
@@ -80,7 +80,7 @@ $$
 
 which will be extremely useful for us to generalize factorial even further.
 
-# $\Gamma(s)$ evaluated at complex numbers
+## $\Gamma(s)$ evaluated at complex numbers
 
 Via taking absolute variable, we know that the Gamma integral converges whenever $\Re(s)>0$
 $$
@@ -89,7 +89,7 @@ $$
 
 which means that this improper integral is converges absolutely on the right half plane. Hence, a stronger definition is needed for us to expand it to the entire complex plane.
 
-# $\Gamma(s)$ as a limit
+## $\Gamma(s)$ as a limit
 
 Let's consider a sequence of functions:
 
@@ -148,7 +148,7 @@ $$
 
 In the following procedure, we are going to expand the left hand side limit in a subtle sense so that the right hand side can be analytically continued to the left half plane.
 
-# Expanding the integral sequence
+## Expanding the integral sequence
 
 Performing a change of variables on (3) gives
 
@@ -175,7 +175,7 @@ $$
 
 which transforms Gamma function into a product representation, however this expression still looks ugly, why not go deeper?
 
-# Weierstrass product for $\Gamma(s)$
+## Weierstrass product for $\Gamma(s)$
 
 First, let's turn this equation up side down to obtain
 
@@ -222,7 +222,7 @@ $$
 
 Now, we successfully expanded factorial to the entire complex plane except at negative integers, but Gamma function has some other brilliant properties. Let's have a look at some of them:
 
-# Alternative Definition for Euler-Mascheroni constant
+## Alternative Definition for Euler-Mascheroni constant
 
 From the [last article](/2020/11/02/rs-integral.html), we know that Euler-Mascheroni constant is defined by
 
@@ -258,7 +258,7 @@ $$
 \int_0^\infty e^{-t}\log(t)\mathrm dt=-\gamma\tag6
 $$
 
-# Integral representation for Digamma function
+## Integral representation for Digamma function
 
 While deriving (5) in the previous section, we introduce the Digamma function, so why don't we do some calculus on that
 
@@ -288,7 +288,7 @@ $$
 \psi(s)=\int_0^1\left\{\log\log\left(\frac1x\right)+{x^{s-1}-1\over x-1}\right\}\mathrm dx\tag7
 $$
 
-# Conclusion
+## Conclusion
 
 In this blog, we first use the technique of differentiation under integral to deduce an integral representation for factorial that introduces the concept of Gamma function $\Gamma(s)$. Then, by using an identity connecting $B(x,y)$ and $\Gamma(s)$, we obtain a product formula that turns $\Gamma(s)$ into a **meromorphic** function on $\mathbb C$. Using this newly obtained product formula, we are also able to discover some new identities. In fact, Gamma function is a function that often appears in the field of analytic number theory, and we will begin future investigation based on the following identity (which you could try prove it yourself):
 

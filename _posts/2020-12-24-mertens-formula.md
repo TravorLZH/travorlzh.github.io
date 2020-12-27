@@ -11,7 +11,7 @@ $$
 \prod_{p\le x}\left(1-\frac1p\right)\sim{e^{-\gamma}\over\log x}\tag1
 $$
 
-# An elementary estimate for reciprocal sum
+## An elementary estimate for reciprocal sum
 
 Due to Mertens' first theorem that
 
@@ -39,7 +39,7 @@ $$
 
 where $B_1$ is called **Mertens' constant**.
 
-# Euler product and convergence
+## Euler product and convergence
 
 From the above justification, it is not difficult for us to deduce that the reciprocal sum of prime numbers diverge. However, there is still little information known about $B_1$ since specific behaviors of $h(x)$ are not known. Therefore, we have to approach this problem by some other means. For example, why not consider Euler product
 
@@ -79,7 +79,7 @@ $$
 \sum_{p\le x}\left[\log\left({1\over1-p^{-1}}\right)-\frac1p\right]=C+\mathcal O\left(\frac1x\right)\tag2
 $$
 
-# Riemann zeta function
+## Riemann zeta function
 
 If we were to expand Euler product in to Dirichlet series, we have
 
@@ -105,7 +105,7 @@ $$
 \zeta(s)={1\over s-1}+\gamma+o(1)
 $$
 
-# $\zeta(s)$ near $s=1$
+## $\zeta(s)$ near $s=1$
 
 Similar to how we study $P(x,s)$, we take logarithm on $\zeta(1+\delta)$ to get
 
@@ -190,7 +190,7 @@ $$
 B_1=\gamma+\sum_p\left[\log\left(1-\frac1p\right)+\frac1p\right]\tag6
 $$
 
-# Proof of Mertens' formula
+## Proof of Mertens' formula
 
 With every prerequisite being ready, plugging (2) and (6) back into (1) gives
 

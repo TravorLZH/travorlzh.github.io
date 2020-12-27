@@ -12,7 +12,7 @@ $$
 \int_0^1\log \vert f(Re^{2\pi it}) \vert \mathrm dt\tag1
 $$
 
-# Blaschke factors
+## Blaschke factors
 
 Let's start with the Mobius transform of complex analysis with some parameters being determined:
 
@@ -40,7 +40,7 @@ $$
 
 which is known as the Blaschke factor.
 
-# Evaluating Jensen's integral
+## Evaluating Jensen's integral
 
 Now, if $f(z)$ has no zero on $ \vert z \vert =R$ or $z=0$ and has zeros $z_1,z_2,\dots,z_m$ on $0< \vert z \vert <R$, then it can be written as
 
@@ -91,7 +91,7 @@ $$
 n(r)\le{\log(M/ \vert f(0) \vert )\over\log(R/r)}\tag4
 $$
 
-# Application of Jensen's inequality - reciprocal sum of entire functions' zeros
+## Application of Jensen's inequality - reciprocal sum of entire functions' zeros
 
 **Definition (order):** An entire function $f(z)$ is said to have order $\lambda$ if and only if there exists some $r$ such that for all $ \vert z \vert >r$ and $\varepsilon>0$:
 
@@ -131,6 +131,6 @@ $$
 
 Subsequently, we deduce that the series converges absolutely.
 
-# Conclusion
+## Conclusion
 
 In essence, we begin our discussion with an integral involving logarithms. Then, we move our focus to deriving Blaschke factors from Mobius transform. Subsequently, we  evaluate (1) with assistance of Blaschke factors and obtain Jensen's formula. After that, we apply (3) to obtain Jensen's inequality for analytic functions. Lastly, we use (4) to determine the convergence of the reciprocal sums of zeros of some entire function of finite order. These efforts will useful since it is the foundation of more indepth and interesting corollaries.
