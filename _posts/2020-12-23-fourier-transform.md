@@ -278,6 +278,7 @@ This implies a pair of Fourier transform equations using angular frequencies:
 $$
 F(\omega)=\int_{-\infty}^\infty e^{-i\omega t}f(t)\mathrm dt\tag9
 $$
+
 $$
 f(t)={1\over2\pi}\int_{-\infty}^\infty e^{i\omega t}F(\omega)\mathrm d\omega\tag{10}
 $$
@@ -426,6 +427,7 @@ Now, if we were to define the **Fourier coefficients** $X_k$ as the amplitude of
 $$
 X_k=\sum_{n=0}^{N-1}x_ne^{-2\pi ink/N}\tag{13}
 $$
+
 $$
 x_n=\frac1N\sum_{k=0}^{N-1}X_ke^{2\pi ikn/N}\tag{14}
 $$
