@@ -18,7 +18,13 @@ $$
 \zeta(s)=\frac12+{1\over s-1}-s\int_1^\infty{P_1(t)\over t^{s+1}}\mathrm dt\tag1
 $$
 
-Because $P_1(t)$ is periodic and continuous,  we know that it is bounded for all real $t$. As a result, the integral on the right of (1) converges for all $\Re s>0$, which indicates that (1) expands the domain of $\zeta(s)$ from $\Re s>1$ to $\Re s>1$. Moreover, if $0<\Re s<1$,  we can use the fact that
+By integration by  parts, we can see that
+
+$$
+\int_1^\infty{P_1(t)\over t^{s+1}}\mathrm d t=\left.{P_2(t)\over2t^{s+1}}\right|_1^\infty+{s+1\over2}\int{P_2(t)\over t^{s+2}}\mathrm dt
+$$
+
+Because periodic Bernoulli polynomials are bounded, the integral on the right hand side converges for all $\Re s>-1$, meaning that the integral on the right of (1) converges for all $\Re s>-1$. This demonstrates that (1) expands the domain of $\zeta(s)$ from $\Re s>1$ to $\Re s>-1$. Moreover, if $-1<\Re s<0$,  we can use the fact that
 
 $$
 -s\int_0^1{P_1(t)\over t^{s+1}}\mathrm dt=\frac12+{1\over s-1}
