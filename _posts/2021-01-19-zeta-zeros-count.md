@@ -65,7 +65,7 @@ $$
 Furthermore, the functional equation implies the symmetric relationship about the critical line:
 
 $$
-{\xi'\over\xi}(s)=-{\xi'\over\xi}(s)
+{\xi'\over\xi}(s)=-{\xi'\over\xi}(1-s)
 $$
 
 By applying this relationship to each of the contours, we can discover
@@ -161,3 +161,10 @@ By the characteristics of logarithms and inverse tangents, we can easily see tha
 ## Summary
 
 In this article, we begin with developing a technique to analyze the zero distribution of analytic functions in arbitrary regions. Then, we apply this technique to $\xi(s)$ and obtain a simple formula to understand the growth of $N(T)$. However, this is not yet finished since more information must be extracted from $S(T)$ before concluding with an asymptotic estimate, and these will be covered in subsequent blogs. I have also opened a question regarding $S(T)$ on Math Stackexchange, feel free to [discuss](https://math.stackexchange.com/questions/3988884/on-the-asymptotic-bound-for-arg-zetas-on-the-critical-line)!
+
+## References
+
+- Dittrich, W. (2018). *Reassessing Riemann’s Paper*.
+- Edwards, H. M. (1974). *Riemann’s Zeta Function*.
+- Karatsuba, A. A. (1990). *The distribution of prime numbers*. Russian Mathematical Surveys, 45(5), 99–171.
+- Tenenbaum, G. (1995). *Introduction to Analytic and Probabilistic Number Theory*.
