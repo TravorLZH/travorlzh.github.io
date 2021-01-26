@@ -116,7 +116,7 @@ $$
 Because sine can always be decomposed into complex exponentials
 
 $$
-\sin\theta={e^{i\theta}+e^{-i\theta}\over2i}
+\sin\theta={e^{i\theta}-e^{-i\theta}\over2i}
 $$
 
 we can take down (5) by evaluating
