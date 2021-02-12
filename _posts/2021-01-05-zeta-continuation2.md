@@ -30,7 +30,7 @@ $$
 -s\int_0^1{P_1(t)\over t^{s+1}}\mathrm dt=\frac12+{1\over s-1}
 $$
 
-to obtain an integral formula for $\zeta(s)$ within the critical strip $0<\Re s<1$:
+to obtain an integral formula for $\zeta(s)$ within $-1<\Re s<0$:
 
 $$
 \zeta(s)=-s\int_0^\infty{P_1(t)\over t^{s+1}}\mathrm dt\tag2
