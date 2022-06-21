@@ -4,3 +4,12 @@
 
 layout: home
 ---
+Welcome to Travor's home page.
+
+## Helpful links
+
+[Travor's Zhihu page](https://www.zhihu.com/people/travorlzh/posts)
+
+[Lectures on sieve methods (Chinese version)](files/sieves.pdf)
+
+## Blog posts
