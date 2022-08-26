@@ -1,0 +1,15 @@
+---
+layout: page
+---
+<link rel="stylesheet" href="/assets/css/articleview.css"/>
+{{ content }}
+{%- if site.posts.size > 0 -%}
+{% for post in site.posts %}
+    <div class="article">
+    <h1>{{ post.title }}</h1>
+    <p>{{post.des}}</p>
+    <span id="date">{{ post.date | date_to_string }}</span>
+    <a href="{{ post.url }}">Link</a>
+    </div>
+{% endfor %}
+{%- endif -%}
