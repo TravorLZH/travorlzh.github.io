@@ -2,11 +2,11 @@
 title:  Welcome!
 layout: page
 ---
-Travor Liu is my English name, and Zihao Liu is my real name. I am currently an undergraduate student studying Mathematics at University College London.
+Hello, this is Travor Liu. I am currently an undergraduate student studying Mathematics at University College London. I am glad to share my journey of discovery in number theory here.
 
-You may contact me via zihao.liu.22 [at] ucl [dot] ac [dot] uk
+My real name is Zihao Liu. You may contact me via zihao.liu.22 [at] ucl [dot] ac [dot] uk
 
-My research lies in multiplicative number theory and sieve theory. See [research](/research/) for details.
+My [research interest](/research/) lies in multiplicative number theory and sieve theory, and I am also constantly [blogging](/blogs/) about what I recently learned.
 
 ## Some other helpful links
 

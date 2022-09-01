@@ -4,8 +4,8 @@
 	position: relative;
 	padding: 10px 20px;
 	margin: 10px;
-	border-radius: 3px;
-	box-shadow: 1px 1px 5px gray;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px gray;
 	transition: transform 0.3s, box-shadow 0.3s, background-color 1s;
 }
 
@@ -14,8 +14,9 @@
 	background-color: lightcyan;
 	transform: translateY(-5px);
 }
-.article:focus{
+.article:active{
 	transform: translateY(-2px);
+	background-color: rgb(156, 215, 255);
 }
 .article a {
 	position: absolute;
