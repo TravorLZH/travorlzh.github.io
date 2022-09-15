@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Representing Integers as Sum of Two Squares"
-date:   2022-08-29
+date:   2022-08-30
 des:    Theory from $\mathbb Z[i]$ is now applied to study $\mathbb Z$
 tags:   number-theory
 ---
