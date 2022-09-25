@@ -62,7 +62,7 @@ Now, we establish a similar result for $L(s,\chi_4)$. Because $\chi_4$ is a real
 $$
 \begin{aligned}
 \log g(s)
-&=s\log2\pi+(1-s)\log4+\log\Gamma(s) \\
+&=s\log2\pi+(1-s)\log4-\log\Gamma(s) \\
 &-\log(e^{-\pi is/2}-e^{\pi is/2})-\log(2i).
 \end{aligned}
 $$
