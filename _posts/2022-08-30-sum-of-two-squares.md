@@ -76,8 +76,8 @@ By the UFT of $\mathbb Z$, we can write $n$ into
 $$
 \begin{aligned}
 n
-&=[(1+i)(1-i)]^u\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}p^r\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}p^s \\
-&=2^u\prod(a+bi)^r(a-bi)^r\prod_{p\equiv3(4)}p^s
+&=2^u\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}p^r\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}p^s \\
+&=[(1+i)(1-i)]^u\prod(a+bi)^r(a-bi)^r\prod_{p\equiv3(4)}p^s
 \end{aligned}
 $$
 
@@ -114,7 +114,7 @@ $$
 Since there are exactly $r+1$ ways to choose $r_1$ and $r_2$ and exactly 4 ways to choose $t$, we see that $r(n)$ is given by
 
 $$
-r(n)=\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}(1+r)\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}{1+(-1)^s\over2},
+r(n)=4\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}(1+r)\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}{1+(-1)^s\over2},
 $$
 
 wherein the second product is to ensure $n$ satisfies the condition that all $s$ are even. However, this expression is still not beautiful, so in the next section we are going to express $r(n)$ as a Dirichlet convolution.
@@ -137,8 +137,8 @@ Moreover, if we require $\chi_4(d)$ to be competely multiplicative, then $r(n)$ 
 $$
 \begin{aligned}
 r(n)
-&=\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}\left(\sum_{0\le m\le r}(1)^m\right)\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}\left(\sum_{0\le v\le s}(-1)^v\right) \\
-&=\prod_{p^r\Vert n}\left(\sum_{0\le m\le r}\chi_4(p^m)\right)=\sum_{d|n}\chi_4(d).
+&=4\prod_{\substack{p^r\Vert n\\p\equiv1(4)}}\left(\sum_{0\le m\le r}(1)^m\right)\prod_{\substack{p^s\Vert n\\p\equiv3(4)}}\left(\sum_{0\le v\le s}(-1)^v\right) \\
+&=4\prod_{p^r\Vert n}\left(\sum_{0\le m\le r}\chi_4(p^m)\right)=4\sum_{d|n}\chi_4(d).
 \end{aligned}
 $$
 
