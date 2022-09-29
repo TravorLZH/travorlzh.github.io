@@ -29,7 +29,7 @@ $$
 Since the common divisors of $a$ and $b$ are also the comon divisors of $a$ and $a\pm b$, we have
 
 $$
-\gcd(a,b)=\gcd(a,r_1)=\gcd(r_1,r_2)=\gcd(r_2,r_3)=\dots=\gcd(r_{n-1},r_n),
+\gcd(a,b)=\gcd(r_1,b)=\gcd(r_1,r_2)=\gcd(r_2,r_3)=\dots=\gcd(r_{n-1},r_n),
 $$
 
 so it follows from the definition of $r_{n-1}$ that $r_n=\gcd(a,b)$.
