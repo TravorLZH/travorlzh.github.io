@@ -89,7 +89,7 @@ With these considered, we can state the UFT for $\mathbb Z$ in the following way
 
 **UFT for $\mathbb Z$:** _Every number in $\mathbb Z$, not zero or a unit, can be expressed as a product of primes, and the representation is unique apart from the order of primes, presence of units in factorizations, and ambiguity of associate primes._
 
-Under this definition, $(-2)\times3$, $(-1)\times(-2)\times(-3)$, and $2\times(-3)$ are considered the same factorization of 6.
+Under this definition, $(-2)\times3$, $(-1)\times(-2)\times(-3)$, and $2\times(-3)$ are considered the same factorization of $-6$.
 
 ## Remarks on Euclid's algorithm
 
