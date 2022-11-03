@@ -1,7 +1,8 @@
 ---
 layout:   default
-comment:  True
+comments:  True
 ---
+<!--
 <script src="https://giscus.app/client.js"
   data-repo="TravorLZH/travorlzh.github.io"
   data-repo-id="MDEwOlJlcG9zaXRvcnkzMjQwNzE0MTA="
@@ -16,7 +17,7 @@ comment:  True
   data-lang="en"
   crossorigin="anonymous"
   async>
-</script>
+</script>-->
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -36,10 +37,10 @@ comment:  True
     {{ content }}
   </div>
 
-  <!-- giscus comment -->
+  <!-- giscus comment
   <div class="giscus">
     <p style="color:red">[Failed to load comment section]</p>
-  </div>
+  </div>-->
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

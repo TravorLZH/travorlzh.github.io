@@ -22,7 +22,7 @@ title: Travor's Home Page
 description: >- # this means to ignore newlines until "baseurl:"
   Backup just in case of amnesia :D
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://travorlzh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: Travor Liu
 github_username: TravorLZH
 twitter_username: TravorLZH
@@ -38,6 +38,9 @@ github: [metadata]
 
 kramdown:
   smart_quotes: ["apos", "apos", "ldquo", "rdquo"]
+
+disqus:
+  shortname: travorlzh-github-io
 
 # Exclude from processing.
 # The following items will not be processed, by default.
