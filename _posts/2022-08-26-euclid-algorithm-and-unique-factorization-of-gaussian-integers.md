@@ -22,7 +22,7 @@ b&=q_2r_1+r_2, \\
 r_1&=q_3r_2+r_3, \\
 r_2&=q_4r_3+r_4, \\
 &\vdots \\
-r_{n-1}&=q_nr_n.
+r_{n-1}&=q_{n+1}r_n.
 \end{aligned}
 $$
 
