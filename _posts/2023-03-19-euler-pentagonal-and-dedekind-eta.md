@@ -2,7 +2,7 @@
 layout: post
 title:  "Euler's pentagonal number theorem and Dedekind eta function"
 date:   2023-03-19
-des:    We prove the functional equation for Dedekind eta function using Euler's pentagonal number theorem.
+des:    We give a direct, elementary proof of the functional equation for $\eta(\tau)$.
 tags:   number-theory complex-analysis modular-forms
 ---
 
