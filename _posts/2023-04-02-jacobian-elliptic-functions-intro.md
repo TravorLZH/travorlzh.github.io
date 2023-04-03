@@ -140,7 +140,7 @@ We see that _$u=F(z)$ maps the boundary of the first quadrant of $z$-plane onto 
 Let $C_1,C_2,C_3,\dots$ be any sequence of simple closed curves in the interior of the first quadrant of $z$-plane such that $C\_n$ tends to the boundary as $n\to\infty$. This indicates that $C'\_n=f(C\_n)$ tends to the rectangular boundary as described in the last paragraph when $n\to\infty$. For any point $u_0$ inside the rectangular region, there exists some $N$ such that $u_0$ is surrounded by $C\_n'$ for all $n>N$, which indicates that $\Delta_{C'\_n}\arg(u-u_0)=\pm2\pi$. Because of the argument principle, we have $\Delta_{C\_n}\arg(F(z)-u_0)\ge0$. This means that for all $n>N$
 
 $$
-\Delta_{C_n'}\arg(u-u_0)=\Delta_{C_n}\arg(F(z)-w_0)=1.\tag{16}
+\Delta_{C_n'}\arg(u-u_0)=\Delta_{C_n}\arg(F(z)-u_0)=1.\tag{16}
 $$
 
 This indicates that _$u=F(z)$ maps the first quadrant of $z$-plane onto the rectangle in $u$-plane formed by vertices $0$, $K$, $K+iK'$, and $iK'$._
