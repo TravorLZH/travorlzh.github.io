@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The foundation of Jacobian theta functions"
-date:   2023-04-05
+date:   2023-04-07
 des:    We derive definitions of theta functions from Jacobian elliptic functions.
 tags:   complex-analysis elliptic-functions
 ---
