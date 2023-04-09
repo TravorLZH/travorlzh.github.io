@@ -45,7 +45,7 @@ $$
 {2K\over\pi}{\operatorname{cn}(u)\operatorname{dn}(u)\over\operatorname{sn}(u)}=-\cot x-4\sum_{m\ge1}{q^m\sin(2mx)\over1+q^m}.\tag3
 $$
 
-Using the [infinite product formulas](/jacobian-elliptic-infinite-products.html) we obtained for Jacobian elliptic functions, we see that plugging in $u=K/2$ gives us
+Using the [infinite product formulas](/2023/04/05/jacobian-elliptic-infinite-products.html) we obtained for Jacobian elliptic functions, we see that plugging in $u=K/2$ gives us
 
 $$
 \operatorname{sn}\left(\frac K2\right)={\sqrt2q^{1/4}\over\sqrt k}\prod_{n\ge1}{1+q^{4n}\over1+q^{4n-2}},\tag4
