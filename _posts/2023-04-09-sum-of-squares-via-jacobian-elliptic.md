@@ -25,7 +25,7 @@ $$
 \log\operatorname{sn}(u)
 &=\log{2q^{1/4}\over\sqrt k}+\log\sin x-\sum_{m\ge1}{e^{2imx}+e^{-2imx}\over m}\sum_{n\ge1}q^{2nm} \\
 &+\sum_{m\ge1}{e^{2imx}+e^{-2imx}\over m}\sum_{n\ge1}q^{(2n-1)m} \\
-&=\log A-2\sum_{m\ge1}{\cos(2mx)\over m}(1-q^{-m})\sum_{n\ge1}q^{2nm}. \\
+&=\log{2q^{1/4}\over\sqrt k}-2\sum_{m\ge1}{\cos(2mx)\over m}(1-q^{-m})\sum_{n\ge1}q^{2nm}. \\
 \end{aligned}
 $$
 
