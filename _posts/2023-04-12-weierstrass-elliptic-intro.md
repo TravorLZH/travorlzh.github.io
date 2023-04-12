@@ -63,7 +63,7 @@ $$
 {1\over(z-w)^2}={1\over w^2}+\sum_{n\ge1}{(n+1)z^n\over w^{n+2}}
 $$
 
-converges absolutely for all $w\in L\setminus\{0\}$. Plugging this into (3), we have
+converges absolutely for all $w\in L\setminus\\{0\\}$. Plugging this into (3), we have
 
 $$
 \begin{aligned}
