@@ -14,7 +14,7 @@ $$
 
 If $f$ has no poles, it follows from Liouville's theorem that $f$ must be constant. If $f$ only has a simple pole, then it follows from the residue theorem that the integral in (1) should be nonzero. As a result, we deduce the theorem of Liouville that _a nonconstant elliptic function must possess at least two poles inside its fundamental parallelogram._ Moreover, because $f'/f$ is also an elliptic function, we see also that _a nonconstant elliptic function has the same number of zeros and poles._
 
-From our analysis in [this article](/2023/04/02/jacobian-elliptic-functions-intro.html), the functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ constructed by Jacobi are elliptic functions with two simple zeros and two simple poles. In contrast, when developing his theory of elliptic functions, Weierstrass was motivated by Liouville's theorem and constructed $\wp$ as an elliptic function with one double pole inside any of its fundamental parallelograms. Specifically, let $\omega_1$, $\omega_2$ be two complex numbers such that $\omega_1/\omega_2\notin\mathbb R$ and $L$ denote the _lattice_ set
+From our analysis in [this article][jacobi-intro], the functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ constructed by Jacobi are elliptic functions with two simple zeros and two simple poles. In contrast, when developing his theory of elliptic functions, Weierstrass was motivated by Liouville's theorem and constructed $\wp$ as an elliptic function with one double pole inside any of its fundamental parallelograms. Specifically, let $\omega_1$, $\omega_2$ be two complex numbers such that $\omega_1/\omega_2\notin\mathbb R$ and $L$ denote the _lattice_ set
 
 $$
 L=\{2m\omega_1+2n\omega_2:(m,n)\in\mathbb Z^2\}.\tag2
@@ -86,7 +86,7 @@ It can be verified that (6) converges absolutely for $k>2$, so $G_k$ is well def
 Because $(\wp')^2$ is even and has no poles besides $z\equiv0\pmod L$, it follows from (4) that $(\wp')^2$ must be a polynomial of $\wp$. From our analysis of the zeros of $\wp$, we also know that the zeros of $\wp'(a)=0$ iff $a\not\equiv0\pmod L$ and $a\equiv-a\pmod L$. This indicates that $a$ must be in the form $m\omega_1+n\omega_2$ for odd integer $m$ and $n$. In the orthodox notation, let $\omega_3$ be defined as
 
 $$
-\omega_3=-\omega_1-\omega_2.\tag7
+\omega_3=-\omega_1-\omega_2\tag7
 $$
 
 and the number $e_j$ be defined by
@@ -161,7 +161,7 @@ A full proof of (14) is available in Apostol's _Modular functions and Dirichlet 
 
 ## $\wp$ and Jacobian elliptic functions
 
-Let $\lambda$ be some nonzero complex number. Then by the properties of $\operatorname{sn}$, we see that
+Let $\lambda$ be some nonzero complex number. Then by [the properties][jacobi-intro] of $\operatorname{sn}$, we see that
 
 $$
 y(z)=A+{\lambda^2\over\operatorname{sn}^2(\lambda z|\tau)}.\tag{15}
@@ -259,4 +259,5 @@ $$
 
 In this article, we defined the Weierstrass elliptic function $\wp(z)$ as a consequence of an attempt to develop the simplest possible elliptic function. Subsequently, by analyzing the Laurent expansion and differential equation of $\wp$, we defined the Eisenstein series, the invariants $g_2,g_3$, and the important special values $e_1,e_2,e_3$. After that, by analyzing the relationships between $\wp$ and Jacobian elliptic functions, we successfully reformulated $\wp$ using Jacobian theta functions as we have done for Jacobian elliptic functions [before][theta].
 
+[jacobi-intro]: /2023/04/02/jacobian-elliptic-functions-intro.html
 [theta]: /2023/04/07/jacobian-theta-functions-foundation.html
