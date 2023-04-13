@@ -12,9 +12,9 @@ $$
 \oint_{\partial P}f(z)\mathrm dz=0.\tag1
 $$
 
-If $f$ has no poles, it follows from Liouville's theorem that $f$ must be constant. If $f$ has one pole, then it follows from residue theorem that the integral in (1) should be nonzero. As a result, we deduce the theorem of Liouville that _a nonconstant elliptic function must possess at least two poles inside its fundamental parallelogram._ Moreover, because $f'/f$ is also an elliptic function, we see also that _a nonconstant elliptic function has the same number of zeros and poles._
+If $f$ has no poles, it follows from Liouville's theorem that $f$ must be constant. If $f$ only has a simple pole, then it follows from the residue theorem that the integral in (1) should be nonzero. As a result, we deduce the theorem of Liouville that _a nonconstant elliptic function must possess at least two poles inside its fundamental parallelogram._ Moreover, because $f'/f$ is also an elliptic function, we see also that _a nonconstant elliptic function has the same number of zeros and poles._
 
-From our analysis in [this article](/2023/04/02/jacobian-elliptic-functions-intro.html), the functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ constructed by Jacobi are elliptic functions with two simple zeros and two simple poles. In contrast, when developing his theory of elliptic functions, Weierstrass is motivated by Liouville's theorem and constructed $\wp$ as an elliptic function with one double pole inside any of its fundamental parallelogram. Specifically, let $\omega_1$, $\omega_2$ be two complex numbers such that $\omega_1/\omega_2\notin\mathbb R$ and $L$ denote the _lattice_ set
+From our analysis in [this article](/2023/04/02/jacobian-elliptic-functions-intro.html), the functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ constructed by Jacobi are elliptic functions with two simple zeros and two simple poles. In contrast, when developing his theory of elliptic functions, Weierstrass was motivated by Liouville's theorem and constructed $\wp$ as an elliptic function with one double pole inside any of its fundamental parallelograms. Specifically, let $\omega_1$, $\omega_2$ be two complex numbers such that $\omega_1/\omega_2\notin\mathbb R$ and $L$ denote the _lattice_ set
 
 $$
 L=\{2m\omega_1+2n\omega_2:(m,n)\in\mathbb Z^2\}.\tag2
@@ -33,17 +33,17 @@ The series converges absolutely and uniformly in any compact subset of $\mathbb 
 ## Universal property of $\wp$
 
 
-It follows from (3) that $\wp$ is even, and this allows us use $\wp$ to represent all even elliptic function $f$ with periods $2\omega_1$ and $2\omega_2$.
+It follows from (3) that $\wp$ is even, and this allows us to use $\wp$ to represent all even elliptic functions $f$ with periods $2\omega_1$ and $2\omega_2$.
 
-It suffices to use $\wp$ to construct $f_1$  so that $\wp$ has the same zeros and poles (with the same multiplicities) as $f$ because Liouville's theorem suggests that $f/f_1$ is constant. Since $f$ is even, we see that if $f(z)$ has a zero of order $r$ at $z=a$, then it will also have a zero of order $r$ at $z=-a$. Because $f'$ is odd, we see that when $a\equiv-a\pmod L$, the zero at $z=a$ will be of order of at least 2. By analyzing $1/f$, we see that the poles of $f$ also exhibits similar properties.
+It suffices to use $\wp$ to construct $f_1$  so that $f_1$ has the same zeros and poles (with the same multiplicities) as $f$ because Liouville's theorem suggests that $f/f_1$ is constant. Since $f$ is even, we see that if $f(z)$ has a zero of order $r$ at $z=a$, then it will also have a zero of order $r$ at $z=-a$. Because $f'$ is odd, we see that when $a\equiv-a\pmod L$, the zero at $z=a$ will be of order at least 2. By analyzing $1/f$, we see that the poles of $f$ also exhibit similar properties.
 
-In the case of $\wp$, due to its double pole we see that $\wp(z)-\wp(a)$ has a zero of order 2 when $a\equiv-a\not\equiv0\pmod L$ and has two simple zeros when $a\not\equiv-a\pmod L$. Therefore, let $z_1,z_2,\dots,z_n$ be a subset of zeros/poles of $f$ in one of its fundamental parallelogram arranged in the fashion such that $z_j\not\equiv-z_k\not\equiv0\pmod L$ and all other zeros/poles are either $\equiv0\pmod L$ or $\equiv\pm z_j\pmod L$. Let $m_j$ be the order of $z_j$. Then we see that if
+In the case of $\wp$, due to its double poles, we see that $\wp(z)-\wp(a)$ has a zero of order 2 when $a\equiv-a\not\equiv0\pmod L$ and has two simple zeros when $a\not\equiv-a\pmod L$. Therefore, let $z_1,z_2,\dots,z_n$ be a subset of zeros/poles of $f$ in one of its fundamental parallelograms arranged in the fashion such that $z_j\not\equiv-z_k\not\equiv0\pmod L$ and all other zeros/poles are either $\equiv0\pmod L$ or $\equiv\pm z_j\pmod L$. Let $m_j$ be the order of $z_j$. Then we see that if
 
 $$
 s_j=
 \begin{cases}
 m_j & z_j\not\equiv-z_j\pmod L \\
-m_j/2 & z_j\equiv-z_j\equiv L
+m_j/2 & z_j\equiv-z_j\pmod L
 \end{cases}
 $$
 
@@ -53,7 +53,7 @@ $$
 f_1(z)=[\wp(z)]^{-2s_0}\prod_{1\le j\le n}[\wp(z)-\wp(z_j)]^{s_j}\tag4
 $$
 
-is exactly what we desire. Therefore, we see that _every even elliptic function is a rational function of $\wp$_. In addition, because every odd elliptic function is a product of $\wp'$ and some even elliptic function and every function can be split into odd and even components, we conclude that _every elliptic function is a rational function of $\wp$ and $\wp'$._
+is exactly what we desired. Therefore, we see that _every even elliptic function is a rational function of $\wp$_. In addition, because every odd elliptic function is a product of $\wp'$ and an even elliptic function and every function can be split into odd and even components, we conclude that _every elliptic function is a rational function of $\wp$ and $\wp'$._
 
 ## Laurent expansion and Eisenstein series
 
@@ -79,11 +79,11 @@ $$
 G_k=G_k(L)=\sum_{w\in L\setminus\{0\}}{1\over w^k}.\tag6
 $$
 
-It can be verified that (6) converges absolutely for $k>2$, so $G_k$ is well defined when $k\ge3$. In addition, because $\wp$ is even, $G_k=0$ for all odd $k$. Furthermore, we will show in a moment that we can determine the values of all $G_k$ as long as $G_4$ and $G_6$ is known.
+It can be verified that (6) converges absolutely for $k>2$, so $G_k$ is well defined when $k\ge3$. In addition, because $\wp$ is even, $G_k=0$ for all odd $k$. Furthermore, we will show in a moment that we can determine the values of all $G_k$ as long as $G_4$ and $G_6$ are known.
 
 ## Differential equation and Eisenstein invariants
 
-Because $(\wp')^2$ is even and has no poles besides $z\equiv0\pmod L$, it follows from (4) that $(\wp')^2$ must be a polynomial of $\wp$. From our analysis on the zeros of $\wp$, we also know that the zeros of $\wp'(a)=0$ iff $a\not\equiv0\pmod L$ and $a\equiv-a\pmod L$. This indicates that $a$ must be in the form $m\omega_1+n\omega_2$ for odd integer $m$ and $n$. In the orthodox notation, let $\omega_3$ be defined as
+Because $(\wp')^2$ is even and has no poles besides $z\equiv0\pmod L$, it follows from (4) that $(\wp')^2$ must be a polynomial of $\wp$. From our analysis of the zeros of $\wp$, we also know that the zeros of $\wp'(a)=0$ iff $a\not\equiv0\pmod L$ and $a\equiv-a\pmod L$. This indicates that $a$ must be in the form $m\omega_1+n\omega_2$ for odd integer $m$ and $n$. In the orthodox notation, let $\omega_3$ be defined as
 
 $$
 \omega_3=-\omega_1-\omega_2.\tag7
@@ -139,15 +139,15 @@ $$
 (\wp')^2=4\wp^3-g_2\wp-g_3,\tag{13}
 $$
 
-where $g_2=60G_4$ and $g_3=140G_6$ are known as the **Eisenstein invariants**. By Vieta's theorem, this indicates that $e_1+e_2+e_3=0$.
+where $g_2=60G_4$ and $g_3=140G_6$ are known as the **Eisenstein invariants**. As a result, it follows from Vieta's theorem that $e_1+e_2+e_3=0$.
 
 Differentiating (13) once more gives
 
 $$
-2\wp'=12\wp^2-g_2,
+2\wp''=12\wp^2-g_2,
 $$
 
-and comparing coefficients produces a recursive formula for Eisenstein series:
+and comparing coefficients produces a recursive formula for the Eisenstein series:
 
 $$
 \begin{aligned}
@@ -257,6 +257,6 @@ $$
 
 ## Conclusion
 
-In this article, we defined Weierstrass elliptic function $\wp(z)$ as a consequence of an attempt to develop the simplest possible elliptic function. Subsequently, by analyzing the Laurent expansion and differential equation of $\wp$, we defined Eisenstein series, the invariants $g_2,g_3$, and the important special values $e_1,e_2,e_3$. After that, by analyzing the relationships between $\wp$ and Jacobian elliptic functions, we successfully reformulated $\wp$ using Jacobian theta functions as we have done for Jacobian elliptic function [before][theta].
+In this article, we defined the Weierstrass elliptic function $\wp(z)$ as a consequence of an attempt to develop the simplest possible elliptic function. Subsequently, by analyzing the Laurent expansion and differential equation of $\wp$, we defined the Eisenstein series, the invariants $g_2,g_3$, and the important special values $e_1,e_2,e_3$. After that, by analyzing the relationships between $\wp$ and Jacobian elliptic functions, we successfully reformulated $\wp$ using Jacobian theta functions as we have done for Jacobian elliptic functions [before][theta].
 
 [theta]: /2023/04/07/jacobian-theta-functions-foundation.html

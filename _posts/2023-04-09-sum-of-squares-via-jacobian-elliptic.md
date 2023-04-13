@@ -39,7 +39,7 @@ This is going to be the starting point of our investigation into $r_2(n)$ and $r
 
 ## Sum of two squares
 
-Differentiating (2) with respect to $u$ on both side, we have
+Differentiating (2) with respect to $u$ on both sides, we have
 
 $$
 {2K\over\pi}{\operatorname{cn}(u)\operatorname{dn}(u)\over\operatorname{sn}(u)}=-\cot x-4\sum_{m\ge1}{q^m\sin(2mx)\over1+q^m}.\tag3
@@ -88,7 +88,7 @@ $$
 =1+4\sum_{m\ge1}{(-1)^{(m-1)/2}q^m\over1-q^m}\tag{10}
 $$
 
-Observe that the left hand side is exactly the power series generating function for $r_2(n)$, so comparing coefficients gives
+Observe that the left-hand side is exactly the power series generating function for $r_2(n)$, so comparing coefficients gives
 
 $$
 r_2(n)=4\sum_{\substack{d|n\\ d\text{ odd}}}(-1)^{(d-1)/2},\tag{11}
@@ -141,4 +141,4 @@ Since $1$ is always a divisor of $n$ that is not a multiple of $4$, we see that 
 
 In this article, we began from the series expansion of $\log\operatorname{sn}(u)$ and successfully obtained formulas for $r_2(n)$ and $r_4(n)$ by differentiations and plugging in special values.
 
-It is also possible to use Jacobian elliptic functions to deduce expressions for $r_s(n)$ for even $s\ge4$, but the work will grows more and more complicated when $s$ becomes large. As a result, modern mathematicians took a different approach: they use another powerful class of functions called modular functions. A good reference for the topic would be chapter IX and chapter XII of Hardy's _Ramanujan: twelve lectures on subjects suggested by his life and work_.
+It is also possible to use Jacobian elliptic functions to deduce expressions for $r_s(n)$ for even $s\ge4$, but the work will grow more and more complicated when $s$ becomes large. As a result, modern mathematicians took a different approach: they use another powerful class of functions called modular functions. A good reference for the topic would be Chapter IX and Chapter XII of Hardy's _Ramanujan: twelve lectures on subjects suggested by his life and work_.

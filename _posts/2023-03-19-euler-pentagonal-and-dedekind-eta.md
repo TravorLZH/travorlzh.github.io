@@ -42,7 +42,7 @@ $$
 
 where $p_v(n)$ is the number of ways to partition $n$ into $m$ unequal parts with $m\equiv v\pmod2$.
 
-It is exhaustive for us to compare $p_0(n)$ and $p_1(n)$ by listing all possible partitions of $n$, so we conider using a graphical representation for partitions.
+It is exhaustive for us to compare $p_0(n)$ and $p_1(n)$ by listing all possible partitions of $n$, so we consider using a graphical representation for partitions.
 
 ### Partition as a graph
 
@@ -50,11 +50,11 @@ Let $n=a_1+a_2+a_3+\dots+a_m$ be a partition of $n$ into $m$ distinct elements a
 
 ![Graph of a partition](/assets/images/partition-graph.png)
 
-By the construction of partition graphs, we see that when the total number $n$ of point are fixed, there is a bijection between partition graphs and partitions of $n$ into unequal parts. Hence, if we define invertible operations on the graphs, then we can create bijections between partitions of $n$.
+By the construction of partition graphs, we see that when the total number $n$ of points is fixed, there is a bijection between partition graphs and partitions of $n$ into unequal parts. Hence, if we define invertible operations on the graphs, then we can create bijections between partitions of $n$.
 
 As shown in the above picture, we let the red segment connect all the points belonging to the bottom row and the blue segment denote the longest 45-degree segment joining the right top point and other points in the graph, and $b,s$ denote the number of points connected by these segments respectively.
 
-These segments are useful because they allow us to establish bijections between odd partition (i.e. partitioning $n$ into odd number of unequal parts) and even partitions when possible.
+These segments are useful because they allow us to establish bijections between odd partitions (i.e. partitioning $n$ into an odd number of unequal parts) and even partitions when possible.
 
 ### Bijection map
 
@@ -62,10 +62,10 @@ These segments are useful because they allow us to establish bijections between 
 
 Using the line segments, we define two operations:
 
-- Operation A: take out the red segment and rotate it by 45 degrees counterclockwises and place it to the right of the blue segment.
+- Operation A: take out the red segment and rotate it by 45 degrees counterclockwise and place it to the right of the blue segment.
 - Operation B: take out the blue segment and rotate it by 45 degrees clockwise and place it below the red segment.
 
-Executing these operations on the aforementioned partition graph producess the following two graphs:
+Executing these operations on the aforementioned partition graph produces the following two graphs:
 
 ![Operation A and B on graphs](/assets/images/partition-operations.png)
 
@@ -154,7 +154,7 @@ $$
 f(y)={1\over\sqrt{3y}}\exp\left\{ {\pi\over12}\left(y-\frac1y\right)+{\pi i\over6}\right\}\underbrace{\sum_{k\in\mathbb Z}\exp\left\{ {\pi ik\over3}-{\pi(k^2+k)\over3y}\right\}}_S.\tag{14}
 $$
 
-Becauses the $S$ converges absolutely, we can split the sum according to the congruence class of $k$ modulo 3:
+Because the $S$ converges absolutely, we can split the sum according to the congruence class of $k$ modulo 3:
 
 $$
 S=\sum_{k\equiv0\pmod3}+\sum_{k\equiv1\pmod3}+\sum_{k\equiv2\pmod3}=S_0+S_1+S_2.\tag{15}
@@ -187,7 +187,7 @@ $$
 S_2=e^{-\pi i/3}\sum_{m\in\mathbb Z}(-1)^me^{-\pi m(3m-1)/y}=e^{-\pi i/3}f\left(\frac1y\right).\tag{18}
 $$
 
-Therefore, combining (16), (17), and (18), we see that (14) becomes
+Therefore, by combining (16), (17), and (18), we see that (14) becomes
 
 $$
 \begin{aligned}
@@ -209,4 +209,4 @@ Although we have only proven (20) for real positive $y$, it follows from the pri
 
 In this article, we began our journey by analyzing the infinite product $\phi(x)$ in (1) using combinatorial methods. After deducing the pentagonal number theorem, we set $x=e^{-2\pi y}$ and perform Poisson summation to obtain a functional equation for $\phi(x)$ and $\eta(\tau)$.
 
-I came up with this proof yesterday and thought that this is something that has never been done before. However, after a series of Internet search, I found that the exact same method was discovered by [Ze-Yong Kong and Lee-Peng Teo](https://arxiv.org/abs/2302.03280) on February 7 this year. This is why I wrote a blog post instead of a research paper today.
+I came up with this proof yesterday and thought that this was something that has never been done before. However, after a series of Internet searching, I found that the exact same method was discovered by [Ze-Yong Kong and Lee-Peng Teo](https://arxiv.org/abs/2302.03280) on February 7 this year. This is why I wrote a blog post instead of a research paper today.

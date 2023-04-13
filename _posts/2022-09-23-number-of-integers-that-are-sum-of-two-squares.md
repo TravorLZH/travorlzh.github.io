@@ -7,7 +7,7 @@ tags:   number-theory complex-analysis
 ---
 > This is written during the flight from Hong Kong to Frankfurt.
 
-In the previous articles, we investigate the number of ways to express integers as a sum of two squares, so one would naturally ask _how frequent are integers expressible as a sum of two squares?_ In other words, we hope to investigate the asymptotic behavior of the following function:
+In the previous articles, we investigate the number of ways to express integers as a sum of two squares, so one would naturally ask _how frequently are integers expressible as a sum of two squares._ In other words, we hope to investigate the asymptotic behavior of the following function:
 
 $$
 N(x)=\sum_{\substack{n\le x\\\exists a,b\in\mathbb Z\text{ s.t. }n=a^2+b^2}}1=\sum_{\substack{n\le x\\r(n)>0}}1.\tag1
@@ -19,11 +19,11 @@ $$
 F(s)=\sum_{\substack{n\ge1\\r(n)>0}}{1\over n^s}=\prod_{p\equiv1(4)}\left(1-{1\over p^s}\right)^{-1}\prod_{p\equiv3(4)}\left(1-{1\over p^{2s}}\right)^{-1}.\tag2
 $$
 
-Typically, we hope to associate $F(s)$ with $\zeta(s)$ or $L(s,\chi)$ as in the preivous article so that we perform contour integration tricks on the estimation of $N(x)$.
+Typically, we hope to associate $F(s)$ with $\zeta(s)$ or $L(s,\chi)$ as in the previous article so that we perform contour integration tricks on the estimation of $N(x)$.
 
 ## Basic properties of $F(s)$
 
-If we were to square both side, then we see that
+If we were to square both sides, then we see that
 
 $$
 \begin{aligned}
@@ -38,7 +38,7 @@ Obviously, we see that the last product converges absolutely on $\Re(s)>\frac12$
 
 ## De la Vallée Poussin's region
 
-Although logarithm is multi-valued, $\log\zeta(s)$ and $\log L(s,\chi_4)$ are well-defined whenever $s$ lies in their zero-free region within the right half plane. In fact, de la Vallée Poussin has proven in 1896 that
+Although logarithm is multi-valued, $\log\zeta(s)$ and $\log L(s,\chi_4)$ are well-defined whenever $s$ lies in their zero-free region within the right half plane. In fact, de la Vallée Poussin had proven in 1896 that
 
 _There exists a constant $c>0$ such that $\zeta(s)$ and $L(s,\chi_4)$ are free of zeros in_
 
@@ -58,7 +58,7 @@ $$
 \vert F(s)\vert\le e^{2\log\log\tau+O(1)}\prod_{p\equiv3(4)}\left(1-{1\over p^{1+2\delta}}\right)^{-1/2}=O(\log^2\tau).\tag5
 $$
 
-The bound (5) is sufficient for us to estimate contour integrals over $F(s)$ along line segments lyinig within (3). Therefore, let's bring in Perron's formula.
+The bound (5) is sufficient for us to estimate contour integrals over $F(s)$ along line segments lying within (3). Therefore, let's bring in Perron's formula.
 
 ## Contour integration and error estimates
 
@@ -68,7 +68,7 @@ $$
 N(x)={1\over2\pi i}\int_{a-iT}^{a+iT}F(s){x^s\over s}\mathrm ds+O\left(x\log x\over T\right)\tag6
 $$
 
-Because $F(s)$ behaves like $(s-1)^{-1/2}$ when $s$ approaches one, we cannot handle the integral via residue theorem. Instead we deform the path $[a-iT,a+iT]$ into
+Because $F(s)$ behaves like $(s-1)^{-1/2}$ when $s$ approaches one, we cannot handle the integral via residue theorem. Instead, we deform the path $[a-iT,a+iT]$ into
 
 $$
 \int_{a-iT}^{a+iT}=\int_{a-iT}^{1-k-iT}+\int_{1-k-iT}^{1-k-i\varepsilon}+\int_C+\int_{1-k+i\varepsilon}^{1-k+iT}+\int_{1-k+iT}^{a+iT},
@@ -108,7 +108,7 @@ $$
 I=\int_{e^{-i\pi}k-i\varepsilon}^{-i\varepsilon}+\int_\gamma+\int_{i\varepsilon}^{e^{\pi is}k+i\varepsilon},\tag{10}
 $$
 
-where $\gamma$ denotes a counter clockwise arc connecting $-i\varepsilon$ and $i\varepsilon$, so letting $\varepsilon\to0^+$, (10) becomes
+where $\gamma$ denotes a counterclockwise arc connecting $-i\varepsilon$ and $i\varepsilon$, so letting $\varepsilon\to0^+$, (10) becomes
 
 $$
 I=(e^{\pi i/2}-e^{-\pi i/2})\int_0^kv^{-1/2}x^{-v}h(1-v)\mathrm dv.\tag{11}
@@ -136,7 +136,7 @@ $$
 N(x)\sim{Kx\over\sqrt{\log x}}\left(1+{b_1\over\log x}+{b_2\over\log^2x}+{b_3\over\log^3x}+\dots\right),\tag{13}
 $$
 
-where $K=a_0/\sqrt\pi$ is called **Landau-Ramanujan constant**. This indicates that the density of integers expressible as a sum of two square is zero, but these type of integers are not so rare as primes (PNT gives $\sim x/\log x$). In the remaining part of this article, we develop analytical expressions for $K$.
+where $K=a_0/\sqrt\pi$ is called the **Landau-Ramanujan constant**. This indicates that the density of integers expressible as a sum of two squares is zero, but these types of integers are not so rare as primes (PNT gives $\sim x/\log x$). In the remaining part of this article, we develop analytical expressions for $K$.
 
 ## The value of Landau-Ramanujan constant
 
@@ -170,13 +170,13 @@ $$
 
 ## Conclusion
 
-In this article, we investigated the distribution of numbers that are sum of two squares using contour integration method. However, the case we study today is fundamentally different from those we have researched in the past.
+In this article, we investigated the distribution of numbers that are a sum of two squares using the contour integration method. However, the case we study today is fundamentally different from those we have researched in the past.
 
 Instead of calculating a residue integral as in the past, we see that the main term of $N(x)$ is obtained by calculating a certain integral over a truncated Hankel contour.
 
 ## Notes
 
-In this article, the analytic continuation of $F(s)$ is achieved by factoring a square root of $\zeta(s)$. In the 1950s, mathematicians Selberg and Delange developed ambitious generalization of the method mentioned in this article. Particularly, they show that _if there exists some complex $z$ such that $[\zeta(s)]^{-z}F(s)$ is analytic and $O(\tau^{1-\delta})$ in the region described in (3), then there exists a sequence $\ell_n$ such that the summatory function of the coefficients of $F(s)$ is asymptotic to_
+In this article, the analytic continuation of $F(s)$ is achieved by factoring a square root of $\zeta(s)$. In the 1950s, mathematicians Selberg and Delange developed ambitious generalizations of the method mentioned in this article. Particularly, they show that _if there exists some complex $z$ such that $[\zeta(s)]^{-z}F(s)$ is analytic and $O(\tau^{1-\delta})$ in the region described in (3), then there exists a sequence $\ell_n$ such that the summatory function of the coefficients of $F(s)$ is asymptotic to_
 
 $$
 \sim x(\log x)^{z-1}\left\{\ell_0+{\ell_1\over\log x}+{\ell_2\over\log^2x}+{\ell_3\over\log^3x}\right\}.

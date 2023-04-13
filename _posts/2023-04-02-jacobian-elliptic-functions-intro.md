@@ -12,11 +12,11 @@ Jacobi originally studies these functions using merely elementary algebra, but t
 
 The book _A Course of Modern Analysis_ by Whittaker and Watson developed the theory of elliptic functions using complex analysis. However, they achieved this goal by introducing theta functions before presenting Jacobian elliptic functions.
 
-As a result, I decide to write a short series of blog post to introduce Jacobian elliptic functions and theta functions in a fashion that is both modern and logical.
+As a result, I decided to write a short series of blogs to introduce Jacobian elliptic functions and theta functions in a fashion that is both modern and logical.
 
 ## Elliptic integrals and Jacobian elliptic functions
 
-The term elliptic integral originates from calculating the circumference of an ellipse. Later, elliptic integral is used to describe a general class of integrals in the form of
+The term elliptic integral originates from calculating the circumference of an ellipse. Later, it is used to describe a general class of integrals in the form of
 
 $$
 \int R(x,\sqrt{f(x)})\mathrm dx\tag1
@@ -28,7 +28,7 @@ $$
 u=F(\phi;k)=\int_0^\phi{\mathrm d\theta\over\sqrt{1-k^2\sin^2\theta}},\quad0<k<1\tag2
 $$
 
-Since the integrand is nonnegative, $F$ is strictly increasing with respect to $\phi$. As a result, we have no problem to invert this quantity when working in real domain. Consequently, Jacobi defined the following quantities
+Since the integrand is nonnegative, $F$ is strictly increasing with respect to $\phi$. As a result, we have no problem inverting this quantity when working in the real domain. Consequently, Jacobi defined the following quantities
 
 $$
 \operatorname{sn}(u;k)=\sin\phi,\quad\operatorname{cn}(u;k)=\cos\phi,\quad\operatorname{dn}(u;k)={\mathrm d\phi\over\mathrm du}.\tag3
@@ -147,7 +147,7 @@ This indicates that _$u=F(z)$ maps the first quadrant of $z$-plane onto the rect
 
 ## Analyticity of $\operatorname{sn}$ in $R$
 
-The analyses in the above section allows us to define the inverse map $z=\operatorname{sn}(u)$ on the rectangular region $R$ described by
+The analyses in the above section allow us to define the inverse map $z=\operatorname{sn}(u)$ on the rectangular region $R$ described by
 
 $$
 u=x+iy,\quad 0\le x\le K,\quad 0\le y\le iK'\tag{17}
@@ -165,7 +165,7 @@ $$
 \oint_\Gamma\operatorname{sn}(u)\mathrm du={1\over2\pi i}\oint_{C_n}zF'(z)\oint_\Gamma{\mathrm du\over F(z)-u}\mathrm dz.\tag{19}
 $$
 
-Because $F(z)$ is always outside $\Gamma$, we conclude the left hand side of (19) is zero. Finally, Morera's theorem guarantees that $\operatorname{sn}$ is analytic inside $R$. From the previous section, we also see that $\operatorname{sn}$ has continuous extension to the points on the boundary of $R$ except for $u=iK'$.
+Because $F(z)$ is always outside $\Gamma$, we conclude the left-hand side of (19) is zero. Finally, Morera's theorem guarantees that $\operatorname{sn}$ is analytic inside $R$. From the previous section, we also see that $\operatorname{sn}$ has a continuous extension to the points on the boundary of $R$ except for $u=iK'$.
 
 ## Double periodicity of $\operatorname{sn}$
 
@@ -203,7 +203,7 @@ $$
 \operatorname{sn}(-u)=-\operatorname{sn}(u)\tag{24}
 $$
 
-As the symmetry about $x=K$ in $u$-plane corresponds to symmetriy about $[1,k^{-1}]$ in $z$-plane, we have
+As the symmetry about $x=K$ in $u$-plane corresponds to symmetry about $[1,k^{-1}]$ in $z$-plane, we have
 
 $$
 \operatorname{sn}(u)=\overline{\operatorname{sn}(2K-\overline u)}.\tag{25}
@@ -225,7 +225,7 @@ This means that $u=iK'$ is a pole of $\operatorname{sn}$. Combining this with (2
 
 ## Properties of $\operatorname{cn}$ and $\operatorname{dn}$
 
-In this section, we transfer the properties of $\operatorname{sn}$ to the other two Jacobian elliptic functions we defined in (3). Applying the principal squareroot to (4), we see that the formulas
+In this section, we transfer the properties of $\operatorname{sn}$ to the other two Jacobian elliptic functions we defined in (3). Applying the principal square root to (4), we see that the formulas
 
 $$
 \operatorname{cn}(u)=\sqrt{1-\operatorname{sn}^2(u)}\tag{28}
@@ -243,6 +243,6 @@ Because both $\operatorname{sn}$ and $\operatorname{cn}$ are quasi $2K,2iK'$-per
 
 ## Summary
 
-In this article, we first introduced Jacobian elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ by inverting an elliptic integral in real domain. Subsequently, by examining the elliptic integral in the complex plane, we successfully defined $\operatorname{sn}$ as a meromorphic doubly periodic function in the complex plane. Finally, by performing analytic continuation on relationships between Jacobian elliptic functions in real domain, we also obtained meromorphic descriptions of $\operatorname{cn}$ and $\operatorname{dn}$.
+In this article, we first introduced Jacobian elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ by inverting an elliptic integral in the real domain. Subsequently, by examining the elliptic integral in the complex plane, we successfully defined $\operatorname{sn}$ as a meromorphic doubly periodic function in the complex plane. Finally, by performing analytic continuation on relationships between Jacobian elliptic functions in the real domain, we also obtained meromorphic descriptions of $\operatorname{cn}$ and $\operatorname{dn}$.
 
 In the next article, we are going to explore further properties of $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ using the tools from complex analysis, which leads to a natural introduction to Jacobian theta functions.

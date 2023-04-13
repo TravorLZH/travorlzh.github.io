@@ -68,7 +68,7 @@ $$
 a_{N,N}=q^{1+3+\dots+(2N-3)+(2N-1)}=q^{N^2}.\tag9
 $$
 
-In addition, by replaceing $w$ with $q^2w$, we have
+In addition, by replacing $w$ with $q^2w$, we have
 
 $$
 \begin{aligned}
@@ -216,7 +216,7 @@ $$
 
 ## The theta functions $\vartheta_r(z)$
 
-The functions $\Theta$ and $H$ are used extensively in Jacobi's _Fundamenta Nova_ but was latter discarded (see §21.62 of Whittaker & Watson's _A Course of Modern Analysis_). A more popular set of notation employed by mathematicians today are due to Tannery and Molk. In their 1893 book _Fonctiones Elliptiques_, the following notations are introduced:
+The functions $\Theta$ and $H$ were used extensively in Jacobi's _Fundamenta Nova_ but were later discarded (see §21.62 of Whittaker & Watson's _A Course of Modern Analysis_). A more popular set of notation employed by mathematicians today was due to Tannery and Molk. In their 1893 book _Fonctiones Elliptiques_, the following notations were introduced:
 
 $$
 \vartheta_1(x)=H(u),\quad\vartheta_2(x)=H(u+K),\tag{27}
@@ -260,7 +260,7 @@ $$
 \end{aligned}\tag{32}
 $$
 
-Using the convention of $q=e^{i\pi\tau}$ with $\Im(\tau)>0$, we see that the theta functions are functions of $z$ and $\tau$. This is whyy some works use $\vartheta_r(z,q)$ and $\vartheta(z\vert\tau)$ to emphasize the relationship.
+Using the convention of $q=e^{i\pi\tau}$ with $\Im(\tau)>0$, we see that the theta functions are functions of $z$ and $\tau$. This is why some works use $\vartheta_r(z,q)$ and $\vartheta(z\vert\tau)$ to emphasize the relationship.
 
 Another benefit of the new definition is that we can discuss theta functions without making any references to quantities of Jacobian elliptic functions. Instead of being quasi $2K,2iK'$-periodic, the theta functions we defined in (29)-(32) are quasi $\pi,\pi\tau$-periodic. From our development of $\Theta(u)$ and $H(u)$, we obtain the following properties for theta functions ($z_1\equiv z_2$ iff $z_1-z_2$ is of the form $m\pi+n\pi\tau$):
 
@@ -272,7 +272,7 @@ Another benefit of the new definition is that we can discuss theta functions wit
 | $\vartheta_3(z)$ | $1,q^{-1}e^{-2iz}$ | $z\equiv\frac12\pi+\frac12\pi\tau$ |
 | $\vartheta_4(z)$ | $1,-q^{-1}e^{-2iz}$ | $z\equiv\frac12\pi\tau$ |
 
-The four theta functions defined in this section not only get rid of its dependence on the theory of Jacobian elliptic functions but also allow us to reformulate the theory of Jacobian elliptic functions in terms of theta functions.
+The four theta functions defined in this section not only get rid of their dependence on the theory of Jacobian elliptic functions but also allow us to reformulate the theory of Jacobian elliptic functions in terms of theta functions.
 
 ### Expressing Jacobian elliptic functions via $\vartheta_r(z)$
 
@@ -282,7 +282,7 @@ $$
 K=\frac\pi2\vartheta_3^2,\quad k={\vartheta_2^2\over\vartheta_3^2},\quad k'={\vartheta_4^2\over\vartheta_3^2}.\tag{33}
 $$
 
-Plugging these results into (22), (24), and (26), we see that Jacobian elliptic functions are expressed as quotient of theta function
+Plugging these results into (22), (24), and (26), we see that Jacobian elliptic functions are expressed as quotients of theta function
 
 $$
 \operatorname{sn}(u)={\vartheta_3\over\vartheta_2}\cdot{\vartheta_1(u/\vartheta_3^2)\over\vartheta_4(u/\vartheta_3^2)},\tag{34}
@@ -296,7 +296,7 @@ $$
 \operatorname{dn}(u)={\vartheta_4\over\vartheta_3}\cdot{\vartheta_3(u/\vartheta_3^2)\over\vartheta_4(u/\vartheta_3^2)}.\tag{36}
 $$
 
-This indicates that identities of Jacobian elliptic functions can be transformed to identities of theta functions. For example, plugging (33) into the relation $k^2+k'^2=1$, we have
+This indicates that identities of Jacobian elliptic functions can be transformed into identities of theta functions. For example, plugging (33) into the relation $k^2+k'^2=1$, we have
 
 $$
 \vartheta_2^4+\vartheta_4^4=\vartheta_3^4.\tag{37}
@@ -346,11 +346,11 @@ $$
 {\partial y\over\partial t}=\frac\pi4{\partial^2y\over\partial z^2},\tag{43}
 $$
 
-which is in fact a **heat equation**. This is why there are literatures that introduce theta functions as solutions to the heat equation. We also see that the whole theory, which originated from physics, eventually returned to physics in a surprising way!
+which is in fact a **heat equation**. This is why there are texts that introduce theta functions as solutions to the heat equation. We also see that the whole theory, which originated from physics, eventually returned to physics in a surprising way!
 
 ## Conclusion
 
-In this article, we began with the infinite product representations for Jacobian elliptic function and introduced the functions $\Theta(u)$ and $H(u)$, which allow us to deduce the expressions (22), (24), and (26).
+In this article, we began with the infinite product representations for the Jacobian elliptic function and introduced the functions $\Theta(u)$ and $H(u)$, which allow us to deduce the expressions (22), (24), and (26).
 
 After that, we defined the Jacobian theta functions $\vartheta_r(z)$ out of $\Theta(u)$ and $H(u)$, which allow us to redefine Jacobian elliptic functions by theta functions. By differentiating the series expansion, we also indicate the significance of theta functions in physics.
 

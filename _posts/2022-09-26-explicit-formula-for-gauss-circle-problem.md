@@ -2,10 +2,10 @@
 layout: post
 title:  "Explicit formula for Gauss circle problem"
 date:   2022-09-26
-des:    We express the error term of Gauss circle problem in terms of Bessel functions
+des:    We express the error term of the Gauss circle problem in terms of Bessel functions
 tags:   number-theory complex-analysis
 ---
-In [one of the previous articles](/2022/09/16/gauss-circle-improvement.html), we used an effective version of Perron's formula to deduce an improved error term for Gauss circle problem. In this article, we are going to deduce an explicit formula for the number $S(x)$, which is also known as **Hardy's identity**:
+In [one of the previous articles](/2022/09/16/gauss-circle-improvement.html), we used an effective version of Perron's formula to deduce an improved error term for the Gauss circle problem. In this article, we are going to deduce an explicit formula for the number $S(x)$, which is also known as **Hardy's identity**:
 
 $$
 S(x)=\sum_{n\le x}r(n)=\pi x-\frac12r(x)+\sum_{n\ge1}r(n)\sqrt\frac xnJ_1(2\pi\sqrt{nx}),\tag1
@@ -15,13 +15,13 @@ where $r(n)$ denotes the number of integer solutions to $a^2+b^2=n$ and $J_m(z)$
 
 ## Contour integration process
 
-To avoid tackling with convergence problems emerging from the traditional Perron's, we study the weighted analog of $S(x)$
+To avoid tackling convergence problems emerging from the traditional Perron's, we study the weighted analog of $S(x)$
 
 $$
 S_m(x)={1\over\Gamma(m)}\sum_{n\le x}\left(1-\frac nx\right)^{m-1}r(n).\tag2
 $$
 
-and derived an explicit expression valid when $\Re(m)$ is large, and then justify it at $m=1$ via the principle of analytic continuation. Using Mellin inversion formula, we see that (2) becomes an integral over some vertical segment in the complex plane:
+and derived an explicit expression valid when $\Re(m)$ is large, and then justify it at $m=1$ via the principle of analytic continuation. Using the Mellin inversion formula, we see that (2) becomes an integral over some vertical segment in the complex plane:
 
 $$
 S_m(x)={1\over2\pi i}\int_{2-i\infty}^{2+i\infty}x^sF(s){\Gamma(s)\over\Gamma(s+m)}\mathrm ds,\tag3
@@ -62,7 +62,7 @@ h(s)
 \end{aligned}
 $$
 
-Obivously $h(s)=f(s)g(s)$, so we see that
+Obivously, $h(s)=f(s)g(s)$, so we see that
 
 $$
 h(s)={\pi^{2s}\over\Gamma^2(s)\sin(\pi s)}.\tag6
@@ -112,7 +112,7 @@ $$
 \log k(s)=2s\log y-(2s-1)\log s+2s-\log[2\pi\sin(\pi s)]+O\left(1\over\vert s\vert \right)
 $$
 
-Taking real parts on both side, we see that when $s=\sigma+it$ there is
+Taking real parts on both sides, we see that when $s=\sigma+it$ there is
 
 $$
 \begin{aligned}
@@ -169,7 +169,7 @@ $$
 S_m(x)={\pi x\over\Gamma(m)}+\pi^{1-m}x^{1-m/2}\sum_{n\ge1}{r(n)\over n^{m/2}}J_m(2\pi\sqrt{nx})\tag9
 $$
 
-is valid for all $\Re(m)\ge3$. As long as we can show that the right hand side converges at $m=1$, (1) becomes true under the principle of analytic continuation.
+is valid for all $\Re(m)\ge3$. As long as we can show that the right-hand side converges at $m=1$, (1) becomes true under the principle of analytic continuation.
 
 ## A convergence problem
 
@@ -212,13 +212,13 @@ $$
 \int_a^bt^{-3/4}e^{2\pi i\sqrt{xt}}\mathrm dt={1\over\pi i\sqrt x}\int_a^b t^{-1/4}\mathrm d(e^{2\pi i\sqrt{tx}})=O(x^{-1/2}a^{-1/4}).
 $$
 
-Therefore, it follows from Cauchy criterion that the series (10) converges when $m=1$. Hence, the proof of (1) is now completed.
+Therefore, it follows from Cauchy's criterion that the series (10) converges when $m=1$. Hence, the proof of (1) is now completed.
 
 ## Conclusion
 
-In this article, we applied Cauchy's theorem several times to deduce an explicit formula for $S_m(x)$ valid for $\Re(m)\ge3$. Then, using well known results from the theory of exponential sums, we see that the series (10) converges for any fixed $x$. Combining this with the principle of continuation, we successfully extended the validity of (10) to $m=1$, thereby proving Hardy's identity.
+In this article, we applied Cauchy's theorem several times to deduce an explicit formula for $S_m(x)$ valid for $\Re(m)\ge3$. Then, using well-known results from the theory of exponential sums, we see that the series (10) converges for any fixed $x$. Combining this with the principle of continuation, we successfully extended the validity of (10) to $m=1$, thereby proving Hardy's identity.
 
-Not only are Bessel functions connected to circles in the arithmetical sense, they also appear in arithmetical problems associated with hyperbolas. Specifically, it was proven by M. G. Voronoï in 1904 that if $N(x)$ denotes the number of positive integer pairs $(a,b)$ such that $ab\le x$, then
+Not only are Bessel functions connected to circles in the arithmetical sense, but they also appear in arithmetical problems associated with hyperbolas. Specifically, it was proven by M. G. Voronoï in 1904 that if $N(x)$ denotes the number of positive integer pairs $(a,b)$ such that $ab\le x$, then
 
 $$
 \begin{aligned}

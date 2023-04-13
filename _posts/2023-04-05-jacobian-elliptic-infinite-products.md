@@ -25,9 +25,9 @@ $$
 z_0,z_0+\omega_1,z_0+\omega_1+\omega_2,z_0+\omega_2\tag1
 $$
 
-possessess no zeros or poles of $f$ on the boundary. In this case, we say $P$ is a fundamental parallelogram of $f$. Because $P$ is compact , if $f$ has no poles inside $P$ then it must be analytic and bounded in $P$. Due to double periodicity, this implies $f$ is a bounded entire function in $\mathbb C$. Hence, it follows from Liouville's theorem that $f$ must be constant.
+possesses no zeros or poles of $f$ on the boundary. In this case, we say $P$ is a fundamental parallelogram of $f$. Because $P$ is compact, if $f$ has no poles inside $P$ then it must be analytic and bounded in $P$. Due to double periodicity, this implies $f$ is a bounded entire function in $\mathbb C$. Hence, it follows from Liouville's theorem that $f$ must be constant.
 
-Similarly, if $f$ has no zeros, then $1/f$ will be an bounded entire function, so zeroless elliptic functions are constant as well.
+Similarly, if $f$ has no zeros, then $1/f$ will be a bounded entire function, so zeroless elliptic functions are constant as well.
 
 Conclusively, if elliptic functions $f$ and $g$ share the same periods, poles, and zeros, then $f/g$ must be constant. This indicates that we will be able to deduce explicit expressions for $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ by crafting elliptic functions that match their periods, zeros, and poles.
 
@@ -39,7 +39,7 @@ $$
 z^me^{P(z)}\prod_\rho\left(1-\frac z\rho\right)e^{Q(z/\rho)},\tag2
 $$
 
-where $P,Q$ are some polynomial functions. However, it is difficult for us to adjust this representation into some periodic or quasi periodic function. Therefore, we need to think differently when finding a factorization for elliptic functions. It is known that the complex exponential $e^{iz}$ is $2\pi$-periodic, so it is reasonable for us to consider forming factorization using $e^{iz}$ instead of $z$. In addition, the complex exponential also allows us to store the information of zeros because the zeros themselves are also doubly periodic. If we let $x=\pi u/2K$, then it follows from the properties of $\operatorname{sn}$ that $\operatorname{sn}(u)=0$ if and only if
+where $P,Q$ are some polynomial functions. However, it is difficult for us to adjust this representation into some periodic or quasi-periodic function. Therefore, we need to think differently when finding a factorization for elliptic functions. It is known that the complex exponential $e^{iz}$ is $2\pi$-periodic, so it is reasonable for us to consider forming factorization using $e^{iz}$ instead of $z$. In addition, the complex exponential also allows us to store the information of zeros because the zeros themselves are also doubly periodic. If we let $x=\pi u/2K$, then it follows from the properties of $\operatorname{sn}$ that $\operatorname{sn}(u)=0$ if and only if
 
 $$
 2x=2\pi m+2\pi{iK'\over K}n\iff e^{2ix}=e^{2ni\pi\tau}=q^{2n},\tag3
@@ -103,7 +103,7 @@ $$
 K=\frac\pi2\prod_{n\ge1}(1+q^{2n-1})^4(1-q^{2n})^2.\tag{10}
 $$
 
-It is also possible for us to represent $A$ by some parameters in Jacobian elliptic function. Because $\operatorname{sn}(K+iK')=k^{-1}$, we also have for $x=\frac\pi2+{\pi\tau\over2}$ that
+It is also possible for us to represent $A$ by some parameters in Jacobian elliptic functions. Because $\operatorname{sn}(K+iK')=k^{-1}$, we also have for $x=\frac\pi2+{\pi\tau\over2}$ that
 
 $$
 \begin{aligned}
@@ -175,4 +175,4 @@ $$
 
 In this article, we began by studying the zeros and poles of elliptic functions and discovered that elliptic functions with prescribed periods, zeros, and poles are unique up to constant multiplication. As a result, we are able to reconstruct $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ using infinite products in terms of nome $q$. This also allows us to deduce product representations for $K$, $k$, and $k'$.
 
-Observe that the function $g(u)$ defined in (6) all appear in the denominators in the product representations of Jacobian elliptic function, so one is motivated to think that _if we investigate the properties of $g(u)$ then it is possible for us to transfer these properties to Jacobian elliptic functions_. As history turns out, this is what Jacobi did in 1829. The first theta function he defined is exactly a constant multiple of $g$. By defining three more theta function, he successfully represented all the Jacobian elliptic functions using theta functions. As this is another fruitful topic, we will investigate it next time.
+Observe that the function $g(u)$ defined in (6) all appear in the denominators in the product representations of the Jacobian elliptic function, so one is motivated to think that _if we investigate the properties of $g(u)$ then it is possible for us to transfer these properties to Jacobian elliptic functions_. As history turns out, this is what Jacobi did in 1829. The first theta function he defined is exactly a constant multiple of $g$. By defining three more theta functions, he successfully represented all the Jacobian elliptic functions using theta functions. As this is another fruitful topic, we will investigate it next time.

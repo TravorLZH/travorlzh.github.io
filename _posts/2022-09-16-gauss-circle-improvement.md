@@ -11,7 +11,7 @@ $$
 S(x)=\pi x+O(\sqrt x)\tag1
 $$
 
-when $x$ grows large. However, the error term in (1) is not optimal, and the task of improving the remainder is called **Gauss circle problem**. In this article, we apply complex-analytic tool to give an improved version of (1):
+when $x$ grows large. However, the error term in (1) is not optimal, and the task of improving the remainder is called the **Gauss circle problem**. In this article, we apply complex-analytic methods to give an improved version of (1):
 
 $$
 S(x)=\pi x+O(x^{1/3+\varepsilon}),\tag2
@@ -139,7 +139,7 @@ Therefore, the remaining task is to estimate the integrals over the horizontal s
 
 ## The horizontal segments
 
-By symmetry, it suffices to establish an upper bound for $F(\sigma+iT)$ valid in $-a\le\sigma\le c$. To fulfill this goal, we quote a well known result from complex analysis:
+By symmetry, it suffices to establish an upper bound for $F(\sigma+iT)$ valid in $-a\le\sigma\le c$. To fulfill this goal, we quote a well-known result from the complex analysis:
 
 **Phragmén-Lindelöf principle:** _Suppose $\phi(\sigma+it)$ is regular and $O(e^{\varepsilon\vert t\vert })$ for all $\varepsilon>0$ in $a\le\sigma\le b$ such that_
 
@@ -173,7 +173,7 @@ $$
 \end{aligned}
 $$
 
-To optimize the right hand side, we set some $\theta$ that merges the two terms. Solving the equation $1-\theta=\theta/2$, we get $\theta=2/3$, allowing the right hand side to become $O(x^{1/3+\varepsilon})$. Therefore, we completed the derivation of (2).
+To optimize the right-hand side, we set some $\theta$ that merges the two terms. Solving the equation $1-\theta=\theta/2$, we get $\theta=2/3$, allowing the right hand side to become $O(x^{1/3+\varepsilon})$. Therefore, we completed the derivation of (2).
 
 ## Remarks
 
