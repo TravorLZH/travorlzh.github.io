@@ -9,8 +9,8 @@ tags:   complex-analysis elliptic-functions
 In the [previous article](/2023/04/02/jacobian-elliptic-functions-intro.html), we have proven that the Jacobian elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ defined from elliptic integrals satisfy the following properties in the complex plane:
 
 - $\operatorname{sn}$ is quasi $2K,2iK'$-periodic with multipliers $-1,1$, zeros at $2mK+2niK'$, and poles at $2mK+(2n-1)iK'$.
-- $\operatorname{cn}$ is quasi $2K,2iK'$-periodic with multipliers $-1,1$, zeros at $(2m-1)K+2niK'$, and poles at $2mK+(2n-1)iK'$.
-- $\operatorname{dn}$ is $2K,2iK'$-periodic with zeros at $(2m-1)K+(2n-1)iK'$ and poles at $2mK+(2n-1)iK'$.
+- $\operatorname{cn}$ is quasi $2K,2iK'$-periodic with multipliers $-1,-1$, zeros at $(2m-1)K+2niK'$, and poles at $2mK+(2n-1)iK'$.
+- $\operatorname{dn}$ is quasi $2K,2iK'$-periodic with multipliers $1,-1$, zeros at $(2m-1)K+(2n-1)iK'$ and poles at $2mK+(2n-1)iK'$.
 - All zeros and poles of these functions are simple.
 
 We will show that these properties in the complex plane completely characterized $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ so that we will be able to deduce infinite product representations with ease.

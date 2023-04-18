@@ -225,21 +225,29 @@ This means that $u=iK'$ is a pole of $\operatorname{sn}$. Combining this with (2
 
 ## Properties of $\operatorname{cn}$ and $\operatorname{dn}$
 
-In this section, we transfer the properties of $\operatorname{sn}$ to the other two Jacobian elliptic functions we defined in (3). Applying the principal square root to (4), we see that the formulas
+In this section, we transfer the properties of $\operatorname{sn}$ to the other two Jacobian elliptic functions we defined in (3). From (4), we see (22) implies
 
 $$
-\operatorname{cn}(u)=\sqrt{1-\operatorname{sn}^2(u)}\tag{28}
+\operatorname{cn}(u+2iK')=\varepsilon\operatorname{cn}(u),\tag{28}
 $$
 
-defines a one-valued meromorphic function in $R_1: \vert x \vert \le K$. By the identity theorem for analytic functions, (7) _extends $\operatorname{cn}$ to a $4K,2iK'$-periodic meromorphic function with zeros at $u=(2m-1)K+2niK'$ and poles at $u=2mK+(2n-1)iK'$ for $m,n\in\mathbb Z$_.
+where $\varepsilon=\pm1$ is independent of $u$. Combine this with (7), we have
+
+$$
+\operatorname{cn}(u+2K+2iK')=-\varepsilon\operatorname{cn}(u).\tag{29}
+$$
+
+Plugging in $u=-K-iK'$, we see that $\varepsilon=-1$, so _$\operatorname{cn}$ is a $4K,2K+2iK'$-periodic meromorphic function with zeros at $u=(2m-1)K+2niK'$ and poles at $u=2mK+(2n-1)iK'$ for $m,n\in\mathbb Z$_.
+
+> By (7), we may also say that $\operatorname{cn}$ is $4K,4iK'$-periodic.
 
 Applying the chain rule, we note that
 
 $$
-\operatorname{dn}(u)={\mathrm d\phi\over\mathrm d\sin\phi}\cdot{\mathrm d\sin\phi\over\mathrm du}={1\over\operatorname{cn}(u)}\cdot{\mathrm d\operatorname{sn}(u)\over\mathrm du}\tag{29}
+\operatorname{dn}(u)={\mathrm d\phi\over\mathrm d\sin\phi}\cdot{\mathrm d\sin\phi\over\mathrm du}={1\over\operatorname{cn}(u)}\cdot{\mathrm d\operatorname{sn}(u)\over\mathrm du}\tag{30}
 $$
 
-Because both $\operatorname{sn}$ and $\operatorname{cn}$ are quasi $2K,2iK'$-periodic functions with the same periodicity factors, we conclude that (29) _defines $\operatorname{dn}$ as a $2K,2iK'$-periodic meromorphic function with zeros at $u=(2m-1)K+(2n-1)iK'$ and poles at $2mK+(2n-1)iK'$ for $m,n\in\mathbb Z$._
+Because both $\operatorname{sn}$ and $\operatorname{cn}$ are quasi $2K,4iK'$-periodic functions with the same periodicity factors, we conclude that (29) _defines $\operatorname{dn}$ as a $2K,4iK'$-periodic meromorphic function with zeros at $u=(2m-1)K+(2n-1)iK'$ and poles at $2mK+(2n-1)iK'$ for $m,n\in\mathbb Z$._ Moreover, we have $\operatorname{dn}(u+2iK')=-\operatorname{dn}(u)$.
 
 ## Summary
 
