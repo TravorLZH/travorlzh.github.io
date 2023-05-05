@@ -2,7 +2,13 @@
 layout: page
 ---
 <link rel="stylesheet" href="/assets/css/articleview.css"/>
-{{ content }}
+<link rel="stylesheet" href="/assets/css/tag.css"/>
+
+Tags:
+{% for tag in site.tags %}
+<a class="post-tag" href="/tags.html?tagName={{ tag[0] }}">{{ tag[0] }}({{ tag[1].size }})</a>
+{% endfor %}
+
 {%- if site.posts.size > 0 -%}
 {% for post in site.posts %}
     <div class="article">

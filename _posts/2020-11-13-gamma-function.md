@@ -1,7 +1,7 @@
 ---
 title: Factorial, Gamma Function, and More
 des: One of the most commonly used way to implement factorials for complex numbers
-tags: gamma-function beta-function
+tags: special-functions
 ---
 
 > This post is also available at [HFI Programming Club's blog](https://hfi.me/2020/11/gamma-function) and [Zhihu](https://zhuanlan.zhihu.com/p/310581970).

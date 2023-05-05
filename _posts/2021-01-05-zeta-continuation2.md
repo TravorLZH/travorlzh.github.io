@@ -1,7 +1,7 @@
 ---
 title:  "Alternative Approach to Redefine $\\zeta(s)$"
 des:    Functional equation but the hardcore approach 
-tags:   zeta-function complex-analysis
+tags:   special-functions complex-analysis
 ---
 
 ## An integral formula for the critical strip

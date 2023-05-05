@@ -1,6 +1,6 @@
 ---
 title:  Borel-Caratheodory Lemma and Its Application
-tags:   math complex-analysis
+tags:   complex-analysis
 des:    Tactical estimation of logarithmic derivatives
 ---
 

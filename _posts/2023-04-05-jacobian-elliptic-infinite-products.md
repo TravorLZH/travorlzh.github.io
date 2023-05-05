@@ -3,7 +3,7 @@ layout: post
 title:  "Infinite products for Jacobian elliptic functions"
 date:   2023-04-05
 des:    We deduce infinite product representations for Jacobian elliptic functions.
-tags:   complex-analysis elliptic-functions
+tags:   complex-analysis elliptic-functions special-functions
 ---
 
 In the [previous article](/2023/04/02/jacobian-elliptic-functions-intro.html), we have proven that the Jacobian elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, and $\operatorname{dn}$ defined from elliptic integrals satisfy the following properties in the complex plane:

@@ -6,7 +6,7 @@
 	margin: 10px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px gray;
-	transition: transform 0.3s, box-shadow 0.3s, background-color 1s;
+	transition: transform 0.2s, box-shadow 0.3s, background-color 0.4s;
 }
 
 .article:hover{
@@ -42,4 +42,8 @@
 	right: 10px;
 	bottom: 5px;
 	color: #AAAAAA;
+}
+
+.hidden {
+	display: none;
 }

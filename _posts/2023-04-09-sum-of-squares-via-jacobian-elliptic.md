@@ -3,7 +3,7 @@ layout: post
 title:  "Jacobian elliptic functions and sum of squares"
 date:   2023-04-09
 des:    We use Jacobian elliptic functions to study the representations of integers as sum of squares
-tags:   complex-analysis elliptic-functions number-theory
+tags:   complex-analysis elliptic-functions number-theory special-functions
 ---
 
 Let $r_s(n)$ be the number of ways to express $n$ as a sum of $s$ squares. We have obtained a formula for $r_2(n)$ in [a previous article](/2022/08/30/sum-of-two-squares.html) using [Gaussian integers](/2022/08/26/euclid-algorithm-and-unique-factorization-of-gaussian-integers.html). By developing the theory of quaternions, it is possible to obtain a formula for $r_4(n)$ as well, but this would involve a lot of abstract algebra.

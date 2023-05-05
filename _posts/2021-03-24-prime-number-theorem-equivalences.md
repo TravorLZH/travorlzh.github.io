@@ -1,7 +1,7 @@
 ---
 title:  The Prime Number Theorem and Its Equivalences
 des:    Demystifying the counting function $\pi(x)$
-tags:   math number-theory prime-number-theorem
+tags:   number-theory
 ---
 
 The study on the distribution of prime numbers had been on since Euclid, who proved that there are infinitely many primes. In the 19th century, Russian mathematician Chebyshev studied the distribution of prime numbers using these two functions

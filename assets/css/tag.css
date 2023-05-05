@@ -1,0 +1,22 @@
+/* Color taken from Math Stack Exchange */
+
+.post-tag {
+    display: inline-block;
+    color: #39739d;
+    background-color: #e1ecf4;
+    padding: 0.4em 0.5em;
+    margin: 0.2em;
+    font-size: small;
+    border-radius: 0.3em;
+}
+
+.post-tag:hover {
+    color: #2c5877;
+    background-color: #d0e3f1;
+    text-decoration: none;
+}
+
+.post-tag:active {
+    color: #254a63;
+    background-color: #c1d4e1;
+}

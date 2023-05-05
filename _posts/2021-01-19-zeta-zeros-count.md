@@ -1,7 +1,7 @@
 ---
 title:  Riemann-von Mangoldt formula for $\zeta(s)$
 des:    A powerful tool for us to study nontrivial zeros of $\zeta(s)$
-tags:   complex-analysis asymptotics
+tags:   special-functions complex-analysis asymptotics
 ---
 
 In 1859, famous mathematician Georg Friedrich Bernhard Riemann conjectured Riemann hypothesis that

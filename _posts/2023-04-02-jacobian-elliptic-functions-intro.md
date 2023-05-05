@@ -3,7 +3,7 @@ layout: post
 title:  "A modern introduction to Jacobian elliptic functions"
 date:   2023-04-02
 des:    We introduce the classical Jacobian elliptic functions from a modern perspective.
-tags:   complex-analysis elliptic-functions
+tags:   complex-analysis elliptic-functions special-functions special-functions
 ---
 
 The $\eta(\tau)$ mentioned in the [previous article](/2023/03/19/euler-pentagonal-and-dedekind-eta.html) arose in the theory of elliptic functions. In this article, we introduce elliptic functions following the path of [Carl Gustav Jacob Jacobi](https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi) using modern tools.

@@ -3,7 +3,7 @@ layout: post
 title:  "A Complete Investigation on Fourier Transform"
 date:   2020-12-23
 des:    A comprehensive derivation of different forms of Fourier transform
-tags: fourier-transform number-theory physics
+tags:   special-functions number-theory complex-analysis
 ---
 
 > This post is also available at [HFI Programming Club's blog](https://hfi.me/2020/12/fourier-transform/).

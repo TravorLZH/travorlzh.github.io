@@ -3,7 +3,7 @@ layout: post
 title:  "Introduction to Weierstrass elliptic functions"
 date:   2023-04-09
 des:    We develop Weierstrass's theory of elliptic functions
-tags:   complex-analysis elliptic-functions
+tags:   complex-analysis elliptic-functions special-functions
 ---
 
 Let $P$ denote a fundamental parallelogram of some elliptic function $f$. Then it follows from the double periodicity that
