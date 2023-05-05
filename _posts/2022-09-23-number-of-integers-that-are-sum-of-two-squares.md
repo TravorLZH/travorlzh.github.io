@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Number of integers that are sum of two squares"
+title:  "Number of integers that are a sum of two squares"
 date:   2022-09-23
 des:    We investigate a question parallel to Gauss circle problem
 tags:   number-theory complex-analysis

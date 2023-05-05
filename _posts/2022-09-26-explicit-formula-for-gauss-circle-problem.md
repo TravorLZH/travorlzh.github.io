@@ -39,7 +39,7 @@ $$
 S_m(x)={\pi x\over\Gamma(m)}+\underbrace{ {1\over2\pi i}\int_{-a-i\infty}^{-a+i\infty}x^sF(s){\Gamma(s)\over\Gamma(s+m)}\mathrm ds}_{E(x)}.\tag5
 $$
 
-From (5), it is evident that the series of Bessel functions will emerge from the evaluation of $E(x)$. This series is obtained by expanding $F(1-s)$ into Dirichlet series, and the ratio $h(s)=F(s)/F(1-s)$ can be expressed in terms of Gamma and trigonometric functions.
+From (5), it is evident that the series of Bessel functions will emerge from the evaluation of $E(x)$. This series is obtained by expanding $F(1-s)$ into a Dirichlet series, and the ratio $h(s)=F(s)/F(1-s)$ can be expressed in terms of Gamma and trigonometric functions.
 
 ## Functional equation for $F(s)$
 
@@ -62,7 +62,7 @@ h(s)
 \end{aligned}
 $$
 
-Obivously, $h(s)=f(s)g(s)$, so we see that
+Obviously, $h(s)=f(s)g(s)$, so we see that
 
 $$
 h(s)={\pi^{2s}\over\Gamma^2(s)\sin(\pi s)}.\tag6
