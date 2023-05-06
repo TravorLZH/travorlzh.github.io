@@ -1,6 +1,6 @@
 /* Color taken from Math Stack Exchange */
 
-.post-tag .post-tag:visited {
+.post-tag, .post-tag:visited {
     display: inline-block;
     color: #39739d;
     background-color: #e1ecf4;
