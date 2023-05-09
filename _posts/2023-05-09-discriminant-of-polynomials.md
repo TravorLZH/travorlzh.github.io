@@ -26,7 +26,7 @@ $$
 
 By the fundamental theorem of algebra, we know that the roots of $f$ are completely determined by its coefficients, so we naturally conjecture the following:
 
-**Proposition 1:** _For a monic polynomial $f(x)$ of degree $n$, let $a_k$ denote the coefficients of $x^k$ for $0\le k<n$. Then its discriminant $D$ a polynomial in $a_0,a_1,a_2,\dots,a_{n-1}$._
+**Proposition 1:** *For a monic polynomial $f(x)$ of degree $n$, let $a_k$ denote the coefficients of $x^k$ for $0\le k<n$. Then its discriminant $D$ a polynomial in $a_0,a_1,a_2,\dots,a_{n-1}$.*
 
 > Although defining $D$ as the absolute value of $V$ also works, but this would destroys its beautiful algebraic structure.
 > 
