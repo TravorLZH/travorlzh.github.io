@@ -1,0 +1,18 @@
+/* This is to deal with long KaTeX equations.
+ * See also https://github.com/KaTeX/KaTeX/issues/1983#issuecomment-1314762849
+ */
+
+.katex-display {
+    overflow: auto hidden;
+}
+
+.katex-display > .katex > .katex-html > .tag {
+    position: absolute;
+    right: 1rem;
+}
+ 
+/* Only use this when the equations are overflowed */
+.tag-overflowed {
+    position: relative !important;
+    right: -5rem !important;
+}
