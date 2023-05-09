@@ -314,6 +314,12 @@ $$
 \vartheta_2^2\vartheta_1^2(z)+\vartheta_4^2\vartheta_3^2(z)=\vartheta_3^2\vartheta_4^2(z).\tag{39}
 $$
 
+Using the fact that $\operatorname{sn}(u)\sim u$ as $u\to0$, we see that (24) produces a formula connecting theta functions at $z=0$:
+
+$$
+\vartheta_1':=\left.{\partial\vartheta_1\over\partial z}\right|_{z=0}=\vartheta_2\vartheta_3\vartheta_4.\tag{40}
+$$
+
 > These formulas are to be found in the [§22.2 of Digital Library of Mathematical Functions](https://dlmf.nist.gov/22.2).
 
 ## Physical significance of theta functions
@@ -321,7 +327,7 @@ $$
 Writing $\vartheta_3(z \vert\tau)$'s series in explicit form, we have
 
 $$
-\vartheta_3(z \vert\tau)=\sum_{m\in\mathbb Z}e^{i\pi\tau(2m)^2/4+2miz}.\tag{40}
+\vartheta_3(z \vert\tau)=\sum_{m\in\mathbb Z}e^{i\pi\tau(2m)^2/4+2miz}.\tag{41}
 $$
 
 Differentiating with respect to $z$ twice gives
@@ -330,20 +336,20 @@ $$
 \begin{aligned}
 {\partial^2\over\partial^2z}\vartheta_3(z \vert\tau)
 &=-\sum_{m\in\mathbb Z}(2m)^2e^{i\pi(2m)^2/4+2miz} \\
-&={4i\over\pi}{\partial\over\partial\tau}\vartheta_3(z \vert\tau).\tag{41}
+&={4i\over\pi}{\partial\over\partial\tau}\vartheta_3(z \vert\tau).\tag{42}
 \end{aligned}
 $$
 
 This indicates that _$\vartheta_3(z \vert\tau)$ is a special solution_ to
 
 $$
-{\pi i\over4}{\partial^2y\over\partial z^2}+{\partial y\over\partial\tau}=0.\tag{42}
+{\pi i\over4}{\partial^2y\over\partial z^2}+{\partial y\over\partial\tau}=0.\tag{43}
 $$
 
-It can be verified that the other three theta functions are also solutions to (42). Under the substitution $\tau=it$, the partial differential equation (42) becomes
+It can be verified that the other three theta functions are also solutions to (43). Under the substitution $\tau=it$, the partial differential equation (43) becomes
 
 $$
-{\partial y\over\partial t}=\frac\pi4{\partial^2y\over\partial z^2},\tag{43}
+{\partial y\over\partial t}=\frac\pi4{\partial^2y\over\partial z^2},\tag{44}
 $$
 
 which is in fact a **heat equation**. This is why there are texts that introduce theta functions as solutions to the heat equation. We also see that the whole theory, which originated from physics, eventually returned to physics in a surprising way!
