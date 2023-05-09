@@ -12,8 +12,8 @@ Tags:
 {%- if site.posts.size > 0 -%}
 {% for post in site.posts %}
     <div class="article">
-    <h1>{{ post.title }}</h1>
-    <p>{{post.des}}</p>
+    <h1>{{ post.title | escape }}</h1>
+    <p>{{ post.des | escape }}</p>
     <span id="date">{{ post.date | date_to_string }}</span>
     <a href="{{ post.url }}">Link</a>
     </div>
