@@ -67,7 +67,7 @@ $$
 
 We conclude that $\det A$ is a homogenous polynomial of degree $n(n-1)/2$.
 
-In addition, because there are exactly $n(n-1)/2$ ways to choose 2 distinct items from $n$ objects, $V$ is a homogenous polynomial of degree $n(n-1)/2$ as well. Consequently, $\det A$ is a constant multiple of $V$. By [Leibniz formula for determinants](https://en.wikipedia.org/wiki/Leibniz_formula_for_determinants), that the term
+In addition, because there are exactly $n(n-1)/2$ ways to choose 2 distinct items from $n$ objects, $V$ is a homogenous polynomial of degree $n(n-1)/2$ as well. Consequently, $\det A$ is a constant multiple of $V$. By [Leibniz's formula for determinants](https://en.wikipedia.org/wiki/Leibniz_formula_for_determinants), the term
 
 $$
 x_2^1x_3^2x_4^3x_5^4\cdots x_{n-1}^{n-2}x_n^{n-1}\tag6
@@ -302,7 +302,7 @@ $$
 D={1\over16}(g_2^3-27g_3^2).
 $$
 
-To work with a simpler expression, we **elliptic discriminant** define
+To work with a simpler expression, we define the **elliptic discriminant** by
 
 $$
 \Delta:=16D=g_2^3-27g_3^2.\tag{28}
