@@ -33,7 +33,7 @@
             throwOnError : false
           });
       });
-      $(window).resize(function(){
+      $(window).on("load resize",function(){
         $(".katex-display").each(function(i,elem){
           var ts=$(elem).find(".tag");
           if(ts.length==0)
