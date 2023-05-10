@@ -40,7 +40,13 @@
             return;
           // It is expected each equation has at most one tag
           var t=ts[0];
-          if(elem.scrollWidth+t.scrollWidth>elem.clientWidth){
+          // Check if the equations are overlapping with the tag
+          var right=0;
+          $(elem).find(".base").each(function(i,eqn){
+            var r=eqn.getBoundingClientRect().right;
+            right=right<r ? r : right;
+          })
+          if(right>t.getBoundingClientRect().left){
             t.classList.add("tag-overflowed");
           }else{
             t.classList.remove("tag-overflowed");
