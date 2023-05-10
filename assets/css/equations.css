@@ -7,12 +7,12 @@
 }
 
 .katex-display > .katex > .katex-html > .tag {
+    display: inline-block;
     position: absolute;
-    right: 1rem;
+    padding-left: 0.5rem;
 }
  
 /* Only use this when the equations are overflowed */
 .tag-overflowed {
     position: relative !important;
-    right: -5rem !important;
 }

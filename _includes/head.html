@@ -36,19 +36,13 @@
       $(window).on("load resize",function(){
         $(".katex-display").each(function(i,elem){
           var ts=$(elem).find(".tag");
-          if(ts.length==0)
+          var eqns=$(elem).find(".base");
+          if(ts.length*eqns.length==0)
             return;
-          // It is expected each equation has at most one tag
           var t=ts[0];
-          // Check if the equations are overlapping with the tag
-          var right=0;
-          $(elem).find(".base").each(function(i,eqn){
-            var r=eqn.getBoundingClientRect().right;
-            right=right<r ? r : right;
-          })
-          if(right>t.getBoundingClientRect().left){
+          if(eqns[eqns.length-1].getBoundingClientRect().right>t.getBoundingClientRect().left){
             t.classList.add("tag-overflowed");
-          }else{
+          }else if(eqns[0].getBoundingClientRect().left-elem.getBoundingClientRect().left>=t.offsetWidth/2){
             t.classList.remove("tag-overflowed");
           }
         });
