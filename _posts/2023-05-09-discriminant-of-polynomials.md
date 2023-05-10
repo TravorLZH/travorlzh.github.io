@@ -59,7 +59,7 @@ x_1^{n-1} & x_2^{n-1} & x_3^{n-1} & \dots & x_n^{n-1}
 \end{pmatrix}.\tag4
 $$
 
-By the properties of determinants, we see that $\det A=0$ whenever there exists $1\le i<j\le n$ such that $x_i=x_j$. As a consequence, $\det A$ must be divisible by $V$. Because multiplying each of $x_1,x_2,\dots,x_n$ by $\lambda\ne0$ causes $\det A$ to be multiplied by
+By the properties of determinants, $\det A=0$ whenever there exists $1\le i<j\le n$ such that $x_i=x_j$. As a consequence, $\det A$ must be divisible by $V$. Because multiplying each of $x_1,x_2,\dots,x_n$ by $\lambda\ne0$ causes $\det A$ to be multiplied by
 
 $$
 \lambda^{1+2+3+\dots+(n-2)+(n-1)}=\lambda^{n(n-1)/2}.\tag5
@@ -67,7 +67,7 @@ $$
 
 We conclude that $\det A$ is a homogenous polynomial of degree $n(n-1)/2$.
 
-In addition, because there are exactly $n(n-1)/2$ ways to choose 2 distinct items from $n$ objects, we see that $V$ is a homogenous polynomial of degree $n(n-1)/2$ as well. Consequently, we deduce that $\det A$ is a constant multiple of $V$. By [Leibniz formula for determinants](https://en.wikipedia.org/wiki/Leibniz_formula_for_determinants), we see that the term
+In addition, because there are exactly $n(n-1)/2$ ways to choose 2 distinct items from $n$ objects, $V$ is a homogenous polynomial of degree $n(n-1)/2$ as well. Consequently, $\det A$ is a constant multiple of $V$. By [Leibniz formula for determinants](https://en.wikipedia.org/wiki/Leibniz_formula_for_determinants), that the term
 
 $$
 x_2^1x_3^2x_4^3x_5^4\cdots x_{n-1}^{n-2}x_n^{n-1}\tag6
@@ -86,7 +86,7 @@ By the multiplicative property of determinants, we find that $D$ can be written 
 $$
 \begin{aligned}
 D
-&=\det(A)^2=\det(A)\det(A^\top)=\det(AA\top ) \\
+&=\det(A)^2=\det(A)\det(A^\top)=\det(AA^\top ) \\
 &=\begin{vmatrix}
 n & p_1 & p_2 & \dots & p_{n-1} \\
 p_1 & p_2 & p_3 & \dots & p_n \\
@@ -139,7 +139,7 @@ $$
 \end{aligned}\tag{13}
 $$
 
-By differentiating the power series in (12) directly, we see that (13) implies
+Differentiating the power series in (12) directly, so (13) implies
 
 $$
 F'(z)=\sum_{k\ge1}k\sigma_kz^{k-1}=F(z)\sum_{m\ge1}(-1)^{m-1}p_mz^{m-1}.\tag{14}
@@ -169,11 +169,11 @@ $$
 [G(z)]^s=\sum_{m\ge1}z^m\color{green}{\sum_{\substack{k_1,k_2,\dots,k_s\ge1\\k_1+k_2+\dots+k_s=m}}}\color{blue}{\prod_{1\le i\le s}\sigma_{k_i}}.\tag{17}
 $$
 
-We see that the blue product is unchanged when the values of $k_1,k_2,\dots,k_s$ are permuted. Therefore, we can modify the green summation so that the like terms in (17) are combined.
+As the blue product is unchanged when the values of $k_1,k_2,\dots,k_s$ are permuted, we can modify the green summation so that the like terms in (17) are combined.
 
 ### Decompositions and partitions
 
-A tuple $\boldsymbol k=(k_1,k_2,\dots,k_s)$ included in the green summation of (18) is called an $s$-decomposition of $m$. For each $s$-decomposition of $m$, we define $\boldsymbol r=(r_1,r_2,\dots,r_m)$ by letting $r_j$ denote the number of repetition of $1\le j\le m$ in the decomposition tuple, so we have
+A tuple $\boldsymbol k=(k_1,k_2,\dots,k_s)$ included in the green summation of (18) is called an $s$-decomposition of $m$. For each $s$-decomposition of $m$, we define $\boldsymbol r=(r_1,r_2,\dots,r_m)$ by letting $r_j$ denote the number of repetition of $1\le j\le m$ in the decomposition tuple, so
 
 $$
 \begin{cases}
@@ -186,13 +186,13 @@ We call $\boldsymbol r$ an $s$-partition of $m$ when $r_1,r_2,\dots,r_m\ge0$ and
 
 For two $s$-decomposition tuples $\boldsymbol k,\boldsymbol k'$, we write $\boldsymbol k\sim\boldsymbol k'$ of $m$ when they are associated with the same $s$-partition of $m$. The relation $\sim$ is easily verified to be reflexive, symmetric, and transitive, thus being an equivalence relation defined on $B$, all $s$-decomposition of $m$.
 
-Let $B_{\boldsymbol r}$ denote the sets of $s$-decomposition of $m$ that are associated with the partition $\boldsymbol r$. Then by the properties of the equivalence relation $\sim$, we see that $B$ is a disjoint union of $B_{\boldsymbol r}$. Moreover, $B_{\boldsymbol r}$ and $B_{\boldsymbol r'}$ are equal to each other iff $\boldsymbol r=\boldsymbol r'$, and the number of $s$-decompositions in each $B_{\boldsymbol r}$ is given by
+Let $B_{\boldsymbol r}$ denote the sets of $s$-decomposition of $m$ that are associated with the partition $\boldsymbol r$. Then by the properties of the equivalence relation $\sim$, $B$ is a disjoint union of $B_{\boldsymbol r}$. Moreover, $B_{\boldsymbol r}$ and $B_{\boldsymbol r'}$ are equal to each other iff $\boldsymbol r=\boldsymbol r'$, and the number of $s$-decompositions in each $B_{\boldsymbol r}$ is given by
 
 $$
 {s!\over r_1!r_2!r_3!\cdots r_m!},
 $$
 
-so we see that (17) is transformed into
+so (17) is transformed into
 
 $$
 [G(z)]^s=\sum_{m\ge1}z^m\sum_{\substack{r_1,r_2,\dots,r_m\ge0\\r_1+2r_2+\dots+mr_m=m\\r_1+r_2+\dots+r_m=s}}{s!\over r_1!r_2!\cdots r_m!}\prod_{1\le j\le m}\sigma_j^{r_j}.\tag{19}
@@ -269,7 +269,7 @@ $$
 \sigma_1=0,\quad\sigma_2=A,\quad\sigma_3=-B.
 $$
 
-Combining this with the fact that $p_1=\sigma_1$ and $\sigma_4=0$, we see that (21), (22), and (23) are transformed into
+Combined with the fact that $p_1=\sigma_1$ and $\sigma_4=0$, (21), (22), and (23) are transformed into
 
 $$
 p_2=-2A,\quad p_3=-3B,\quad p_4=-2A^2.\tag{25}
@@ -308,7 +308,7 @@ $$
 \Delta:=16D=g_2^3-27g_3^2.\tag{28}
 $$
 
-In standard notations, the roots of the right-hand side of (27) are given by $e_1$, $e_2$, and $e_3$, so we see that
+In standard notations, the roots of the right-hand side of (27) are given by $e_1$, $e_2$, and $e_3$, so we have
 
 $$
 \Delta=16(e_1-e_2)^2(e_1-e_3)^2(e_2-e_3)^2.\tag{29}
@@ -340,19 +340,19 @@ $$
 \vartheta_2(0 \vert \tau)\vartheta_3(0 \vert \tau)\vartheta_4(0 \vert \tau)=\vartheta_1'(0 \vert \tau)=2q^{1/4}\prod_{n\ge1}(1-q^{2n})^3,
 $$
 
-so we see that (30) becomes an infinite product:
+so (30) becomes an infinite product:
 
 $$
 \left(\omega_1\over\pi\right)^{12}\Delta=q^2\prod_{n\ge1}(1-q^{2n})^{24}=e^{2\pi i\tau}\prod_{n\ge1}(1-e^{2\pi i\tau})^{24}.\tag{31}
 $$
 
-Therefore, we see that the numbers $e_1,e_2,e_3$ are always distinct when $0<\Im(\tau)<+\infty$.
+Therefore, the numbers $e_1,e_2,e_3$ are always distinct when $0<\Im(\tau)<+\infty$.
 
 ## Conclusion
 
-In this article, we began our investigation by proving Proposition 1. In particular, we prove it by introducing two methods to obtain expressions of power-sum polynomials $p_k$ in terms of elementary symmetric polynomials $e_k$.
+In this article, we began our investigation by proving Proposition 1. In particular, we prove it by introducing two methods to deduce expressions of power-sum polynomials $p_k$ in terms of elementary symmetric polynomials $e_k$.
 
-After proving Proposition 1, we compute $p_2$, $p_3$, and $p_4$, which allows us to obtain an explicit expression for the cubic discriminant in terms of coefficients. This, combined with our investigation of Weierstrass elliptic functions and Jacobian theta functions, allows us to introduce the elliptic discriminant $\Delta$ and obtain its product representation.
+After proving Proposition 1, we compute $p_2$, $p_3$, and $p_4$, which provide an explicit expression for the cubic discriminant in terms of coefficients. This, combined with our investigation of Weierstrass elliptic functions and Jacobian theta functions, allows us to introduce the elliptic discriminant $\Delta$ and obtain its product representation.
 
 [wp]: /2023/04/09/weierstrass-elliptic-intro.html
 [th]: /2023/04/07/jacobian-theta-functions-foundation.html
