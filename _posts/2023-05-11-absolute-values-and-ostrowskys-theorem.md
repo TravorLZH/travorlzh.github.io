@@ -2,7 +2,7 @@
 layout: post
 title:  "Absolute values and Ostrowski's theorem"
 date:   2023-05-11
-des:    We prove a classification theorem of absolute values on $\mathbb Q$ due to Ostrowski
+des:    We investigate all possible versions of absolute values over $\mathbb Q$.
 tags:   algebra p-adic
 ---
 
