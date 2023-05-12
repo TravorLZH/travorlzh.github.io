@@ -56,7 +56,7 @@ $$
 $$
 
 $$
-\operatorname{dn}\left(\frac K2\right)=\sqrt{k'}\prod_{n\ge1}{1+q^{4n-2}\over1+q^{2n-1}}=\sqrt{k'}.\tag6
+\operatorname{dn}\left(\frac K2\right)=\sqrt{k'}\prod_{n\ge1}{1+q^{4n-2}\over1+q^{4n-2}}=\sqrt{k'}.\tag6
 $$
 
 This allows us to transform (3) into
