@@ -212,7 +212,7 @@ $$
 Combining this with the right-hand side of (16), we see that $p_k$ can be directly expressed by $\sigma_k$ via
 
 $$
-p_m=(-1)^mm\sum_{\substack{r_1,r_2,\dots,r_m\ge0\\r_1+2r_2+3r_3+\dots+mr_m}}{(r_1+r_2+\dots+r_m)!\over r_1!r_2!\cdots r_m!}\prod_{1\le j\le m}(-\sigma_j)^{r_j}.\tag{20}
+p_m=(-1)^mm\sum_{\substack{r_1,r_2,\dots,r_m\ge0\\r_1+2r_2+\dots+mr_m=m}}{(r_1+r_2+\dots+r_m)!\over r_1!r_2!\cdots r_m!}\prod_{1\le j\le m}(-\sigma_j)^{r_j}.\tag{20}
 $$
 
 Consequently, (20) proves Proposition 1 directly.
