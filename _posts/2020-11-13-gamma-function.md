@@ -22,7 +22,7 @@ $$
 \int_0^\infty e^{-\lambda t}\mathrm dt=\frac1\lambda
 $$
 
-Differentiation with respect to $s$ on both side for $n-1$ times gives
+Differentiation with respect to $\lambda$ on both side for $n-1$ times gives
 
 $$
 \int_0^\infty t^{n-1}e^{-\lambda t}\mathrm dt={(n-1)!\over\lambda^n}
