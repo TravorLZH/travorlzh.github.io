@@ -42,7 +42,7 @@ This is going to be the starting point of our investigation into $r_2(n)$ and $r
 Differentiating (2) with respect to $u$ on both sides, we have
 
 $$
-{2K\over\pi}{\operatorname{cn}(u)\operatorname{dn}(u)\over\operatorname{sn}(u)}=-\cot x-4\sum_{m\ge1}{q^m\sin(2mx)\over1+q^m}.\tag3
+{2K\over\pi}{\operatorname{cn}(u)\operatorname{dn}(u)\over\operatorname{sn}(u)}=\cot x-4\sum_{m\ge1}{q^m\sin(2mx)\over1+q^m}.\tag3
 $$
 
 Using the [infinite product formulas](/2023/04/05/jacobian-elliptic-infinite-products.html) we obtained for Jacobian elliptic functions, we see that plugging in $u=K/2$ gives us
