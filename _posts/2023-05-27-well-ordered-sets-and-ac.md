@@ -74,7 +74,7 @@ In addition, we say $R$ is a total order iff we can compare any two elements of 
 
 Finally, we say $(A,R)$ is well ordered when every nonempty subset of $A$ contains a minimal element:
 
-- Well order: $\forall S\subset A\space S\ne\empty\Rightarrow(\exists x\in S\space\forall y\in S\space y\ge x).$
+- Well order: $\forall S\subset A\space S\ne\empty\Rightarrow(\exists x\in S\space\forall y\in S\space y=x\vee xRy).$
 
 It is clear from (4) that $(\omega,<)$ is a well-ordered set, where $<$ is the ordinary comparison symbol for real numbers. Additionally, the transitivity of $\subset$ indicates that every subset of a well-ordered set is also well-ordered.
 
