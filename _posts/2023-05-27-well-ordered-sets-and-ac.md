@@ -130,7 +130,7 @@ $$
 S=\{y\in A:f(y)\ne y\}.
 $$
 
-If $S$ is nonempty, choose $z=\min S$. If $f(z)<z$, then $f(f(z))<f(z)$, so $f(z)\in S$, which suggests $z>\min S$, a contradiction. If $f(z)>z$, then $z<x$, so there is a unique $z'$ such that $z=f(z')$. Thus, we have $z'<z$ and $f(z')>z'$, which also suggests $z>\min S$. Therefore, $S$ must be empty and $f(y)=y$ for all $y\in A$. In particular, $f(x)=x$, which contradicts the fact that $f$ is an isomorphism from $A$ to $A_{<x}$.
+If $S$ is nonempty, choose $z=\min S$. If $f(z)<z$, then $f(f(z))<f(z)$, so $f(z)\in S$, which suggests $z>\min S$, a contradiction. If $f(z)>z$, then $z<x$, so there is a unique $z'$ such that $z=f(z')$. Thus, we have $z'<z$ and $f(z')>z'$, which also suggests $z>\min S$. Therefore, $S$ must be empty and $f(y)=y$ for all $y\in A$. In particular, $f(x)=x$, which contradicts the fact that $f$ is an isomorphism from $A$ to $A_x$.
 
 ### Trichotomy
 
