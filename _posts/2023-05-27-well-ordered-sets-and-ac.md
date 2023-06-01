@@ -145,7 +145,7 @@ and we stop the recursion when at least one of the following happens:
 1. $B\setminus\lbrace f(y):y<_Ax\rbrace=\empty$.
 2. $f(x)$ is defined for all $x\in A$.
 
-Intuitively, when both events occur simultaneously, $f$ is an order isomorphism from $A$ to $B$. When only the first event happens, $f$ is an order isomorphism from $A$ onto some initial segment of $B$, and when only the second event happens, $f$ is an order isomorphism from some initial segment of $A$ onto $B$. This allows us to reasonably formulate the trichotomy law for well-ordered sets:
+Intuitively, when both events occur simultaneously, $f$ is an order isomorphism from $A$ to $B$. When only the first event happens, $f$ is an order isomorphism from some initial segment of $A$ onto $B$, and when only the second event happens, $f$ is an order isomorphism from $A$ onto some initial segment of $B$. This allows us to reasonably formulate the trichotomy law for well-ordered sets:
 
 **Theorem 1:** *For well-ordered sets $(A,<_A)$ and $(A,<_B)$, exactly one of the following happens:*
 
