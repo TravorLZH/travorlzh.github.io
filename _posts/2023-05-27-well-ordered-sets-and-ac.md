@@ -271,7 +271,7 @@ By applying successor operations repetitively, we obtain all the natural numbers
 
 When $C$ is a set of ordinals, the arguments in proving Lemma 4 indicates that $\min C=\cap C$[^cap]. This naturally lets us consider the properties of $D=\cup C$.
 
-Let $\alpha\in D$ and $\beta\in\alpha$ be arbitrary. Then it follows from the definition that $\exists\gamma\in C\space\alpha\in\gamma$, so the transitivity of $\in$ in ordinals implies that $\beta\in\gamma$, so $\beta\in C$. Therefore, $\alpha\in D\Rightarrow\alpha\subset D$. This, combined with Lemma 4, indicates that $D$ is itself an ordinal that serves as an upper bound for $C$. In addition, because $\forall\alpha<D\space\exists\beta\in C\space\alpha<\beta$, we conclude that $D$ is also the least upper bound, so $\sup C=\cup C$.
+Let $\alpha\in D$ and $\beta\in\alpha$ be arbitrary. Then it follows from the definition that $\exists\gamma\in C\space\alpha\in\gamma$, so the transitivity of $\in$ in ordinals implies that $\beta\in\gamma$, so $\beta\in D$. Therefore, $\alpha\in D\Rightarrow\alpha\subset D$. This, combined with Lemma 4, indicates that $D$ is itself an ordinal that serves as an upper bound for $C$. In addition, because $\forall\alpha<D\space\exists\beta\in C\space\alpha<\beta$, we conclude that $D$ is also the least upper bound, so $\sup C=\cup C$.
 
 For an ordinal $\alpha$, it is clear that $\sup\alpha\le\alpha$. In particular, we say $\alpha$ is a **limit ordinal** iff $\sup\alpha=\alpha$. Because $\beta\in S(\alpha)\iff\beta\le\alpha$, we deduce that $\sup S(\alpha)=\alpha$, so a successor ordinal cannot be a limit ordinal.
 
@@ -279,7 +279,7 @@ On the other hand, when $\beta=\sup\alpha<\alpha$, we have $\alpha\ge S(\beta)$.
 
 **Lemma 5:** *For any ordinal $\alpha$, $\sup\alpha<\alpha$ iff $\alpha$ is the successor of $\sup\alpha$.*
 
-It should be noted that $0=\empty$ is also a limit ordinal.
+> It should be noted that $0=\empty$ is also a limit ordinal.
 
 ### Classes and class mapping
 
@@ -344,16 +344,16 @@ for some $G:V\to V$. Using this compact notation, we state the principle of **tr
 **Theorem 6:** *For each class mapping $G:V\to V$, there is exactly one function $F:ON\to V$ such that*
 
 $$
-\forall\alpha\space F(\alpha)=G(F\vert_\alpha)=G(F\vert_{\lbrace\beta:\beta<\alpha\rbrace}).
+\forall\alpha\space F(\alpha)=G(F\vert_\alpha)=G(F\vert_{\lbrace\beta:\beta<\alpha\rbrace}).\tag{11}
 $$
 
-_Proof._ The trick is to approximate $F$ by some function defined on some ordinal $\delta>\alpha$. For each ordinal $\delta$, a function $f_\delta:ON\to V$ is said to be an approximant for $F$ iff
+_Proof._ The trick is to approximate $F$ by some function defined on some ordinal $\delta>\alpha$. For each ordinal $\delta$, a function $f_\delta:\delta\to V$ is said to be an approximant for $F$ iff
 
 $$
-\forall\alpha\in\delta\space f_\delta(\alpha)=G(f_\delta\vert_\alpha).\tag{11}
+\forall\alpha\in\delta\space f_\delta(\alpha)=G(f_\delta\vert_\alpha).
 $$
 
-For two approximants $f_{\delta_1}$ and $f_{\delta_2}$ such that $\delta_1\le\delta_2$. It follows from transfinite induction that the two functions agree whenever $\alpha\in\delta_1$. Therefore, it remains to establish the existence of approximants for all $\delta$.
+For two approximants $f_{\delta_1}$ and $g_{\delta_2}$ such that $\delta_1\le\delta_2$. It follows from transfinite induction that $f_{\delta_1}(\alpha)=g_{\delta_2}(\alpha)$ whenever $\alpha\in\delta_1$. This also there could be at most one approximant for each $\delta$, so it remains to establish the existence of such approximants.
 
 Suppose approximants $f_{\delta'}$ exists for all $\delta'<\delta$. Then let
 
@@ -406,10 +406,10 @@ $$
 which indicates that $A$ is well-ordered by
 
 $$
-\forall x,y\in A\space x<y\iff F^{-1}(x)\in F^{-1}(y).
+R=\lbrace(x,y)\in A\times A: F^{-1}(x)\in F^{-1}(y)\rbrace
 $$
 
-The introduction of the axiom of choice is essential to the well-ordering theorem as the former is also implied by the latter. Assuming the truth of the well-ordering theorem, let $A=\cup\mathscr F$ and choose $R\subset A\times A$ such that $(A,R)$ well-ordered, so $\min(x)$ will be a valid choice function as every $x\in\mathscr F$ is a nonempty subset of $A$.
+The introduction of the axiom of choice is essential to the well-ordering theorem as the former is also implied by the latter. Assuming the truth of the well-ordering theorem, let $A=\cup\mathscr F$ and choose $R\subset A\times A$ such that $(A,R)$ well-ordered, so $\min(X)$ will be a valid choice function as every $X\in\mathscr F$ is a nonempty subset of $A$.
 
 Because the axiom of choice is one of the most controversial concepts in mathematics, mathematicians often emphasize whether they work with the axiom of choice or not. The Zermelo-Fraenkel axioms for set theory that does not include choice is abbreviated as ZF, and the set theory that includes ZF axioms and choice is known as the ZFC set theory. What we have proven in this section is that the axiom of choice is equivalent to the well-ordering theorem under ZF.
 
