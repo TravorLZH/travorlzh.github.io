@@ -21,7 +21,7 @@ $$
 which is known as the principle of **weak induction**. In occasions such as proving every integer $>1$ is a product of primes, weak induction is not sufficient, so we replace the second step with $P(0)\wedge P(1)\wedge\dots\wedge P(k)\Rightarrow P(k+1)$ instead of $P(k)\Rightarrow P(k+1)$:
 
 $$
-[P(0)\wedge[\forall x\in\omega\setminus\lbrace1\rbrace\space\forall y\in\omega\space(y<x\Rightarrow P(y))\Rightarrow P(x)]]\Rightarrow\forall x\in\omega\space P(x).\tag2
+[P(0)\wedge[\forall x\in\omega\setminus\lbrace0\rbrace\space\forall y\in\omega\space(y<x\Rightarrow P(y))\Rightarrow P(x)]]\Rightarrow\forall x\in\omega\space P(x).\tag2
 $$
 
 We do not have to consider the base case $P(0)$ separately during the proof. Using propositional calculus, we obtain
