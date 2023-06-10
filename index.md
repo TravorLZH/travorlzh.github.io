@@ -10,6 +10,8 @@ My [research interest](/research/) lies in multiplicative number theory and siev
 
 ## Talks
 
+Axiom of Choice: Equivalents, Consequences, and Independence (with Yi Liu, Daya Singh, and Tairan Wang) ([Slides](files/ac-slides.pdf))
+
 [Ellipses, Pendulum, and Double Periodicity (10 Mar 2023)](https://www.youtube.com/watch?v=gtAM2S-vND4) ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf))
 
 [Bounded gaps between primes (28 Oct 2022)](https://www.youtube.com/watch?v=W5cDx4IEhS4) ([Slides](https://ucl-ug-col.github.io/past/slides/28oct22.pdf))
