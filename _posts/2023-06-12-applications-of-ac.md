@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Applications of the axiom of choice"
-date:   2023-05-27
+date:   2023-06-12
 des:    We discuss several important applications of the axiom of choice in analysis and algebra.
 tags:   algebra set-theory
 ---
