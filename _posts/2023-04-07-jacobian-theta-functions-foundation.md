@@ -18,7 +18,7 @@ k=4q^{1/2}\prod_{n\ge1}\left(1+q^{2n}\over1+q^{2n-1}\right)^4\tag2
 $$
 
 $$
-k'=\prod_{n\ge1}\left(1-q^{2n-1}\over1+q^{2n-1}\right)^2.\tag3
+k'=\prod_{n\ge1}\left(1-q^{2n-1}\over1+q^{2n-1}\right)^4.\tag3
 $$
 
 

@@ -150,7 +150,7 @@ $$
 Since $\operatorname{dn}(K)=\sqrt{1-k^2}=k'$, plugging $x=\pi/2$ into (15) gives
 
 $$
-k'=C^2=\prod_{n\ge1}\left(1-q^{2n-1}\over1+q^{2n-1}\right)^2.\tag{17}
+k'=C^2=\prod_{n\ge1}\left(1-q^{2n-1}\over1+q^{2n-1}\right)^4.\tag{17}
 $$
 
 Combining this with (12) and (16), we obtain
