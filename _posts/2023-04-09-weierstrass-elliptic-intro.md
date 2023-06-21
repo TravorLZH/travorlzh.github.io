@@ -226,7 +226,7 @@ Because we know that quantities related to Jacobian elliptic functions are expre
 From [this article][theta], we know that
 
 $$
-K=\frac\pi2\vartheta_3^2,\quad k={\vartheta_2^3\over\vartheta_3^2},\quad k'={\vartheta_4^2\over\vartheta_3^2},
+K=\frac\pi2\vartheta_3^2,\quad k={\vartheta_2^2\over\vartheta_3^2},\quad k'={\vartheta_4^2\over\vartheta_3^2},
 $$
 
 so (20) (21), and (22) become
