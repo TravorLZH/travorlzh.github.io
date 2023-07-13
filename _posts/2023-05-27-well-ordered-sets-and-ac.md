@@ -112,7 +112,7 @@ $$
 S=\lbrace x\in A:f(x)\ne g(x)\rbrace.\tag7
 $$
 
-If $S$ is nonempty, then pick $z=\min S$ and assume $f(z)>_Bg(z)$ without loss of generality. Since $g(z)\in B$, we can choose a unique $z'\in A$ such that $g(z)=f(z')$, so $z'<_Az$ and $f(z')\ne g(z')$, which imply $z'<z$ and $z'\in B$, which is a contradiction. Therefore, we conclude
+If $S$ is nonempty, then pick $z=\min S$ and assume $f(z)>_Bg(z)$ without loss of generality. Since $g(z)\in B$, we can choose a unique $z'\in A$ such that $g(z)=f(z')$, so $z'<_Az$ and $f(z')\ne g(z')$, which imply $z'<z$ and $z'\in S$, which is a contradiction. Therefore, we conclude
 
 **Lemma 2:** *If $(A,<_A)$ and $(B,<_B)$ are isomorphic well-ordered sets, then the isomorphism function $f:A\to B$ is unique.*
 
