@@ -197,21 +197,18 @@ Let $x\in\alpha$ be arbitrary. Then $\forall y\space(y\in\alpha_x\iff y\in x)$, 
 
 When $\beta\subset\alpha$ is an ordinal, let $\gamma\in\beta$ and $\delta\in\alpha$ be arbitrary. If $\delta<\gamma$, then the transitive property of ordering indicates that $\delta\in\beta$, so $\beta$ is an order ideal of $\alpha$. Thus, we infer from Lemma 1 that $\beta\in\alpha$ or $\beta=\alpha$.
 
-When $C$ is a set of ordinals, we can always choose a minimal element from it. This is made possible by choosing $\min(\alpha\cap C)$ when $\alpha\in C$ is not the minimum.
-
 Summarizing these properties, we conclude that
 
 **Lemma 4**: *Let $\alpha$ and $\beta$ be ordinals. Then*
 
 1. *$\forall\beta\in\alpha\space\beta=\lbrace x\in\alpha:x<\beta\rbrace$.*
 2. *$\beta\subsetneq\alpha\Rightarrow\beta\in\alpha$.*
-3. *When $C$ is a set of ordinals, $\exists\alpha\in C\space\forall\beta\in C\space\beta\ge\alpha$.*
 
 ### Trichotomy
 
-By adapting the proof of Lemma 3, we find that two ordinals are isomorphic to each other iff they are the same, so we deduce the following law of trichotomy for ordinals from Theorem 1:
+By adapting the proof of Lemma 3, we find that two ordinals are isomorphic to each other iff they are the same, so we deduce the following law of trichotomy for ordinals. In addition, when $C$ is a set of ordinals, we can always choose a minimal element from it. This is made possible by choosing $\min(\alpha\cap C)$ when $\alpha\in C$ is not the minimum.
 
-**Theorem 2:** *When $\alpha$ and $\beta$ are ordinals, $\alpha\cong\beta\Rightarrow\alpha=\beta$, and exactly one of these relationships hold: $\alpha=\beta$, $\alpha\in\beta$, or $\beta\in\alpha$.*
+**Theorem 2:** *When $\alpha$ and $\beta$ are ordinals, $\alpha\cong\beta\Rightarrow\alpha=\beta$, and exactly one of these relationships hold: $\alpha=\beta$, $\alpha\in\beta$, or $\beta\in\alpha$. Moreover, every set of ordinals is well ordered by $\in$.*
 
 ### Ordinals and well-ordered sets
 
@@ -233,7 +230,7 @@ $$
 B=\lbrace\alpha:\exists!x\in A\space(A_x,<)\cong\alpha\rbrace.
 $$
 
-The uniqueness of $x$ for each $\alpha$ is justified by Lemma 3. According to the arguments used in the proof of Theorem 1, we gather that $A'$ is an order ideal and for any ordinals $\gamma,\delta$, we have $(\gamma\in B\wedge\delta<\gamma)\Rightarrow\delta\in B$. By Lemma 4, $B$ is also well-ordered, so $B$ is itself an ordinal too.
+The uniqueness of $x$ for each $\alpha$ is justified by Lemma 3. According to the arguments used in the proof of Theorem 1, we gather that $A'$ is an order ideal and for any ordinals $\gamma,\delta$, we have $(\gamma\in B\wedge\delta<\gamma)\Rightarrow\delta\in B$. By Theorem 2, $B$ is also well-ordered, so $B$ is itself an ordinal too.
 
 If $A'=A_x$ for some $x\in A$. Then $(A_x,<)\cong\alpha$, so $x\in A'$, which is a contradiction, so $A'=A$ and $(A,<)\cong B$. The uniqueness of $B$ is guaranteed by Theorem 2.
 
@@ -269,9 +266,9 @@ By applying successor operations repetitively, we obtain all the natural numbers
 
 ### Limit ordinals
 
-When $C$ is a set of ordinals, the arguments in proving Lemma 4 indicates that $\min C=\cap C$[^cap]. This naturally lets us consider the properties of $D=\cup C$.
+When $C$ is a set of ordinals, the arguments in proving Theorem 2 indicates that $\min C=\cap C$[^cap]. This naturally lets us consider the properties of $D=\cup C$.
 
-Let $\alpha\in D$ and $\beta\in\alpha$ be arbitrary. Then it follows from the definition that $\exists\gamma\in C\space\alpha\in\gamma$, so the transitivity of $\in$ in ordinals implies that $\beta\in\gamma$, so $\beta\in D$. Therefore, $\alpha\in D\Rightarrow\alpha\subset D$. This, combined with Lemma 4, indicates that $D$ is itself an ordinal that serves as an upper bound for $C$. In addition, because $\forall\alpha<D\space\exists\beta\in C\space\alpha<\beta$, we conclude that $D$ is also the least upper bound, so $\sup C=\cup C$.
+Let $\alpha\in D$ and $\beta\in\alpha$ be arbitrary. Then it follows from the definition that $\exists\gamma\in C\space\alpha\in\gamma$, so the transitivity of $\in$ in ordinals implies that $\beta\in\gamma$, so $\beta\in D$. Therefore, $\alpha\in D\Rightarrow\alpha\subset D$. This, combined with Theorem 2, indicates that $D$ is itself an ordinal that serves as an upper bound for $C$. In addition, because $\forall\alpha<D\space\exists\beta\in C\space\alpha<\beta$, we conclude that $D$ is also the least upper bound, so $\sup C=\cup C$.
 
 For an ordinal $\alpha$, it is clear that $\sup\alpha\le\alpha$. In particular, we say $\alpha$ is a **limit ordinal** iff $\sup\alpha=\alpha$. Because $\beta\in S(\alpha)\iff\beta\le\alpha$, we deduce that $\sup S(\alpha)=\alpha$, so a successor ordinal cannot be a limit ordinal.
 
@@ -283,7 +280,7 @@ On the other hand, when $\beta=\sup\alpha<\alpha$, we have $\alpha\ge S(\beta)$.
 
 ### Classes and class mapping
 
-The axiom of infinity guarantees the collection of natural numbers forms a set, but this is not the case if we gather all the ordinals. Suppose $C$ is a set containing all the ordinals. Then it follows from Lemma 4 that it must be well-ordered. On the other hand, we also know that $\alpha\in C\Rightarrow\alpha\subset C$, so $C$ must be itself an ordinal as well, but this means $C\in C$, which is a contradiction as an ordinal cannot be less than itself.
+The axiom of infinity guarantees the collection of natural numbers forms a set, but this is not the case if we gather all the ordinals. Suppose $C$ is a set containing all the ordinals. Then it follows from Theorem 2 that it must be well-ordered. On the other hand, we also know that $\alpha\in C\Rightarrow\alpha\subset C$, so $C$ must be itself an ordinal as well, but this means $C\in C$, which is a contradiction as an ordinal cannot be less than itself.
 
 **Theorem 4:** *There are no sets containing all the ordinals.*
 
