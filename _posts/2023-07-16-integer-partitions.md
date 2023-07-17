@@ -78,7 +78,7 @@ $$
 
 From (3), we see that every root of unity is a singularity of $f$, and because $\mathbb Q$ is dense in $\mathbb R$, we see that $\vert x\vert=1$ is a natural boundary of $f$, which prevents us from continuing $f$ to some function outside the unit disc. This indicates that we cannot compute $p(n)$ by shifting the path of integration to the left-half plane like we did when playing with $\zeta(s)$.
 
-Fortunately, we know the function $f$ very well. Our discussion of [pentagonal numbers](/2023/03/19/euler-pentagonal-and-dedekind-eta.html) few months ago tells us that when
+Fortunately, we know the function $f$ very well. Our discussion of [pentagonal numbers](/2023/03/19/euler-pentagonal-and-dedekind-eta.html) a few months ago tells us that when
 
 $$
 \phi(x)=(1-x)(1-x^2)(1-x^3)\cdots=\prod_{m\ge1}(1-x^m),
@@ -139,7 +139,7 @@ $$
 p(n)-p^*(n)\ll\exp\left[2\pi ny+{\pi\over48y}\right].
 $$
 
-By the inequality $a+b\ge2\sqrt{ab}$, the exponents on the right hand side attains its minimum at $y={1/4\sqrt{6n}}$, so we have
+By the inequality $a+b\ge2\sqrt{ab}$, the exponent on the right-hand side attains its minimum at $y={1/4\sqrt{6n}}$, so we have
 
 $$
 p(n)=p^*(n)+O(e^{\pi\sqrt{n/6}}).\tag{11}
@@ -236,7 +236,7 @@ $$
 p(n)={1+O(n^{-1/10})\over4n\sqrt3}\exp\left(\pi\sqrt{2n\over3}\right),
 $$
 
-which effectively proves the asymptotic formula (1). Plugging $n=200$ into the right hand side of (1) gives the approximation
+which effectively proves the asymptotic formula (1). Plugging $n=200$ into the right-hand side of (1) gives the approximation
 
 $$
 p(200)\approx 4,100,251,432,188.\tag{15}
