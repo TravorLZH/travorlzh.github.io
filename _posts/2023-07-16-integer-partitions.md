@@ -164,7 +164,7 @@ $$
 Because
 
 $$
-w^{1/2}e^{2\pi\lambda_n g(w)}\ll\vert w\vert^{1/2} e^{2\pi\lambda_n\alpha+{2\pi\lambda_n\over24\lambda_n/2}}\ll\lambda_n^{1/2}e^{2\pi n\alpha}
+w^{1/2}e^{2\pi\lambda_n g(w)}\ll\vert w\vert^{1/2} e^{2\pi\lambda_n\alpha+{2\pi\lambda_n\over24\lambda_n/2}}\ll\lambda_n^{1/2}e^{2\pi\alpha\sqrt n}
 $$
 
 when $\Re(w)\le\alpha$ and $\vert\Im(w)\vert=\lambda_n/2$, we have
@@ -172,8 +172,8 @@ when $\Re(w)\le\alpha$ and $\vert\Im(w)\vert=\lambda_n/2$, we have
 $$
 \begin{aligned}
 p^*(n)-M(n)
-&=\lambda_n^{-3/2}i^{-1}\left(\int_{y\lambda_n-i\lambda_n/2}^{\alpha-i\lambda_n/2}+\int_{\alpha+i\lambda_n/2}^{y\lambda_n+i\lambda_n/2}\right)O(\lambda_n^{1/2}e^{2\pi n\alpha})\mathrm dw \\
-&\ll\lambda_n^{-1}\vert\alpha-y\lambda_n\vert e^{2\pi n\alpha}\ll e^{\pi\sqrt{n/6}}.
+&=\lambda_n^{-3/2}i^{-1}\left(\int_{y\lambda_n-i\lambda_n/2}^{\alpha-i\lambda_n/2}+\int_{\alpha+i\lambda_n/2}^{y\lambda_n+i\lambda_n/2}\right)O(\lambda_n^{1/2}e^{2\pi\alpha\sqrt n})\mathrm dw \\
+&\ll\lambda_n^{-1}\vert\alpha-y\lambda_n\vert e^{2\pi\alpha\sqrt n}\ll e^{\pi\sqrt{n/6}}.
 \end{aligned}\tag{13}
 $$
 
@@ -275,7 +275,7 @@ $$
 Consequently, when
 
 $$
-L(n)=i^{-1}\int_{-\infty}^{(0+)}u^{1/2}\exp\left(2\pi\lambda_n^2u+{\pi\over12u}\right).
+L(n)=i^{-1}\int_{-\infty}^{(0+)}u^{1/2}\exp\left(2\pi\lambda_n^2u+{\pi\over12u}\right)\mathrm du.
 $$
 
 we have
@@ -445,7 +445,7 @@ $$
 The Hankel integral approach in this article is adapted from Rademacher[^rm]. By analyzing the asymptotic behaviors of $f(x)$ near the roots of unities, Hardy and Ramanujan[^hr] improved (2) to an asymptotic series:
 
 $$
-p(n)={1\over2\pi\sqrt2}\sum_{k\le\alpha\sqrt{n}}A_k(n){\mathrm d\over\mathrm dn}\left(e^{C\lambda_n}\over\lambda_n\right)+O(n^{-\frac14}),\tag{22}
+p(n)={1\over2\pi\sqrt2}\sum_{k\le\alpha\sqrt{n}}A_k(n)k^{\frac12}{\mathrm d\over\mathrm dn}\left(e^{C\lambda_n}\over\lambda_n\right)+O(n^{-\frac14}),\tag{22}
 $$
 
 where $A_k(n)$ is a certain trigonometric sum. It is (22) that allows them to obtain the exact value of $p(200)$. As the proof of this asymptotic series invokes deep results from modular functions, we will not be discussing (22) until we have fully developed the theory.
