@@ -196,7 +196,7 @@ $$
 \ell'+1={2\over k+1},\quad k={1-\ell'\over1+\ell'},
 $$
 
-we have $k'=2\sqrt{\ell}/(1+\ell')$, so the arguments for (14) give us
+we have $k'=2\sqrt{\ell}/(1+\ell)$, so the arguments for (14) give us
 
 $$
 K'=(\ell'+1)L',\quad 2L'=(k+1)K'.\tag{15}
