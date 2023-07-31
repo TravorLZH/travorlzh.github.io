@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to the transformations of elliptic functions"
 date:   2023-07-25
-des:    We give an elementary derivation of Jacobian imaginary transformations and Landen's transformations and discuss their consequences in the theory of elliptic functions.
+des:    We give an elementary derivation of Jacobi's imaginary transformations and Landen's transformations and discuss their consequences in the theory of elliptic functions.
 tags:   complex-analysis elliptic-functions special-functions
 ---
 
@@ -15,9 +15,9 @@ $$
 > $k$ and $l$ are assumed to lie in $(0,1)$ throughout this article.
 
 
-Particularly, he was seeking expressions of $y$ in terms of $x$ for which $M$ is some constant. In this article, we present Jacobian imaginary transformation and Landen's transformation, which are important special cases that motivated Jacobi to study the general formula (1).
+Particularly, he was seeking expressions of $y$ in terms of $x$ for which $M$ is some constant. In this article, we present Jacobi's imaginary transformation and Landen's transformation, which are important special cases that motivated Jacobi to study the general formula (1).
 
-## Jacobian imaginary transformation
+## Jacobi's imaginary transformation
 
 For the sake of convenience, let $y=\sin\alpha$ and $x=\sin\beta$, so (1) is equivalent to
 
@@ -61,7 +61,7 @@ $$
 \sin\alpha={-2it\over1-t^2}=-i\tan\beta.\tag5
 $$
 
-After setting $x=\sin\beta$ in (5), we obtain a special case of (1) in which $\ell=k'$, $M=i$, and $y=-ix/\sqrt{1-x^2}$, which is known as the **Jacobian imaginary transformation**. This transformation explains the origin of the notion of the complementary elliptic modulus $k'$.
+After setting $x=\sin\beta$ in (5), we obtain a special case of (1) in which $\ell=k'$, $M=i$, and $y=-ix/\sqrt{1-x^2}$, which is known as the **Jacobi's imaginary transformation**. This transformation explains the origin of the notion of the complementary elliptic modulus $k'$.
 
 ## Landen's transformation
 
@@ -156,7 +156,7 @@ $$
 
 With these notations, we can demonstrate the impact of the above transformations on Jacobian elliptic functions.
 
-### Jacobian imaginary transformation of elliptic functions
+### Jacobi's imaginary transformation of elliptic functions
 
 When $\ell=k'$, it is clear that $L=K'$ and $L'=K$. As for elliptic functions, it follows from (5) and (10) that
 
@@ -176,7 +176,7 @@ $$
 -i\operatorname{sn}(iu;k)\operatorname{dn}(iu;k)={-\operatorname{sn}(u;k')\operatorname{dn}(u;k')\over\operatorname{cn}^2(u;k')},
 $$
 
-so we obtain the Jacobian imaginary transformation of $\operatorname{dn}$ too:
+so we obtain Jacobi's imaginary transformation of $\operatorname{dn}$ too:
 
 $$
 \operatorname{dn}(iu;k)={\operatorname{dn}(u;k')\over\operatorname{cn}(u;k')}.\tag{13}
@@ -269,9 +269,9 @@ $$
 k'={\vartheta_4^2(0\vert\tau)\over\vartheta_3^2(0\vert\tau)},\quad\ell'={\vartheta_4^2(0\vert\tau')\over\vartheta_3^2(0\vert\tau')}.\tag{21}
 $$
 
-### Jacobian imaginary transformation of theta functions
+### Jacobi's imaginary transformation of theta functions
 
-Because Jacobian imaginary transformation sets $L=K'$ and $L'=K$, we have
+Because the imaginary transformation sets $L=K'$ and $L'=K$, we have
 
 $$
 \tau'={iK\over K'}=-\frac1\tau,
@@ -289,7 +289,7 @@ $$
 \psi(u)=e^{au^2}\vartheta_3(u\vert\tau').
 $$
 
-Then from the [quasi periodicity of theta functions](theta-intro), we have
+Then from the [quasi periodicity of theta functions][theta-intro], we have
 
 $$
 \vartheta_3(z+\pi\vert\tau)=\vartheta_3(z\vert\tau),\quad\vartheta_3(z+\pi\tau\vert\tau)=e^{-i\pi\tau-2iz}\vartheta_3(z\vert\tau),
@@ -315,7 +315,7 @@ $$
 
 Thus, $\phi(u)=\psi(u)/\vartheta_3(u\tau\vert\tau)$ is an elliptic function. Because $\vartheta_3(z\vert\tau)$ has simple zeros iff $z\equiv\frac\pi2+{\pi\tau\over2}$ modulo $m\pi+n\pi\tau$ and $\psi(u)$ has simple zeros whenever $u\equiv{\pi\over2}+{\pi\tau'\over2}\equiv{\pi\over2}+{\pi\over2\tau}$ modulo $m\pi+n\pi/\tau$, we find that $\phi$ is an elliptic function without zeros.
 
-Therefore, [Liouville's theorem][weierstrass-intro] indicates that $\phi(u)=\phi(0)=(-i\tau)^{-1/2}$, so we obtain the general Jacobian imaginary transformation of $\vartheta_3(z\vert\tau)$ (setting $z=u\tau$):
+Therefore, [Liouville's theorem][weierstrass-intro] indicates that $\phi(u)=\phi(0)=(-i\tau)^{-1/2}$, so we obtain the general Jacobi's imaginary transformation of $\vartheta_3(z\vert\tau)$ (setting $z=u\tau$):
 
 $$
 \vartheta_3(z\vert\tau)=(-i\tau)^{-1/2}\exp\left(z^2\over i\pi\tau\right)\vartheta_3\left(\frac z\tau\left\vert-\frac1\tau\right.\right).\tag{22}
@@ -323,7 +323,7 @@ $$
 
 > Exercise: Give a direct proof of (22) via Poisson summation.
 
-For more Jacobian imaginary transformation formulas, consult §21.51 of Whittaker & Watson's _A Course of Modern Analysis_.
+For more formulas about Jacobi's imaginary transformation, consult §21.51 of Whittaker & Watson's _A Course of Modern Analysis_.
 
 ### Landen's transformation of theta functions
 
@@ -377,7 +377,7 @@ For more Landen transformation identities of theta functions, consult [DLMF](htt
 
 ## Conclusion
 
-In this article, we began our discussion of the transformation theory by making subtle substitutions inside elliptic integrals. By performing Weierstrass substitution, we obtained Jacobian imaginary transformation. Using a geometric argument, we give a motivated proof of Landen's transformation. After that, we examine the impact of these transformations on elliptic functions and theta functions.
+In this article, we began our discussion of the transformation theory by making subtle substitutions inside elliptic integrals. By performing Weierstrass substitution, we obtained Jacobi's imaginary transformation. Using a geometric argument, we give a motivated proof of Landen's transformation. After that, we examine the impact of these transformations on elliptic functions and theta functions.
 
 After Landen's transformation, one is motivated to consider the general problem of determining algebraic relationship between $k$ and $\ell$ such that
 
