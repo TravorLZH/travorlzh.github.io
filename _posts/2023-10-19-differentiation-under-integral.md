@@ -223,7 +223,7 @@ $$
 so by divergence theorem, (9) becomes
 
 $$
-{\mathrm dF\over\mathrm dt}=\int_{\Omega(t)}{\partial f\over\partial t}\mathrm dV+\int_{\partial\Omega(t)}(\boldsymbol u\cdot\hat n)f\mathrm dS.\tag{10}
+{\mathrm d\over\mathrm dt}\int_{\Omega(t)}f\mathrm dV=\int_{\Omega(t)}{\partial f\over\partial t}\mathrm dV+\int_{\partial\Omega(t)}(\boldsymbol u\cdot\hat n)f\mathrm dS.\tag{10}
 $$
 
 This is known as the **Reynolds transport theorem**.
@@ -239,7 +239,7 @@ $$
 Because incompressibility implies $\nabla\cdot\boldsymbol u\equiv 0$, we can simplify (9) into
 
 $$
-{\mathrm dF\over\mathrm dt}=\int_{\Omega(t)}{Df\over Dt}\mathrm dV.\tag{11}
+{\mathrm d\over\mathrm dt}\int_{\Omega(t)}f\mathrm dV=\int_{\Omega(t)}{Df\over Dt}\mathrm dV.\tag{11}
 $$
 
 This indicates that when the flow is incompressible, (11) guarantees that the time derivative of $F$ is the volume integral of the material derivative of $f$.
