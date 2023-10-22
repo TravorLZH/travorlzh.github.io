@@ -58,7 +58,7 @@ $$
 Using integration by parts, there are
 
 $$
-\vert I_2\vert\le\left\vert\left[-\cos x\cdot{e^{-sx}\over x}\right]_T^{+\infty}+\int_T^{+\infty}\cos x\mathrm d\left(e^{-sx}\over x\right)\right\vert\le{2e^{-sT}\over T}.
+\vert I_2\vert\le\left\vert\left[-\cos x\cdot{e^{-sx}\over x}\right]_T^{+\infty}+\int_T^{+\infty}\cos x\mathrm d\left(e^{-sx}\over x\right)\right\vert\le{2e^{-sT}\over T}
 $$
 
 and
