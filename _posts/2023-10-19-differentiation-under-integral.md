@@ -48,16 +48,20 @@ $$
 Since $\vert\sin x\vert\le\min(\vert x\vert,1)$, we have
 
 $$
-\vert I_1\vert\le\int_0^T(1-e^{-sx})\mathrm dx\le T(1-e^{-sT})
+\begin{aligned}
+\vert I_1\vert
+&\le 1-e^{-s}+\int_1^T{1-e^{-sx}\over x}\mathrm dx \\
+&\le 1-e^{-s}+(\log T)(1-e^{-sT}).
+\end{aligned}
+$$
+
+Using integration by parts, there are
+
+$$
+\vert I_2\vert\le\left\vert\left[-\cos x\cdot{e^{-sx}\over x}\right]_T^{+\infty}+\int_T^{+\infty}\cos x\mathrm d\left(e^{-sx}\over x\right)\right\vert\le{2e^{-sT}\over T}.
 $$
 
 and
-
-$$
-\vert I_2\vert\le{1\over T}\int_T^{+\infty}e^{-sx}\mathrm dx={e^{-sT}\over sT}.
-$$
-
-Using integration by parts, there is
 
 $$
 \vert I_3\vert=\left\vert\left[{-\cos x\over x}\right]_T^{+\infty}-\int_T^{+\infty}{\cos x\over x^2}\mathrm dx\right\vert\le{2\over T}.
@@ -66,10 +70,10 @@ $$
 Combining everything, we have
 
 $$
-\vert I(s)-I(0)\vert\le T(1-e^{-sT})+{e^{-sT}\over sT}+\frac 2T.
+\vert I(s)-I(0)\vert\le 1-e^{-s}+(\log T)(1-e^{-sT})+\frac 4T.
 $$
 
-Setting $T=s^{\frac12}$ and letting $s\to0^+$, we see that (2) implies
+Setting $T=s^{-\frac12}$ and letting $s\to0^+$, we see that (2) implies
 
 $$
 I(0)=\lim_{s\to0^+} I(s)=\frac\pi2-\lim_{s\to0^+}\arctan s=\frac\pi2,
