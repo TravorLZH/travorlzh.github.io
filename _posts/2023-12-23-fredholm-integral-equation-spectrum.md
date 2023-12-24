@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On the spectrum of Fredholm integral equations"
-date:   2023-11-16
+date:   2023-12-23
 des:    We give an elementary proof that the spectrum of Fredholm integral equations is discrete modulo the origin.
 tags:   real-analysis complex-analysis algebra
 ---
