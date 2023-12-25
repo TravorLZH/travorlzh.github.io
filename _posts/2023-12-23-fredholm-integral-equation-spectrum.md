@@ -2,7 +2,7 @@
 layout: post
 title:  "On the spectrum of Fredholm integral equations"
 date:   2023-12-23
-des:    We give an elementary proof that the spectrum of Fredholm integral equations is discrete modulo the origin.
+des:    We give an elementary argument showing that the spectrum of Fredholm integral equations is discrete.
 tags:   real-analysis complex-analysis algebra
 ---
 
@@ -43,21 +43,23 @@ This indicates that the spectrum of $-\partial_{xx}$ in $U_2$ is exactly $(0,+\i
 
 Contrasting (2) and (3), we see that in infinite-dimensional vector spaces, the spectrum of linear operators can possess contrasting topological properties.
 
-Ordinary differential equations arising from physics can often be converted to integral equations via the means of Green's function. Let $L$ be some differential operator and $G$ be its Green's function. Then the eigenvalue problem $Lu=\lambda u$ on some interval $[a,b]$ becomes an integral equation:
+Ordinary differential equations (with boundary conditions) arising from physics can often be converted to integral equations via the means of Green's function. Let $L$ be some linear differential operator and $G$ be its Green's function. Then the eigenvalue problem $Lu=\lambda u$ on some interval $[a,b]$ becomes an integral equation:
 
 $$
 Lu=\lambda u\iff u(x)=\lambda\int_a^bG(x,t)u(t)\mathrm ds.\tag4
 $$
 
-This is known as **Fredholm's integral equation**. For convenience of investigation, we define the operator:
+This is known as **Fredholm's integral equation**. For convenience of investigation, we define the operator
 
 $$
 (Gu)(x)=\int_a^b G(x,t)u(t)\mathrm dt\tag5
 $$
 
+and assume $G(x,y)$ is bounded.
+
 ## Transformation to a discrete problem
 
-Let $a=x_0<x_1<x_2<\dots<x_n=b$ be a partition satisfying $x_q-x_{q-1}=(b-a)/n:=\delta$ be a partition. Then we $Gu$ should be well approximated by
+Let $a=x_0<x_1<x_2<\dots<x_n=b$ be a partition of $[a,b]$ satisfying $x_q-x_{q-1}=(b-a)/n:=\delta$. Then $Gu$ should be well approximated by
 
 $$
 (G_nu)(x)=\sum_{q=1}^nG(x,x_q)u(x_q)\delta
@@ -69,13 +71,13 @@ $$
 [(I-\lambda G_n)u](x)=0\tag6
 $$
 
-and make $n\to+\infty$. Because (6) needs to be valid for all $x\in[a,b]$, it must also be true when $x=x_p$. Consequently, we transform the eigenvalue problem into a system of linear equations:
+and make $n\to+\infty$. Because (6) needs to be valid for all $x\in[a,b]$, it must also be true when $x=x_p$. Consequently, we transform the eigenvalue problem (6) into a system of linear equations:
 
 $$
 u(x_p)-\lambda\delta\sum_{q=1}^nG(x_p,x_q)u(x_q)=0
 $$
 
-for $p=1,2,\dots,n$. When $\lambda\ne0$, this equation has a unique solution if and only if the determinant ($G_{p,q}=G(x_p,x_q)$)
+for $p=1,2,\dots,n$. This equation has a unique solution if and only if the determinant ($G_{p,q}=G(x_p,x_q)$)
 
 $$
 D_n(\lambda)=
@@ -88,14 +90,14 @@ D_n(\lambda)=
 \end{vmatrix}
 $$
 
-vanishes at $\lambda=\lambda^{-1}$. To study how this determinant behaves has $n\to+\infty$, we need to expand it first into a polynomial of $\lambda$:
+vanishes at $\lambda$. To study how this determinant behaves has $n\to+\infty$, we need to expand it first into a polynomial of $\lambda$:
 
-### Expansion of $D_n(\lambda)$
+## Expansion of $D_n(\lambda)$
 
-If $e_{p,q}$ represents the $p,q$'th entry of the identity matrix. Then the Leibniz expansion gives
+If $e_{p,q}$ represents the $p,q$'th entry of the identity matrix, then the Leibniz expansion gives
 
 $$
-D_n(\lambda)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{p=1}^n(e_{p,\sigma(p)}-\lambda\delta G_{p,\sigma(p)}).
+D_n(\lambda)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{p=1}^n(e_{p,\sigma(p)}-\lambda\delta G_{p,\sigma(p)}).\tag7
 $$
 
 Observe that
@@ -110,7 +112,7 @@ $$
 D_n(\lambda)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\sum_A(-\lambda\delta)^{\vert A\vert}\prod_{p\in A}G_{p,\sigma(p)}{\color{blue}\prod_{q\in A^c}e_{q,\sigma(q)}}.
 $$
 
-Because the blue term is zero when $\sigma$ does not fix elements of $\lbrace1,2,\dots,n\rbrace$ that is not in $A$, we only need to restrict the domain of $\sigma$ to the permutations $S_A$ of set $A$:
+Because the blue term is zero when $\sigma$ does not fix elements of $A^c=\lbrace1,2,\dots,n\rbrace\setminus A$, we only need to restrict the domain of $\sigma$ to the permutations $S_A$ of set $A$:
 
 $$
 D_n(\lambda)=\sum_A(-\lambda\delta)^{\vert A\vert}\sum_{\sigma\in S_A}\operatorname{sgn}(\sigma)\prod_{p\in A}G_{p,\sigma(p)}=\sum_{m=0}^na_{m,n}\lambda^m,
@@ -144,7 +146,7 @@ G(x_{p_m},x_{p_1}) & G(x_{p_m},x_{p_2}) & \dots & G(x_{p_m},x_{p_m})
 \end{aligned}
 $$
 
-### Limit of $D_n(\lambda)$ as $n\to+\infty$
+## Limit of $D_n(\lambda)$ as $n\to+\infty$
 
 When $n\to+\infty$, $a_{m,n}$ converges pointwise to
 
@@ -175,7 +177,7 @@ $$
 \vert a_{m,n}\vert\le Cm^{-m/2}[(b-a)eA]^m,
 $$
 
-for some fixed $C>0$ and all $n$ so by the dominated convergence theorem, we conclude that
+for some fixed $C>0$ and all $m,n$ so by the dominated convergence theorem, we conclude that
 
 $$
 D_n(\lambda)\to D(\lambda)=\sum_{m\ge0}a_m\lambda^m
@@ -185,7 +187,7 @@ uniformly for all $\lambda$ in any compact subset of $\mathbb C$, so $D(\lambda)
 
 ## The spectrum of $L$
 
-By the nature of determinants, we conclude that $\lambda$ is a solution to the eigenvalue problem (4) if and only if $D(\lambda)=0$. Because an entire function can either have no zeros, finitely many zeros, or countably many zeros accumulating at infinity, we see that the set of eigenvalues $S$ of $L$ can only be distributed in the following manner:
+By the nature of determinants, we conclude that $\lambda$ is a solution to the eigenvalue problem (4) if and only if $D(\lambda)=0$. Because a nonconstant analytic function can only have isolated zeros, we see that the set of eigenvalues $S$ of $L$ can only belong in one of the following types:
 
 1. $S$ is empty or finite.
 2. $S$ is countably infinite and discrete.
