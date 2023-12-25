@@ -43,65 +43,59 @@ This indicates that the spectrum of $-\partial_{xx}$ in $U_2$ is exactly $(0,+\i
 
 Contrasting (2) and (3), we see that in infinite-dimensional vector spaces, the spectrum of linear operators can possess contrasting topological properties.
 
-Ordinary differential equations can often be converted to integral equations (e.g. the proof of Picard-Lindelöf theorem), so in this article, we study the spectrum of a certain class of integral operators.
-
-## Fredholm's integral equation
-
-In 1903, Fredholm developed a general theory to attack the following equation:
+Ordinary differential equations arising from physics can often be converted to integral equations via the means of Green's function. Let $L$ be some differential operator and $G$ be its Green's function. Then the eigenvalue problem $Lu=\lambda u$ on some interval $[a,b]$ becomes an integral equation:
 
 $$
-u(x)=f(x)+\int_a^b K(x,t)u(t)\mathrm dt,
+Lu=\lambda u\iff u(x)=\lambda\int_a^bG(x,t)u(t)\mathrm ds.\tag4
 $$
 
-where $K(x,t)$, the **kernel**, is a bounded integrable function on $[a,b]^2$. The integral equation produces the following integral operator:
+This is known as **Fredholm's integral equation**. For convenience of investigation, we define the operator:
 
 $$
-(Ku)(x)=\int_a^b K(x,t)u(t)\mathrm dt,\tag4
+(Gu)(x)=\int_a^b G(x,t)u(t)\mathrm dt\tag5
 $$
-
-and we will be investigating the spectrum of this operator throughout the rest of this article.
 
 ## Transformation to a discrete problem
 
-Let $a=x_0<x_1<x_2<\dots<x_n=b$ be a partition satisfying $x_q-x_{q-1}=(b-a)/n:=\delta$ be a partition. Then we $Ku$ should be well approximated by
+Let $a=x_0<x_1<x_2<\dots<x_n=b$ be a partition satisfying $x_q-x_{q-1}=(b-a)/n:=\delta$ be a partition. Then we $Gu$ should be well approximated by
 
 $$
-(K_nu)(x)=\sum_{q=1}^nK(x,x_q)u(x_q)\delta
+(G_nu)(x)=\sum_{q=1}^nG(x,x_q)u(x_q)\delta
 $$
 
-when $n\to+\infty$. Consequently, we can attack the eigenvalue problem of operator $K$ by considering the equation
+when $n\to+\infty$. Consequently, we can attack the eigenvalue problem (4) by considering the equation
 
 $$
-[(\lambda I-K_n)u](x)=0\tag5
+[(I-\lambda G_n)u](x)=0\tag6
 $$
 
-and make $n\to+\infty$. Because (5) needs to be valid for all $x\in[a,b]$, it must also be true when $x=x_p$. Consequently, we transform the eigenvalue problem into a system of linear equations:
+and make $n\to+\infty$. Because (6) needs to be valid for all $x\in[a,b]$, it must also be true when $x=x_p$. Consequently, we transform the eigenvalue problem into a system of linear equations:
 
 $$
-\lambda u(x_p)-\delta\sum_{q=1}^nK(x_p,x_q)u(x_q)=0\tag6
+u(x_p)-\lambda\delta\sum_{q=1}^nG(x_p,x_q)u(x_q)=0
 $$
 
-for $p=1,2,\dots,n$. When $\lambda\ne0$, this equation has a unique solution if and only if the determinant ($K_{p,q}=K(x_p,x_q)$)
+for $p=1,2,\dots,n$. When $\lambda\ne0$, this equation has a unique solution if and only if the determinant ($G_{p,q}=G(x_p,x_q)$)
 
 $$
-D_n(z)=
+D_n(\lambda)=
 \begin{vmatrix}
-1-z\delta K_{1,1} & -z\delta K_{1,2} & -z\delta K_{1,3} & \dots & -z\delta K_{1,n} \\
--z\delta K_{2,1} & 1-z\delta K_{2,2} & -z\delta K_{2,3} & \dots & -z\delta K_{2,n} \\
--z\delta K_{3,1} & -z\delta K_{3,2} & 1-z\delta K_{3,3} & \dots & -z\delta K_{3,n} \\
+1-\lambda\delta G_{1,1} & -\lambda\delta G_{1,2} & -\lambda\delta G_{1,3} & \dots & -\lambda\delta G_{1,n} \\
+-\lambda\delta G_{2,1} & 1-\lambda\delta G_{2,2} & -\lambda\delta G_{2,3} & \dots & -\lambda\delta G_{2,n} \\
+-\lambda\delta G_{3,1} & -\lambda\delta G_{3,2} & 1-\lambda\delta G_{3,3} & \dots & -\lambda\delta G_{3,n} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
--z\delta K_{n,1} & -z\delta K_{n,2} & -z\delta K_{n,3} & \dots & 1-z\delta K_{n,n}
+-\lambda\delta G_{n,1} & -\lambda\delta G_{n,2} & -\lambda\delta G_{n,3} & \dots & 1-\lambda\delta G_{n,n}
 \end{vmatrix}
 $$
 
-vanishes at $z=\lambda^{-1}$. To study how this determinant behaves has $n\to+\infty$, we need to expand it first into a polynomial of $z$:
+vanishes at $\lambda=\lambda^{-1}$. To study how this determinant behaves has $n\to+\infty$, we need to expand it first into a polynomial of $\lambda$:
 
-### Expansion of $D_n(z)$
+### Expansion of $D_n(\lambda)$
 
 If $e_{p,q}$ represents the $p,q$'th entry of the identity matrix. Then the Leibniz expansion gives
 
 $$
-D_n(z)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{p=1}^n(e_{p,\sigma(p)}-z\delta K_{p,\sigma(p)}).\tag7
+D_n(\lambda)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{p=1}^n(e_{p,\sigma(p)}-\lambda\delta G_{p,\sigma(p)}).
 $$
 
 Observe that
@@ -113,13 +107,13 @@ $$
 so (7) becomes
 
 $$
-D_n(z)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\sum_A(-z\delta)^{\vert A\vert}\prod_{p\in A}K_{p,\sigma(p)}{\color{blue}\prod_{q\in A^c}e_{q,\sigma(q)}}.
+D_n(\lambda)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\sum_A(-\lambda\delta)^{\vert A\vert}\prod_{p\in A}G_{p,\sigma(p)}{\color{blue}\prod_{q\in A^c}e_{q,\sigma(q)}}.
 $$
 
 Because the blue term is zero when $\sigma$ does not fix elements of $\lbrace1,2,\dots,n\rbrace$ that is not in $A$, we only need to restrict the domain of $\sigma$ to the permutations $S_A$ of set $A$:
 
 $$
-D_n(z)=\sum_A(-z\delta)^{\vert A\vert}\sum_{\sigma\in S_A}\operatorname{sgn}(\sigma)\prod_{p\in A}K_{p,\sigma(p)}=\sum_{m=0}^na_{m,n}z^m,
+D_n(\lambda)=\sum_A(-\lambda\delta)^{\vert A\vert}\sum_{\sigma\in S_A}\operatorname{sgn}(\sigma)\prod_{p\in A}G_{p,\sigma(p)}=\sum_{m=0}^na_{m,n}\lambda^m,
 $$
 
 where
@@ -127,10 +121,10 @@ where
 $$
 \begin{aligned}
 a_{m,n}
-&=(-\delta)^m\sum_{\vert A\vert=m}\sum_{\sigma\in S_A}\operatorname{sgn}(\sigma)\prod_{p\in A}K_{p,\sigma(p)} \\
-&=(-\delta)^m\sum_{1\le p_1<p_2<\dots<p_m\le n}\sum_{t\in S_m}\operatorname{sgn}(t)\prod_{k=1}^m K_{p_k,\sigma(p_k)} \\
-&=(-\delta)^m\sum_{1\le p_1<p_2<\dots<p_m\le n}\det(K_{p_r,p_s})_{1\le r,s\le m} \\
-&={(-\delta)^m\over m!}\sum_{\substack{1\le p_1,p_2,\dots,p_m\le n\\p_1,p_2,\dots,p_m\text{ distinct}}}\det(K_{p_r,p_s})_{1\le r,s\le m}
+&=(-\delta)^m\sum_{\vert A\vert=m}\sum_{\sigma\in S_A}\operatorname{sgn}(\sigma)\prod_{p\in A}G_{p,\sigma(p)} \\
+&=(-\delta)^m\sum_{1\le p_1<p_2<\dots<p_m\le n}\sum_{t\in S_m}\operatorname{sgn}(t)\prod_{k=1}^m G_{p_k,\sigma(p_k)} \\
+&=(-\delta)^m\sum_{1\le p_1<p_2<\dots<p_m\le n}\det(G_{p_r,p_s})_{1\le r,s\le m} \\
+&={(-\delta)^m\over m!}\sum_{\substack{1\le p_1,p_2,\dots,p_m\le n\\p_1,p_2,\dots,p_m\text{ distinct}}}\det(G_{p_r,p_s})_{1\le r,s\le m}
 \end{aligned}
 $$
 
@@ -139,38 +133,38 @@ Because the determinant is zero when its matrix has identical rows or columns, w
 $$
 \begin{aligned}
 a_{m,n}
-&={(-1)^m\over m!}\sum_{\substack{1\le p_1,p_2,\dots,p_m\le n}}\delta^m\det(K_{p_r,p_s})_{1\le r,s\le m} \\
+&={(-1)^m\over m!}\sum_{\substack{1\le p_1,p_2,\dots,p_m\le n}}\delta^m\det(G_{p_r,p_s})_{1\le r,s\le m} \\
 &={(-1)^m\over m!}\sum_{\substack{1\le p_1,p_2,\dots,p_m\le n}}\delta^m
 \begin{vmatrix}
-K(x_{p_1},x_{p_1}) & K(x_{p_1},x_{p_2}) & \dots & K(x_{p_1},x_{p_m}) \\
-K(x_{p_2},x_{p_1}) & K(x_{p_2},x_{p_2}) & \dots & K(x_{p_2},x_{p_m}) \\
+G(x_{p_1},x_{p_1}) & G(x_{p_1},x_{p_2}) & \dots & G(x_{p_1},x_{p_m}) \\
+G(x_{p_2},x_{p_1}) & G(x_{p_2},x_{p_2}) & \dots & G(x_{p_2},x_{p_m}) \\
 \vdots & \vdots & \ddots & \vdots \\
-K(x_{p_m},x_{p_1}) & K(x_{p_m},x_{p_2}) & \dots & K(x_{p_m},x_{p_m})
+G(x_{p_m},x_{p_1}) & G(x_{p_m},x_{p_2}) & \dots & G(x_{p_m},x_{p_m})
 \end{vmatrix}.
 \end{aligned}
 $$
 
-### Limit of $D_n(z)$ as $n\to+\infty$
+### Limit of $D_n(\lambda)$ as $n\to+\infty$
 
 When $n\to+\infty$, $a_{m,n}$ converges pointwise to
 
 $$
 a_m={(-1)^m\over m!}\mathop{\int\dots\int}\limits_{a\le t_1,t_2,\dots,t_m\le b}
 \begin{vmatrix}
-K(t_1,t_1) & K(t_1,t_2) & \dots & K(t_1,t_n) \\
-K(t_2,t_1) & K(t_2,t_2) & \dots & K(t_2,t_n) \\
+G(t_1,t_1) & G(t_1,t_2) & \dots & G(t_1,t_n) \\
+G(t_2,t_1) & G(t_2,t_2) & \dots & G(t_2,t_n) \\
 \vdots & \vdots & \ddots & \vdots \\
-K(t_n,t_1) & K(t_n,t_2) & \dots & K(t_n,t_n)
+G(t_n,t_1) & G(t_n,t_2) & \dots & G(t_n,t_n)
 \end{vmatrix}
 \mathrm dt_1\mathrm dt_2\cdots\mathrm dt_n.
 $$
 
-By our assumption, $\vert K(x,y)\vert\le A$ for some fixed $A>0$ throughout $(x,y)\in [a,b]^2$, so Hadamard's inequality gives
+By our assumption, $\vert G(x,y)\vert\le A$ for some fixed $A>0$ throughout $(x,y)\in [a,b]^2$, so Hadamard's inequality gives
 
 $$
 \begin{aligned}
 \vert m!a_{m,n}\vert
-&\le\delta^m\sum_{1\le p_1,p_2,\dots,p_m\le n}\prod_{r=1}^m\left(\sum_{s=1}^m\vert K(x_{p_s},x_{p_r})\vert^2\right)^{1/2} \\
+&\le\delta^m\sum_{1\le p_1,p_2,\dots,p_m\le n}\prod_{r=1}^m\left(\sum_{s=1}^m\vert G(x_{p_s},x_{p_r})\vert^2\right)^{1/2} \\
 &\le\delta^mn^m\prod_{r=1}^m(m^{1/2}A)=m^{m/2}[(b-a)A]^m
 \end{aligned}
 $$
@@ -178,23 +172,23 @@ $$
 From Stirling's approximation $m!\sim\sqrt{2\pi} m^{m+\frac12}e^{-m}$, we see that
 
 $$
-\vert a_{m,n}\vert\le Cm^{-m/2}[(b-a)eA]^m,\tag8
+\vert a_{m,n}\vert\le Cm^{-m/2}[(b-a)eA]^m,
 $$
 
 for some fixed $C>0$ and all $n$ so by the dominated convergence theorem, we conclude that
 
 $$
-D_n(z)\to D(z)=\sum_{m\ge0}a_mz^m
+D_n(\lambda)\to D(\lambda)=\sum_{m\ge0}a_m\lambda^m
 $$
 
-uniformly for all $z$ in any compact subset of $\mathbb C$, so $D(z)$ is an entire function.
+uniformly for all $\lambda$ in any compact subset of $\mathbb C$, so $D(\lambda)$ is an entire function.
 
-## The spectrum of $K$
+## The spectrum of $L$
 
-By the nature of determinants, we conclude that $\lambda\ne0$ is an eigenvalue of the operator $K$ if and only if $D(\lambda^{-1})=0$. Because an entire function can either have no zeros, finitely many zeros, or countably many zeros accumulating at infinity, we conclude that the spectrum $\sigma(K)$ of operator $K$ defined by (4) belongs to exactly one of the following kinds:
+By the nature of determinants, we conclude that $\lambda$ is a solution to the eigenvalue problem (4) if and only if $D(\lambda)=0$. Because an entire function can either have no zeros, finitely many zeros, or countably many zeros accumulating at infinity, we see that the set of eigenvalues $S$ of $L$ can only be distributed in the following manner:
 
-1. $\sigma(K)$ is empty.
-2. $\sigma(K)$ is finite.
-3. $\sigma(K)$ is countably infinite and accumulates at zero.
+1. $S$ is empty or finite.
+2. $S$ is countably infinite and discrete.
+3. $S=\mathbb C$.
 
-This indicates that the fundamental reason for certain operators to possess a discrete spectrum is that it is characterized by the zeros of some analytic function.
+Conclusively, the fundamental reason for certain differential operators to possess a discrete spectrum is that it is characterized by the isolated zeros of some analytic function.
