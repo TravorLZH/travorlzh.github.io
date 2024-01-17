@@ -157,7 +157,7 @@ $$
 Setting $a_\ell=(2\ell-1)!!/\ell!$ gives the **Legendre polynomial** $P_\ell(\mu)$ of order $\ell$:
 
 $$
-P_\ell(\mu)=\sum_{0\le m\le\ell/2}(-1)^m{(2\ell-2m)!\over(\ell-m)!(\ell-2m)!}\mu^{\ell-2m}.\tag{10}
+P_\ell(\mu)=\sum_{0\le m\le\ell/2}{(-1)^m\over2^\ell m!}{(2\ell-2m)!\over(\ell-m)!(\ell-2m)!}\mu^{\ell-2m}.\tag{10}
 $$
 
 Notice that
