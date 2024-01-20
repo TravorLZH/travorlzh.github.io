@@ -18,10 +18,10 @@ $$
 \rho^{-2}\partial_\rho(\rho^2 u_\rho)+\rho^{-2}\csc^2\theta u_{\phi\phi}+\rho^{-2}\csc\theta\partial_\theta(\sin\theta u_\theta)=0.\tag1
 $$
 
-Let $u$ be symmetric about the $z$-axis, so it does not depend on $\phi$, which we should investigate (1) by setting $u=f(\rho)g(\theta)$:
+Let $u$ be symmetric about the $z$-axis, so it does not depend on $\phi$, which means we should investigate (1) by the separation of variables $u=f(\rho)g(\theta)$:
 
 $$
-g\rho^{-2}\partial_\rho(\rho^2 f_\rho)+f\rho^{-2}\csc\theta\partial_\theta(\sin\theta g_\theta)=0
+g\rho^{-2}\partial_\rho(\rho^2 f_\rho)+f\rho^{-2}\csc\theta\partial_\theta(\sin\theta g_\theta)=0.
 $$
 
 Rearranging the terms gives
@@ -30,7 +30,7 @@ $$
 {\partial_\rho(\rho^2 f_\rho)\over f}=-{\csc\theta\partial_\theta(\sin\theta g_\theta)\over g}.\tag2
 $$
 
-Because the left-hand side does not depend on $\theta$ and the right-hand side does not depend on $\rho$, both sides of (2) should be equal to some constant $\lambda$. as a result, we convert Laplace's equation into two ordinary differential equations:
+Because the left-hand side does not depend on $\theta$ and the right-hand side does not depend on $\rho$, both sides of (2) should be equal to some constant $\lambda$. As a result, we convert Laplace's equation into two ordinary differential equations:
 
 $$
 \rho^2f_{\rho\rho}+2\rho f_\rho=\lambda f,\tag3
@@ -117,17 +117,17 @@ $$
 {e^{-A}\over k}<{a_{2k+\nu}\over a_{2k_0+\nu}}<{e^A\over k}.\tag8
 $$
 
-Setting $\alpha=0$ and rewriting (6), we have
+Setting $\alpha=0$ in (6), we have
 
 $$
-g(\mu)=\sum_{k\ge0}a_{2k}\mu^{2k}+\sum_{k\ge0}a_{2k+1}\mu^{2k+1}\tag9
+g(\mu)=\sum_{k\ge0}a_{2k}\mu^{2k}+\sum_{k\ge0}a_{2k+1}\mu^{2k+1}.\tag9
 $$
 
 Because $a_{2k+\nu}$ is a multiple of $a_\nu$, we conclude that the odd and even components in (9) are exactly the fundamental solutions of (5), and we can adjust the values of $a_0$ and $a_1$ to represent all general solutions.
 
 ## The spectrum of the Legendre differential operator
 
-According to (8) and the comparison test, we see that $g(\mu)$ is regular when $-1<\mu<1$. When $\mu=\pm1$, we see that the fundamental solution
+According to (8) and the comparison test, $g(\mu)$ is regular when $-1<\mu<1$. When $\mu=\pm1$, we see that the fundamental solution
 
 $$
 \sum_{k\ge0}a_{2k+\nu}\mu^{2k+\nu}
@@ -135,11 +135,11 @@ $$
 
 will diverge if $a_{2k+\nu}$ is nonzero for all sufficiently large $k$. Consequently, for (5) to have meaningful solutions, at least of the sequences $a_{2k}, a_{2k+1}$ needs to vanish at all large $k$.
 
-From the properties of the recursive relation (7), we see that this is possible if and only if $\lambda=\ell(\ell+1)$ for some integer $\ell$. In this situation, the meaningful solution is given by exactly one of the fundamental solutions whose coefficients become zero at large $k$, and this is the best we can do.
+From the properties of the recursive relation (7), this is possible if and only if $\lambda=\ell(\ell+1)$ for some integer $\ell$. In this situation, the meaningful solutions are exactly the constant multiples of one fundamental solution satisfying $\nu\equiv\ell\pmod2$.
 
 ## Legendre polynomials
 
-Let $\lambda=\ell(\ell+1)$ for some non-negative integer $\ell$ and $\nu\in\lbrace 0,1\rbrace$ be such that $\ell-\nu$ is even, we see that the sequence $a_{2k+\nu}$ becomes zero after $2k+\nu>\ell$, so it follows from (7) that for $0\le m\le(\ell-\nu)/2$, there is
+Let $\lambda=\ell(\ell+1)$ for some non-negative integer $\ell$ and $\nu\in\lbrace 0,1\rbrace$ be such that $\ell-\nu$ is even, so the sequence $a_{2k+\nu}$ becomes zero after $2k+\nu>\ell$, so it follows from (7) that for $0\le m\le(\ell-\nu)/2$, there is
 
 $$
 \begin{aligned}
