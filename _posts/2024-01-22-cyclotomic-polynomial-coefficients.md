@@ -121,7 +121,7 @@ Since $\deg\Phi_{pq}=(p-1)(q-1)<pq$, the terms of $x^{pq}\Phi_{pq}(x)$ and $-\Ph
 
 Combining this with Theorem 1 and 2, we deduce our main result:
 
-**Theorem 3 (Brookfield[^1]):** *Let $n$ be divisible by at most two different odd primes. Then the expansion of $\Phi_n(x)$ only contains terms of the form $\pm x^k$.*
+**Theorem 3 (Migotti[^1]):** *Let $n$ be divisible by at most two different odd primes. Then the expansion of $\Phi_n(x)$ only contains terms of the form $\pm x^k$.*
 
 ## Conclusion
 
