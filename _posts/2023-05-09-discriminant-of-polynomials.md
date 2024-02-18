@@ -343,7 +343,7 @@ $$
 so (30) becomes an infinite product:
 
 $$
-\left(\omega_1\over\pi\right)^{12}\Delta=q^2\prod_{n\ge1}(1-q^{2n})^{24}=e^{2\pi i\tau}\prod_{n\ge1}(1-e^{2\pi i\tau})^{24}.\tag{31}
+\left(\omega_1\over\pi\right)^{12}\Delta=q^2\prod_{n\ge1}(1-q^{2n})^{24}=e^{2\pi i\tau}\prod_{n\ge1}(1-e^{2\pi in\tau})^{24}.\tag{31}
 $$
 
 Therefore, the numbers $e_1,e_2,e_3$ are always distinct when $0<\Im(\tau)<+\infty$.
