@@ -71,11 +71,11 @@ Although the pure sieve is capable of deriving lower bounds for $S(\mathcal A,\m
 
 **Theorem 1:** *There exist infinitely many integers $n$ such that $n$ and $n+2$ are products of at most 9 primes.*
 
-**Theorem 2:** *Every sufficiently large even integer is a sum of two integers, each being products of at most 9 primes.*
+**Theorem 2:** *Every sufficiently large even integer is a sum of two integers, each being a product of at most 9 primes.*
 
 Theorem 1 is an approximation to the twin prime conjecture, and Theorem 2 is an approximation to the Goldbach conjecture.
 
-Brun's modified principle is explained in the books of Cojocaru & Murty [^2] and Halberstam & Richert [^3], but after reading Brun's original paper and found the original text more motivating than these accounts from the books. Throughout the remaining sections of the article, we will derive Brun's main sieve in the Brun's original spirit and apply it to prove Theorem 1 and Theorem 2.
+Brun's modified principle is explained in the books of Cojocaru & Murty [^2] and Halberstam & Richert [^3], but after reading Brun's original paper and found the original text more motivating than these accounts from the books. Throughout the remaining sections of the article, we will derive Brun's main sieve in Brun's original spirit and apply it to prove Theorem 1 and Theorem 2.
 
 ### A lower-bound sieve
 
@@ -495,7 +495,7 @@ where $c_x>0$ is defined by (22).
 
 ## Conclusion
 
-In this article, we began our discussion by deriving Buchstab's identity in sieve theory. Subsequently, we apply this identity iteratively to deduce Brun's pure sieve, which enables him to establish the convergence of the reciprocal sum of twin primes. After that, we introduce Brun's main sieve and used it to derive approximations to the twin primes conjecture (Theorem 1) and the Goldbach conjecture (Theorem 2).
+In this article, we began our discussion by deriving Buchstab's identity in sieve theory. Subsequently, we applied this identity iteratively to deduce Brun's pure sieve, which enables him to establish the convergence of the reciprocal sum of twin primes. After that, we introduced Brun's main sieve and used it to derive approximations to the twin primes conjecture (Theorem 1) and the Goldbach conjecture (Theorem 2).
 
 [^1]: Brun, V. (1920). Le crible d’Eratosthene et le theoreme de Goldbach. *Skr. Norske Vid. Akad*, 3, 1–36.
 
