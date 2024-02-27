@@ -455,7 +455,7 @@ $$
 When $u=9$, $x^{9.999\over u+1}$ grows slower than $x/\log^2x$, so plugging this lower bound into (9), we conclude that
 
 $$
-\#\lbrace n\le x:n,n-2\text{ are products of }\le 10\text{ primes}\rbrace>{98cx\over\log^2x},\tag{21}
+\#\lbrace n\le x:n,n-2\text{ are products of }\le 9\text{ primes}\rbrace>{98cx\over\log^2x},\tag{21}
 $$
 
 where $c>0$ is defined as in (20).
@@ -488,7 +488,7 @@ $$
 Since $g(p)\le2/p$ for all $p>2$, we also find that $\mathcal A$ satisfies $\Omega(\kappa)$ at $\kappa=2$, so we can reuse our calculations above to conclude that when $x$ is a large even integer,
 
 $$
-\#\lbrace n\le x:n,x-n\text{ are products of }\le 10\text{ primes}\rbrace>{98c_xx\over\log^2x}>0,
+\#\lbrace n\le x:n,x-n\text{ are products of }\le 9\text{ primes}\rbrace>{98c_xx\over\log^2x}>0,
 $$
 
 where $c_x>0$ is defined by (22).
