@@ -10,11 +10,13 @@ My [research interest](/research/) lies in multiplicative number theory and siev
 
 ## Talks
 
-Axiom of Choice: Equivalents, Consequences, and Independence (with Yi Liu, Daya Singh, and Tairan Wang) ([Slides](files/ac-slides.pdf))
+- 28 Feb 2024: Introduction to $p$-adic Analysis (with May Jiang, Qing Su, and Hantang Guo)) ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording]((https://www.youtube.com/watch?v=0rtHSvbxd9s))
 
-[Ellipses, Pendulum, and Double Periodicity (10 Mar 2023)](https://www.youtube.com/watch?v=gtAM2S-vND4) ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf))
+- 6 June 2023: Axiom of Choice: Equivalents, Consequences, and Independence (with Yi Liu, Daya Singh, and Tairan Wang) ([Slides](files/ac-slides.pdf))
 
-[Bounded gaps between primes (28 Oct 2022)](https://www.youtube.com/watch?v=W5cDx4IEhS4) ([Slides](https://ucl-ug-col.github.io/past/slides/28oct22.pdf))
+- 10 Mar 2023: Ellipses, Pendulum, and Double Periodicity ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf)) ([Recording]((https://www.youtube.com/watch?v=gtAM2S-vND4)))
+
+- 28 Oct 2022: Bounded gaps between primes ([Slides](https://ucl-ug-col.github.io/past/slides/28oct22.pdf)) ([Recording]((https://www.youtube.com/watch?v=W5cDx4IEhS4)))
 
 The recordings are also available on [Bilibili](https://space.bilibili.com/27074620/video).
 
