@@ -10,9 +10,9 @@ My [research interest](/research/) lies in multiplicative number theory and siev
 
 ## Talks
 
-- 28 Feb 2024: Introduction to $p$-adic Analysis (with May Jiang, Qing Su, and Hantang Guo)) ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording]((https://www.youtube.com/watch?v=0rtHSvbxd9s))
+- 28 Feb 2024 (with May Jiang, Qing Su, and Hantang Guo): Introduction to $p$-adic Analysis ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording](https://www.youtube.com/watch?v=0rtHSvbxd9s))
 
-- 6 June 2023: Axiom of Choice: Equivalents, Consequences, and Independence (with Yi Liu, Daya Singh, and Tairan Wang) ([Slides](files/ac-slides.pdf))
+- 6 June 2023 (with Yi Liu, Daya Singh, and Tairan Wang): Axiom of Choice: Equivalents, Consequences, and Independence ([Slides](files/ac-slides.pdf))
 
 - 10 Mar 2023: Ellipses, Pendulum, and Double Periodicity ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf)) ([Recording]((https://www.youtube.com/watch?v=gtAM2S-vND4)))
 
