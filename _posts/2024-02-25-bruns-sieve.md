@@ -493,9 +493,71 @@ $$
 
 where $c_x>0$ is defined by (22).
 
+## A simple upper bound for $S(\mathcal A,\mathcal P,z)$
+
+For general $\mathcal A$ satisfying $\Omega(\kappa)$ and $\vert r(d)\vert\le f(d)$ for some multiplicative function $f$ satisfying (17), we can use Lemma 2 and Theorem 3 to conclude that
+
+$$
+S(\mathcal A,\mathcal P,z)<c_1XV(z)+c_2z^{c_3}.
+$$
+
+for some $c_1,c_2,c_3>0$ that depends on $\kappa$. By $\Omega(\kappa)$, we have $V(z)\gg(\log z)^{-\kappa}$, so when $z\le X^{1/B}$ for some $B>c_3$ and $X$ is large, the above expression simplifies to $\ll XV(z)$. Therefore, we obtain a convenient result to produce simple upper bounds:
+
+**Theorem 3 (fundamental lemma in sieve theory):** _Let $\mathcal A$ satisfy $\Omega(\kappa)$ and $\vert r(d)\vert\le f(d)$ for some multiplicative $f$ such that $f(p)$ is uniformly bounded. Then there is some $B,C>0$ such that_
+
+$$
+S(\mathcal A,\mathcal P,z)<C\cdot XV(z)
+$$
+
+_whenever $z\le X^{1/B}$._
+
+For instance, when $\mathcal A=\lbrace n\le x:n\equiv h\pmod k\rbrace$ for coprime integers $(h,k)$, we have $X=x/k$ and
+
+$$
+g(p)=
+\begin{cases}
+1/p & p\nmid k, \\
+0 & p\vert k,
+\end{cases}
+$$
+
+so when $z$ is large
+
+$$
+\begin{aligned}
+V(z)
+&=\prod_{\substack{p<z\\p\nmid k}}\left(1-\frac1p\right)=\prod_{\substack{p<z\\p\vert k}}\left(1-\frac1p\right)^{-1}\prod_{p<z}\left(1-\frac1p\right) \\
+&\le\prod_{p\vert k}\left(1-\frac1p\right)^{-1}\prod_{p<z}\left(1-\frac1p\right)={k\over\varphi(k)}\prod_{p<z}\left(1-\frac1p\right).
+\end{aligned}
+$$
+
+Finally, by Mertens' theorem, we have $V(z)\ll k/(\varphi(k)\log z)$. Notice that $\Omega(\kappa)$ is satisfied at $\kappa=1$, so we have for $z=X^{1/B}$ that
+
+$$
+S(\mathcal A,\mathcal P,z)\ll\frac xkV(z)\ll{x\over\varphi(k)\log z}\ll{x\over\varphi(k)\log(x/k)}.\tag{23}
+$$
+
+If $\pi(x;k,h)$ is the number of primes $\le x$ and $\equiv h\pmod k$, then because the number of such primes in $[z,x]$ is bounded by the number of elements of $\mathcal A$ free of prime divisors $<z$, we have $\pi(x;k,h)\le z+S(\mathcal A,\mathcal P,z)$. Combining this observation with (23), we obtain
+
+**Theorem 4 (Brun-Titchmarsh):** _Let $h,k$ be coprime integers, then for $x\ge2k$, there is some $C>0$ such that_
+
+$$
+\pi(x;k,h)<{Cx\over\varphi(k)\log(x/k)}.
+$$
+
+The prime number theorem for arithmetic progressions states that
+
+$$
+\pi(x;k,h)\sim{x\over\varphi(k)\log x}\tag{24}
+$$
+
+for fixed $k$ and any $h$ coprime to $k$. Siegel-Walfisz theorem strengthens (24) to arbitrary $k\le(\log x)^C$, and the generalized Riemann hypothesis can only ensure the validity of (24) for $k\le x^{\frac12-\varepsilon}$. For larger $k$, Theorem 4 is the best we can get at present.
+
 ## Conclusion
 
 In this article, we began our discussion by deriving Buchstab's identity in sieve theory. Subsequently, we applied this identity iteratively to deduce Brun's pure sieve, which enables him to establish the convergence of the reciprocal sum of twin primes. After that, we introduced Brun's main sieve and used it to derive approximations to the twin primes conjecture (Theorem 1) and the Goldbach conjecture (Theorem 2).
+
+Update (2 May 2024): An extra section is added to prove the fundamental lemma and Brun-Titchmarsh inequality.
 
 [^1]: Brun, V. (1920). Le crible d’Eratosthene et le theoreme de Goldbach. *Skr. Norske Vid. Akad*, 3, 1–36.
 
