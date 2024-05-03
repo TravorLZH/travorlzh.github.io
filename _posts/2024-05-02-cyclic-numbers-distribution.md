@@ -20,7 +20,7 @@ In the [previous article][cyc], we showed that $n$ is cyclic if and only if $n$ 
 
 ## Least prime divisor and sieving
 
-In sieve theory, it is common that asymptotic formulas emerge when we count numbers free of small prime divisors. In the case for $N_x$, it is true indeed that the main term comes from the contribution of cyclic numbers whose least prime divisor is $>y$ for some carefully chosen $y$.
+In sieve theory, it is common that asymptotic formulas emerge when we count numbers free of small prime divisors. In the case of $N_x$, the main term does come from the contribution of cyclic numbers whose least prime divisor is $>y$ for some carefully chosen large $y$.
 
 Let $N_{x,y}$ be defined as follows:
 
@@ -34,9 +34,9 @@ $$
 S_{x,y}=\lbrace n\le x: p\vert n\Rightarrow p\ge y\rbrace.
 $$
 
-Notice that the complement $S_{x,y}\setminus N_{x,y}$ contains $n\in S_{x,y}$ such that $\gcd(\varphi(n),n)>1$, which means at least one of the following is true
+Notice that the complement $S_{x,y}\setminus N_{x,y}$ contains $n\in S_{x,y}$ that is not cyclic, which means at least one of the following is true
 
-1. $n$ is not squarefree: There exists some prime divisor $p\in(y,x]$ such that $p^2\vert n$
+1. $n$ is not squarefree: There exists some prime $p\in(y,x]$ such that $p^2\vert n$
 2. $n$ is squarefree and $\gcd(\varphi(n),n)>1$: There exists prime divisors $p,q\in(y,x]$ such that $q\equiv1\pmod p$.
 
 Consequently, we deduce that
@@ -45,8 +45,8 @@ $$
 \begin{aligned}
 \vert S_{x,y}\setminus N_{x,y}\vert
 &\le\sum_{y<p\le x}\#\lbrace n\in S_{x,y}:p^2\vert n\rbrace+\sum_{y<p\le x}\sum_{\substack{y<q\le x\\q\equiv1(p)}}\#\lbrace n\in S_{x,y}:pq\vert n\rbrace \\
-&\le\sum_{y<p\le x}\left\lfloor x\over p^2\right\rfloor+\sum_{y<p\le x}\sum_{\substack{y<q\le x\\q\equiv1(p)}}\left\lfloor x\over pq\right\rfloor=S_1+S_2.\tag2
-\end{aligned}
+&\le\sum_{y<p\le x}\left\lfloor x\over p^2\right\rfloor+\sum_{y<p\le x}\sum_{\substack{y<q\le x\\q\equiv1(p)}}\left\lfloor x\over pq\right\rfloor=S_1+S_2.
+\end{aligned}\tag2
 $$
 
 The first term $S_1$ can be trivially bounded by
@@ -69,11 +69,11 @@ $$
 &\le\sum_{\substack{q\le 2p\\q\equiv1(p)}}\frac1q+\int_{2p}^x{\mathrm dQ(t)\over t} \\
 &\le{1\over p+1}+{Q(x)\over x}
 +\int_{2p}^x{Q(t)\over t^2}\mathrm dt \\
-&\ll\frac1p+\int_{2p}^x{\mathrm dt\over t\log(t/p)}\ll{\log\log x\over p}.
+&\ll\frac1p+\int_{2p}^x{\mathrm dt\over t\log(t/p)}\ll{\log\log x\over p},
 \end{aligned}
 $$
 
-Consequently, we have
+so we have
 
 $$
 S_2\ll x\sum_{y<p\le x}{\log\log x\over p^2}\ll{x\log\log x\over y}.
@@ -112,7 +112,7 @@ $$
 \end{aligned}
 $$
 
-Since this upper bound is meaningless when $\alpha>1$, so we set $\alpha=1-s$ for some $0<s<1$. Notice that for real $u$, $1-u\le e^{-u}$, so $e^u\le1+ue^u$. This means
+Since this upper bound is meaningless when $\alpha\ge1$, so we set $\alpha=1-s$ for some $0<s<1$. Notice that for real $u$, $1-u\le e^{-u}$, so $e^u\le1+ue^u$. This means
 
 $$
 \begin{aligned}
@@ -141,7 +141,7 @@ $$
 This indicates that when $y\le e^{\sqrt{\log x}}$, there is some $c>0$ such that
 
 $$
-E_1\ll xe^{-c_0\sqrt{\log x}},\quad E_2\ll e^{-c_0\sqrt{\log x}}.\tag5
+E_1\ll xe^{-c\sqrt{\log x}},\quad E_2\ll e^{-c\sqrt{\log x}}.\tag5
 $$
 
 Plugging (5) into (4) gives
@@ -169,15 +169,15 @@ Now, we turn our focus on estimating the size of $N_x\setminus N_{x,y}$.
 Let $N_x^p$ denote the elements of $N_x$ whose least prime divisor is $p$. Then clearly
 
 $$
-\vert N_x\setminus N_{x,y}\vert\le\sum_{p<y}\vert N_{x,p}\vert.\tag7
+\vert N_x\setminus N_{x,y}\vert\le\sum_{p<y}\vert N_x^p\vert.\tag7
 $$
 
-Because $(p-1)\vert\varphi(n)$ for all $n\in N_{x,p}$, when $\mathcal P$ is the collection of primes $\equiv1\pmod p$, $\vert N_{x,p}\vert$ is bounded by the number of integers $n$ such that $pn\le x$ and $n$ whose prime divisors do not belong to $\mathcal P$.
+Because $(p-1)\vert\varphi(n)$ for all $n\in N_x^p$, when $\mathcal P$ is the collection of primes $\equiv1\pmod p$, $\vert N_x^p\vert$ is bounded by the number of integers $n$ such that $pn\le x$ and $n$ whose prime divisors do not belong to $\mathcal P$.
 
 Consequently, by the fundamental lemma (Theorem 3 of the [Brun's sieve article][brun]), there exists some large $B\ge1$ such that when $z=x^{1/2B}\le(xe^{-\sqrt{\log x}})^{1/B}\le (x/p)^{1/B}$, we have
 
 $$
-\vert N_{x,p}\vert\ll\frac xp\prod_{\substack{q<z\\q\equiv1(p)}}\left(1-\frac1p\right)\le\frac xp\exp\left(-\sum_{\substack{q<z\\q\equiv1(p)}}\frac1q\right).\tag8
+\vert N_x^p\vert\ll\frac xp\prod_{\substack{q<z\\q\equiv1(p)}}\left(1-\frac1p\right)\le\frac xp\exp\left(-\sum_{\substack{q<z\\q\equiv1(p)}}\frac1q\right).\tag8
 $$
 
 To estimate the reciprocal sum from below, we quote **Siegel-Walfisz theorem**:
@@ -195,13 +195,13 @@ $$
 for some absolute constant $c>0$. Plugging this back into (8), we obtain
 
 $$
-\vert N_{x,p}\vert\ll\frac xp\exp\left(-{c\log\log x\over p}\right).\tag9
+\vert N_x^p\vert\ll\frac xp\exp\left(-{c\log\log x\over p}\right).\tag9
 $$
 
-(9) is only useful when $p\le\log\log x$, so for large $p$, we shall estimate $\vert N_{x,p}\vert$ by using the fact that $p$ is the least divisor:
+Nevertheless, (9) is only useful when $p\le\log\log x$, so for large $p$, we shall estimate $\vert N_x^p\vert$ by using the fact that $p$ is the least divisor:
 
 $$
-\vert N_{x,p}\vert\le\sum_{\substack{pn\le x\\q\vert n\Rightarrow q\ge p}}1=\sum_{\substack{n\le x/p\\q\vert n\Rightarrow q\ge p}}1\ll\frac xp\prod_{q<p}\left(1-\frac1q\right)\ll{x\over p\log p},\tag{10}
+\vert N_x^p\vert\le\sum_{\substack{pn\le x\\q\vert n\Rightarrow q\ge p}}1=\sum_{\substack{n\le x/p\\q\vert n\Rightarrow q\ge p}}1\ll\frac xp\prod_{q<p}\left(1-\frac1q\right)\ll{x\over p\log p},\tag{10}
 $$
 
 where the first $\ll$ follows from the fundamental lemma and the fact that $p\le y\le x^{1/B}$.
@@ -246,7 +246,7 @@ Since $\delta>0$ can be made arbitrarily small, we conclude the right-hand side 
 
 ## Conclusion
 
-In this article, we gave a motivated account of Erdös's original method of studying the distribution of cyclic numbers. In essence, he decomposed $N_x$ according to the size of the least prime divisor and obtained asymptotic main term from counting the cyclic numbers with prime divisors $\gg\log\log x$.
+In this article, we gave a motivated account of Erdös's original method of studying the distribution of cyclic numbers. In essence, he decomposed $N_x$ according to the size of the least prime divisor and obtained the asymptotic main term from counting the cyclic numbers with prime divisors $\gg\log\log x$.
 
 By making a more delicate decomposition, Paul Pollack[^3] improved (1) to an asymptotic series:
 
