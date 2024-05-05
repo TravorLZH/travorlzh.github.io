@@ -94,7 +94,7 @@ $$
 n-{n\over\vert U\vert}+n-{n\over\vert V\vert}=n\left(2-{1\over\vert U\vert}-{1\over\vert V\vert}\right)
 $$
 
-distinct non-identity elements. However, because $\vert U\vert,\vert V\vert\ge21$, we see that the right-hand side $\ge n$, but $G-\lbrace e\rbrace$ only has $n-1$ elements, so we reach a contradiction.
+distinct non-identity elements. However, because $\vert U\vert,\vert V\vert\ge2$, we see that the right-hand side $\ge n$, but $G-\lbrace e\rbrace$ only has $n-1$ elements, so we reach a contradiction.
 
 ## Conclusion
 
