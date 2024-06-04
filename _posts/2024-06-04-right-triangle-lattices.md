@@ -21,7 +21,7 @@ $$
 we have
 
 $$
-N_{\alpha,\beta}(x)-P(x)=o(x).\tag2
+N_{\alpha,\beta}(x)-P(x)=o(x)\tag2
 $$
 
 for irrational $\alpha/\beta$, and when $\alpha/\beta$ is rational, there exists $K>0$ such that for all $X>0$, there exist $x,x'>X$ satisfying
@@ -88,7 +88,7 @@ $$
 S_{\alpha,1}(x)=\sum_{m=0}^{\lfloor x\rfloor}\rho(x-\alpha m).
 $$
 
-Let $p/q=p_n/q_n$ be an n'th continued fraction convergent to $\alpha$. Then it follows from the properties of continued fractions that $p,q$ are coprime and
+Let $\frac pq={p_n\over q_n}$ be an n'th continued fraction convergent to $\alpha$. Then it follows from the properties of continued fractions that $p,q$ are coprime and
 
 $$
 \alpha=\frac pq+(-1)^n\varepsilon,\quad 0<\varepsilon<{1\over q^2}.\tag8
@@ -112,10 +112,10 @@ $$
 \theta_\mu=\frac tq+(-1)^n\delta,\quad 0\le\delta<\frac1q.\tag{10}
 $$
 
-Then it follows from (8) and (9) that
+Then it follows from (8) and $0\le\nu<q$ that
 
 $$
-\theta_\mu-\alpha\nu-{t-p\nu\over q}=(-1)^n(\delta+\nu\varepsilon)\in\left(-\frac1q,\frac1q\right).
+\theta_\mu-\alpha\nu-{t-p\nu\over q}=(-1)^n(\delta+\nu\varepsilon)\in\left(-\frac1q,\frac1q\right).\tag{11}
 $$
 
 Because $\gcd(p,q)=1$, $\nu\mapsto p\nu$ permutes $\mathbb Z/q\mathbb Z$. As a result,
@@ -124,7 +124,7 @@ $$
 r_\nu={t-p\nu\over q}-\left\lfloor t-p\nu\over q\right\rfloor
 $$
 
-takes each of $0,1/q,2/q,\dots,(q-1)/q$ exactly once when $\nu$ runs through $0,1,2,\dots,q-1.$ It follows from (10) that
+takes each of $0,1/q,2/q,\dots,(q-1)/q$ exactly once when $\nu$ runs through $0,1,2,\dots,q-1$. It follows from (11) that
 
 $$
 \lfloor\theta_\mu-\alpha\nu\rfloor=\left\lfloor t-p\nu\over q\right\rfloor
@@ -136,7 +136,7 @@ $$
 \lfloor\theta_\mu-\alpha\nu\rfloor=\left\lfloor t-p\nu\over q\right\rfloor+g
 $$
 
-for some $g\in\lbrace 0,-1\rbrace$ according to whether there is an integer between $\theta_\mu-\alpha\nu$ and $t-p\nu\over q$. Since $r_\nu$ only occurs once, we have
+for some $g\in\lbrace 0,-1\rbrace$ according to whether there is an integer between $\theta_\mu-\alpha\nu$ and $t-p\nu\over q$. Since such exceptional $r_\nu$ only occurs once, we have
 
 $$
 \begin{aligned}
@@ -153,10 +153,10 @@ $$
 Combined with (8) and (10), we have
 
 $$
-\vert S^{(\mu)}(x)\vert\le 1+{q(q-1)\over 2q^2}+\frac12+\vert g\vert<3.\tag{11}
+\vert S^{(\mu)}(x)\vert\le 1+{q(q-1)\over 2q^2}+\frac12+\vert g\vert<3.
 $$
 
-Plugging (11) into (9), we obtain
+Plugging this into (9), we obtain
 
 $$
 S_{\alpha,1}(x)=\sum_{\mu=0}^{r-1}O(1)+O(s)=O(r)+O(s).
@@ -168,7 +168,7 @@ $$
 \vert S_{\alpha,1}(x)\vert\le A\left(\frac xq+q\right).
 $$
 
-When $\alpha$ is irrational, it follows from the theory of continued fractions that there are infinitely many pairs of coprime integers $p$ and $q$ satisfying (8), so for any $\delta>0$ we can choose $>2A\varepsilon^{-1}$, so when $x>2Aq\varepsilon^{-1}$, there is
+When $\alpha$ is irrational, it follows from the theory of continued fractions that there are infinitely many pairs of coprime integers $(p,q)$ satisfying (8), so for any $\varepsilon>0$ we can choose $q>2A\varepsilon^{-1}$, so when $x>2Aq\varepsilon^{-1}$, there is
 
 $$
 \vert S_{\alpha,1}(x)\vert<\frac\varepsilon2x+\frac\varepsilon2x=\varepsilon x.
@@ -186,6 +186,8 @@ Combining this with (6) completes the proof of (2).
 
 > The elementary approach presented below is my original idea, which is considerably simpler than the complex-analytic method in Hardy's book.
 
+When $\alpha/\beta$ is rational, there are only finitely many coprime pairs $(p,q)$ satisfying (8), so the method above can only give us $S_{\alpha,\beta}(x)=O(x)$. In this section, we prove that no further improvements can be made.
+
 Since $S_{\alpha,\beta}(x)=S_{\alpha\lambda,\beta\lambda}(\lambda x)$ for all $\lambda>0$, we assume without loss of generality that $\alpha$ and $\beta$ are coprime integers.
 
 Write $\lfloor x/\alpha\rfloor=r\beta+s$ for some $0\le s<\beta$, so it follows from (7) and the fact that $\rho(x+1)=\rho(x)$,
@@ -200,7 +202,7 @@ S_{\alpha,\beta}(x)
 \end{aligned}
 $$
 
-Since $\nu\mapsto-\alpha\nu$ permutes $\mathbb Z/\beta\mathbb Z$, we can rewrite the inner sum into
+Since $\nu\mapsto-\alpha\nu$ permutes $\mathbb Z/\beta\mathbb Z$, we can rewrite the remaining sum into
 
 $$
 \begin{aligned}
@@ -224,6 +226,6 @@ Because $x-\lfloor x\rfloor-\frac12$ oscillates between $-\frac12$ and $\frac12$
 
 ## Conclusion
 
-In this article, we investigated the error $N_{\alpha,\beta}(x)-P(x)$. By invoking the theory of continued fractions, we prove that the error is of $o(x)$ when $\alpha/\beta$ is irrational. By invoking Hermite's identity for floor function, we give an elementary proof that the error is oscillating with order of magnitude $x$ when $\alpha/\beta$ is rational.
+In this article, we performed a systematic study of the error $N_{\alpha,\beta}(x)-P(x)$. By invoking the theory of continued fractions, we proved that the error is of order $o(x)$ when $\alpha/\beta$ is irrational. Subsequently, we gave an elementary proof that the error is oscillating with order of magnitude $x$ when $\alpha/\beta$ is rational.
 
 [^1]: Hardy, G. H. (1940). *Ramanujan: Twelve lectures on subjects suggested by his life and work.* Cambridge University Press.
