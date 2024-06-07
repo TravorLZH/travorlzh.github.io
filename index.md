@@ -10,6 +10,8 @@ My [research interest](/research/) lies in multiplicative number theory and siev
 
 ## Talks
 
+- 7 June 2024 (with Irvette Xu and Jiaxuan Yang): Special values of the Riemann zeta function ([Slides](files/zeta-values.pdf))
+
 - 28 Feb 2024 (with May Jiang, Qing Su, and Hantang Guo): Introduction to $p$-adic Analysis ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording](https://www.youtube.com/watch?v=0rtHSvbxd9s))
 
 - 6 June 2023 (with Yi Liu, Daya Singh, and Tairan Wang): Axiom of Choice: Equivalents, Consequences, and Independence ([Slides](files/ac-slides.pdf))
