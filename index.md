@@ -14,6 +14,8 @@ My [research interest](/research/) lies in multiplicative number theory and siev
 
 - 28 Feb 2024 (with May Jiang, Qing Su, and Hantang Guo): Introduction to $p$-adic Analysis ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording](https://www.youtube.com/watch?v=0rtHSvbxd9s))
 
+- 11 Oct 2023: Ray Reflection and Rational Approximation ([Notes](https://ucl-ug-col.github.io/past/notes/11oct23.pdf)) ([Recording](https://www.youtube.com/watch?v=gJHOogkgaA4&t=11s))
+
 - 6 June 2023 (with Yi Liu, Daya Singh, and Tairan Wang): Axiom of Choice: Equivalents, Consequences, and Independence ([Slides](files/ac-slides.pdf))
 
 - 10 Mar 2023: Ellipses, Pendulum, and Double Periodicity ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf)) ([Recording]((https://www.youtube.com/watch?v=gtAM2S-vND4)))
