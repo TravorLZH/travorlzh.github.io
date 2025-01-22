@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Infinity, axiom of choice, and continuity"
-date:   2024-11-12
+date:   2025-01-21
 des:    We compare two notions of infinity and relate it to the axiom of choice and the continuity of functions on the real line.
 tags:   analysis real-analysis set-theory
 ---
