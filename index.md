@@ -11,6 +11,8 @@ I am a first year PhD student in the Department of Mathematics at Stanford Unive
 
 Email: travor_liu [at] stanford [dot] edu
 
+Office: Room 381F, Building 380, Stanford, CA 94305
+
 ## Education
 
 - PhD in Mathematics, Stanford University (2025 - Present)
@@ -18,6 +20,8 @@ Email: travor_liu [at] stanford [dot] edu
 - BSc in Mathematics, University College London (2022 - 2025)
 
 ## Quick Links
+
+[Stanford profile page](https://mathematics.stanford.edu/people/travor-liu)
 
 [Travor's Zhihu 知乎](https://www.zhihu.com/people/travorlzh/posts)
 
