@@ -1,10 +1,11 @@
 ---
 layout: page
+title: Travor Zihao Liu (刘子灏)
 ---
 
 ## About Me
 
-My name is Travor Zihao Liu (刘子灏). I am a first year PhD student in the Department of Mathematics at Stanford University. My [research interest](/research/) lies in multiplicative number theory and sieve theory. I am frequently [blogging](/blogs/) about my findings.
+I am a first year PhD student in the Department of Mathematics at Stanford University. My [research interest](/research/) lies in multiplicative number theory and sieve theory. I am frequently [blogging](/blogs/) about my findings.
 
 ## Contact
 
