@@ -21,6 +21,8 @@ Office: Room 381F, Building 380, Stanford, CA 94305
 
 ## Quick Links
 
+[CV](files/cv.pdf)
+
 [Stanford profile page](https://mathematics.stanford.edu/people/travor-liu)
 
 [Travor's Zhihu 知乎](https://www.zhihu.com/people/travorlzh/posts)
