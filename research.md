@@ -19,6 +19,8 @@ permalink: /research/
 
 ## Expository
 
+[Additive divisor problem](files/additive-divisor.pdf)
+
 [Gaps between primes](files/gaps-between-primes.pdf)
 
 [Lectures on sieve methods (Chinese version)](files/sieves.pdf)
