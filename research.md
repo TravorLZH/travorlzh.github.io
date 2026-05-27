@@ -7,13 +7,13 @@ permalink: /research/
 
 ## Research Papers
 
-1. Explicit quadratic large sieve inequality. _Acta Arithmetica,_ **223(3)**:227-252 (2026). [journal](https://doi.org/10.4064/aa250722-27-1).
+1. Explicit quadratic large sieve inequality. [_Acta Arithmetica,_ **223(3)**:227-252](https://doi.org/10.4064/aa250722-27-1) (2026).
 2. On sums of Fourier coefficients of cusp forms twisted with additive characters (2023). [arXiv](https://arxiv.org/abs/2311.00006).
 3. On a weighted sum over multiplicative functions and its applications to the GPY sieve (2022). [arXiv](https://arxiv.org/abs/2210.01671).
 4. A corrected simplified proof of Chen’s theorem (2022). [arXiv](http://arxiv.org/abs/2203.07871).
 {% comment %}
 5. (2022). A Simple Proof of Siegel’s Theorem Using Mellin Transform [arXiv](http://arxiv.org/abs/2202.00635).
-6. (2022). A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function. [_Journal of Physics: Conference Series_, 2287(1), 012008](https://doi.org/10.1088/1742-6596/2287/1/012008). [arXiv](https://arxiv.org/abs/2105.05317)
+6. (2022). A Direct Proof of the Prime Number Theorem using Riemann’s Prime-counting Function. [_Journal of Physics: Conference Series_, )**2287(1)**, 012008](https://doi.org/10.1088/1742-6596/2287/1/012008). [arXiv](https://arxiv.org/abs/2105.05317)
 {% endcomment %}
 5. PM2.5 Density Prediction Based on a Two-Stage Rolling Forecast Model Using LightGBM. In W. Cao, A. Ozcan, H. Xie, & B. Guan (Eds.), [_Computing and Data Science (Vol. 1513, pp. 228–248)_](https://doi.org/10.1007/978-981-16-8885-0_19) (2021). Springer Nature Singapore.
 
