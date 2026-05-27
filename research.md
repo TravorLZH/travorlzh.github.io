@@ -7,7 +7,7 @@ permalink: /research/
 
 ## Research Papers
 
-1. Explicit quadratic large sieve inequality. _Accepted by Acta Arithmetica_ (2026). [arXiv](https://arxiv.org/abs/2505.09637).
+1. Explicit quadratic large sieve inequality. _Acta Arithmetica,_ **223(3)**:227-252 (2026). [journal](https://doi.org/10.4064/aa250722-27-1).
 2. On sums of Fourier coefficients of cusp forms twisted with additive characters (2023). [arXiv](https://arxiv.org/abs/2311.00006).
 3. On a weighted sum over multiplicative functions and its applications to the GPY sieve (2022). [arXiv](https://arxiv.org/abs/2210.01671).
 4. A corrected simplified proof of Chen’s theorem (2022). [arXiv](http://arxiv.org/abs/2203.07871).
