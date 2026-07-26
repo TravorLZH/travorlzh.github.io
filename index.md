@@ -9,7 +9,7 @@ I am a first year PhD student in the Department of Mathematics at Stanford Unive
 
 ## Contact
 
-Email: travor_liu [at] stanford [dot] edu
+Email: tzliu [at] stanford [dot] edu
 
 Office: Room 381F, Building 380, Stanford, CA 94305
 
