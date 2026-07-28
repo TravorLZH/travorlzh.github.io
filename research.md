@@ -19,6 +19,8 @@ permalink: /research/
 
 ## Expository
 
+[Random matrix theory and $L$-functions](files/rmt-notes.pdf)
+
 [Additive divisor problem](files/additive-divisor.pdf)
 
 [Gaps between primes](files/gaps-between-primes.pdf)
