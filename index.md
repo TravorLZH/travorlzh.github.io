@@ -27,10 +27,4 @@ Office: Room 381F, Building 380, Stanford, CA 94305
 
 [Travor's Zhihu 知乎](https://www.zhihu.com/people/travorlzh/posts)
 
-[Additive divisor problem](files/additive-divisor.pdf)
-
-[Gaps between primes](files/gaps-between-primes.pdf)
-
-[Lectures on sieve methods (Chinese version)](files/sieves.pdf)
-
 [UCL Undergraduate Math Colloquium](https://ucl-ug-col.github.io/)
