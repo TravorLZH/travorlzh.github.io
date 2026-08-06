@@ -5,7 +5,7 @@ title: Travor Zihao Liu (刘子灏)
 
 ## About Me
 
-I am a first year PhD student in the Department of Mathematics at Stanford University. My [research interest](/research/) lies in multiplicative number theory and sieve theory. I am frequently [blogging](/blogs/) about my findings.
+I am a first year PhD student in the Department of Mathematics at Stanford University. My [research interest](/research/) lies in random matrix theory, $L$-functions, and distribution of primes. I am frequently [blogging](/blogs/) about my findings.
 
 ## Contact
 
