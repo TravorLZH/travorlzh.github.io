@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Alternative Approach to Redefine $\\zeta(s)$"
 des:    Functional equation but the hardcore approach 
 tags:   special-functions complex-analysis

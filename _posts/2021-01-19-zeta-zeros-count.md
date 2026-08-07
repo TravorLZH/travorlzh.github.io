@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  Riemann-von Mangoldt formula for $\zeta(s)$
 des:    A powerful tool for us to study nontrivial zeros of $\zeta(s)$
 tags:   special-functions complex-analysis asymptotics

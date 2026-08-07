@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Factorial, Gamma Function, and More
 des: One of the most commonly used way to implement factorials for complex numbers
 tags: special-functions

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Analytic Continuation of the Riemann Zeta Function"
 des: "Finally, we can catch a glimpse of the million-dollar math puzzle."
 tags: special-functions complex-analysis

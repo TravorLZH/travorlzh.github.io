@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  The Prime Number Theorem and Its Equivalences
 des:    Demystifying the counting function $\pi(x)$
 tags:   number-theory

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Möbius Inversion and Beyond
 des: Arithmetic functions are fun!
 tags: number-theory
