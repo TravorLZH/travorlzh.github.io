@@ -3,39 +3,59 @@ layout:   default
 comments:  True
 ---
 <link rel="stylesheet" href="/assets/css/tag.css"/>
+<link rel="stylesheet" href="{{ "/assets/css/post.css" | relative_url }}"/>
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="post-layout{% if page.toc == false %} post-layout--without-toc{% endif %}">
+  {%- unless page.toc == false -%}
+  <aside class="post-toc" data-post-toc hidden>
+    <p class="post-toc__title">Table of Contents</p>
+    <button class="post-toc__toggle" type="button" aria-expanded="false" aria-controls="post-toc-navigation">
+      <span>Table of Contents</span>
+      <span class="post-toc__toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="post-toc__nav" id="post-toc-navigation" aria-label="Table of contents">
+      <ol class="post-toc__list" data-post-toc-list></ol>
+    </nav>
+  </aside>
+  {%- endunless -%}
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-      {% for tag in site.tags %}
-      {% if page.tags contains tag[0] %}
-      <a class="post-tag" href="/tags.html?tagName={{ tag[0] }}">{{ tag[0] }}</a>
-      {% endif %}
-      {% endfor %}
-  </header>
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}</p>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+        {% for tag in site.tags %}
+        {% if page.tags contains tag[0] %}
+        <a class="post-tag" href="/tags.html?tagName={{ tag[0] }}">{{ tag[0] }}</a>
+        {% endif %}
+        {% endfor %}
+    </header>
 
-  <!-- giscus comment
-  <div class="giscus">
-    <p style="color:red">[Failed to load comment section]</p>
-  </div>-->
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+    <!-- giscus comment
+    <div class="giscus">
+      <p style="color:red">[Failed to load comment section]</p>
+    </div>-->
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+</div>
+
+{%- unless page.toc == false -%}
+<script src="{{ "/assets/js/post-toc.js" | relative_url }}"></script>
+{%- endunless -%}
