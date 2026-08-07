@@ -131,24 +131,22 @@
     overflow-y: auto;
     overscroll-behavior: contain;
   }
+
+  .post-content h2,
+  .post-content h3 {
+    scroll-margin-top: 72px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .post-layout:not(.post-layout--without-toc) {
-    display: grid;
-    width: 1000px;
-    margin-left: 50%;
-    grid-template-columns: 220px minmax(0, 740px);
-    column-gap: 40px;
-    align-items: start;
-    transform: translateX(calc(-50% - 130px));
-  }
-
   .post-toc {
     position: sticky;
+    float: left;
     top: 24px;
+    box-sizing: border-box;
+    width: 220px;
     max-height: calc(100vh - 48px);
-    margin: 0;
+    margin: 0 0 0 -260px;
     padding: 0 0 0 14px;
     border: 0;
     border-left: 2px solid #e8e8e8;

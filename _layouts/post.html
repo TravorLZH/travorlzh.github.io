@@ -6,19 +6,6 @@ comments:  True
 <link rel="stylesheet" href="{{ "/assets/css/post.css" | relative_url }}"/>
 
 <div class="post-layout{% if page.toc == false %} post-layout--without-toc{% endif %}">
-  {%- unless page.toc == false -%}
-  <aside class="post-toc" data-post-toc hidden>
-    <p class="post-toc__title">Table of Contents</p>
-    <button class="post-toc__toggle" type="button" aria-expanded="false" aria-controls="post-toc-navigation">
-      <span>Table of Contents</span>
-      <span class="post-toc__toggle-icon" aria-hidden="true"></span>
-    </button>
-    <nav class="post-toc__nav" id="post-toc-navigation" aria-label="Table of contents">
-      <ol class="post-toc__list" data-post-toc-list></ol>
-    </nav>
-  </aside>
-  {%- endunless -%}
-
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
@@ -38,6 +25,19 @@ comments:  True
         {% endif %}
         {% endfor %}
     </header>
+
+    {%- unless page.toc == false -%}
+    <aside class="post-toc" data-post-toc hidden>
+      <p class="post-toc__title">Table of Contents</p>
+      <button class="post-toc__toggle" type="button" aria-expanded="false" aria-controls="post-toc-navigation">
+        <span>Table of Contents</span>
+        <span class="post-toc__toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="post-toc__nav" id="post-toc-navigation" aria-label="Table of contents">
+        <ol class="post-toc__list" data-post-toc-list></ol>
+      </nav>
+    </aside>
+    {%- endunless -%}
 
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
