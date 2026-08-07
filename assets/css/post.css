@@ -103,7 +103,9 @@
 }
 
 .post-toc__link:hover,
-.post-toc__link[aria-current="location"] {
+.post-toc__link[aria-current="location"],
+.post-toc__sublist .post-toc__link:hover,
+.post-toc__sublist .post-toc__link[aria-current="location"] {
   color: #2a7ae2;
 }
 
