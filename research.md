@@ -19,27 +19,29 @@ permalink: /research/
 
 ## Expository
 
-[Random matrix theory and $L$-functions](files/rmt-notes.pdf)
+[Random matrix theory and $L$-functions](/files/rmt-notes.pdf)
 
-[Additive divisor problem](files/additive-divisor.pdf)
+[Additive divisor problem](/files/additive-divisor.pdf)
 
-[Gaps between primes](files/gaps-between-primes.pdf)
+[Gaps between primes](/files/gaps-between-primes.pdf)
 
-[Lectures on sieve methods (Chinese version)](files/sieves.pdf)
+[Lectures on sieve methods (Chinese version)](/files/sieves.pdf)
 
 ## Talks
 
-- 21 July 2025: On the distribution of zeros of $\zeta(s)$ ([Slides](files/zeta-zeros.pdf)) ([Recording](https://www.bilibili.com/video/BV1Q3g5zqEbs))
+- 10 Aug 2026: Random matrix theory and $L$-functions ([Slides](/files/rmt-talk.pdf))
 
-- 9 Dec 2024 (with Ruiyang Tang and Siyu Liu): Inverse Galois problem ([Slides](files/inverse-galois-problem.pdf))
+- 21 July 2025: On the distribution of zeros of $\zeta(s)$ ([Slides](/files/zeta-zeros.pdf)) ([Recording](https://www.bilibili.com/video/BV1Q3g5zqEbs))
 
-- 16 Oct 2024: Special values of the Riemann zeta function ([Slides](files/zeta-values2.pdf)) (Recording [EP1](https://www.youtube.com/watch?v=HQ5jm88lKHA) [EP2](https://www.youtube.com/watch?v=6yHf8tLth80))
+- 9 Dec 2024 (with Ruiyang Tang and Siyu Liu): Inverse Galois problem ([Slides](/files/inverse-galois-problem.pdf))
+
+- 16 Oct 2024: Special values of the Riemann zeta function ([Slides](/files/zeta-values2.pdf)) (Recording [EP1](https://www.youtube.com/watch?v=HQ5jm88lKHA) [EP2](https://www.youtube.com/watch?v=6yHf8tLth80))
 
 - 28 Feb 2024 (with May Jiang, Qing Su, and Hantang Guo): Introduction to $p$-adic Analysis ([Slides](https://ucl-ug-col.github.io/past/slides/28feb24.pdf)) ([Recording](https://www.youtube.com/watch?v=0rtHSvbxd9s))
 
 - 11 Oct 2023: Ray Reflection and Rational Approximation ([Notes](https://ucl-ug-col.github.io/past/notes/11oct23.pdf)) ([Recording](https://www.youtube.com/watch?v=gJHOogkgaA4))
 
-- 6 June 2023 (with Yi Liu, Daya Singh, and Tairan Wang): Axiom of Choice: Equivalents, Consequences, and Independence ([Slides](files/ac-slides.pdf))
+- 6 June 2023 (with Yi Liu, Daya Singh, and Tairan Wang): Axiom of Choice: Equivalents, Consequences, and Independence ([Slides](/files/ac-slides.pdf))
 
 - 10 Mar 2023: Ellipses, Pendulum, and Double Periodicity ([Notes](https://ucl-ug-col.github.io/past/notes/10mar23.pdf)) ([Recording]((https://www.youtube.com/watch?v=gtAM2S-vND4)))
 
