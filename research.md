@@ -29,7 +29,7 @@ permalink: /research/
 
 ## Talks
 
-- 10 Aug 2026: Random matrix theory and $L$-functions ([Slides](/files/rmt-talk.pdf))
+- 10 Aug 2026: Random matrix theory and $L$-functions ([Slides](/files/rmt-talk.pdf)) ([Recording](https://www.bilibili.com/video/BV1W5tP64EkY))
 
 - 21 July 2025: On the distribution of zeros of $\zeta(s)$ ([Slides](/files/zeta-zeros.pdf)) ([Recording](https://www.bilibili.com/video/BV1Q3g5zqEbs))
 
